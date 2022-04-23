@@ -1,6 +1,6 @@
-#include "../inc/mainwindow.hh"
+#include "inc/mainwindow.hh"
 #include "ui_mainwindow.h"
-#include "secondwindow.hh"
+#include "inc/secondwindow.hh"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

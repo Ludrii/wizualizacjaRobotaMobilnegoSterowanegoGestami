@@ -52,7 +52,7 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../secondwindow.cpp \
+SOURCES       = ../src/secondwindow.cpp \
 		../src/main.cpp \
 		../src/mainwindow.cpp moc_mainwindow.cpp \
 		moc_secondwindow.cpp
@@ -137,7 +137,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
 		../../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro ../inc/mainwindow.hh \
-		../secondwindow.hh ../secondwindow.cpp \
+		../inc/secondwindow.hh ../src/secondwindow.cpp \
 		../src/main.cpp \
 		../src/mainwindow.cpp
 QMAKE_TARGET  = wizualizacjaRobotaMobilnegoSterowanegoGestami
@@ -319,9 +319,9 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../inc/mainwindow.hh ../secondwindow.hh $(DISTDIR)/
-	$(COPY_FILE) --parents ../secondwindow.cpp ../src/main.cpp ../src/mainwindow.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../secondwindow.ui ../ui/mainwindow.ui $(DISTDIR)/
+	$(COPY_FILE) --parents ../inc/mainwindow.hh ../inc/secondwindow.hh $(DISTDIR)/
+	$(COPY_FILE) --parents ../src/secondwindow.cpp ../src/main.cpp ../src/mainwindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../ui/secondwindow.ui ../ui/mainwindow.ui $(DISTDIR)/
 	$(COPY_FILE) --parents lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.ts $(DISTDIR)/
 
 
@@ -362,10 +362,10 @@ moc_mainwindow.cpp: ../inc/mainwindow.hh \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/release/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/mainwindow.hh -o moc_mainwindow.cpp
 
-moc_secondwindow.cpp: ../secondwindow.hh \
+moc_secondwindow.cpp: ../inc/secondwindow.hh \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/release/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../secondwindow.hh -o moc_secondwindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/release/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/secondwindow.hh -o moc_secondwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -374,9 +374,9 @@ compiler_moc_source_clean:
 compiler_uic_make_all: ui_secondwindow.h ui_mainwindow.h
 compiler_uic_clean:
 	-$(DEL_FILE) ui_secondwindow.h ui_mainwindow.h
-ui_secondwindow.h: ../secondwindow.ui \
+ui_secondwindow.h: ../ui/secondwindow.ui \
 		/usr/lib/qt5/bin/uic
-	/usr/lib/qt5/bin/uic ../secondwindow.ui -o ui_secondwindow.h
+	/usr/lib/qt5/bin/uic ../ui/secondwindow.ui -o ui_secondwindow.h
 
 ui_mainwindow.h: ../ui/mainwindow.ui \
 		/usr/lib/qt5/bin/uic
@@ -392,16 +392,14 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 
 ####### Compile
 
-secondwindow.o: ../secondwindow.cpp ../secondwindow.hh \
-		ui_secondwindow.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o secondwindow.o ../secondwindow.cpp
+secondwindow.o: ../src/secondwindow.cpp ui_secondwindow.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o secondwindow.o ../src/secondwindow.cpp
 
 main.o: ../src/main.cpp ../inc/mainwindow.hh
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../src/main.cpp
 
 mainwindow.o: ../src/mainwindow.cpp ../inc/mainwindow.hh \
-		ui_mainwindow.h \
-		../secondwindow.hh
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../src/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 

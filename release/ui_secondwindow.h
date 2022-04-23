@@ -32,7 +32,7 @@ public:
 
     void retranslateUi(QDialog *SecondWindow)
     {
-        SecondWindow->setWindowTitle(QApplication::translate("SecondWindow", "Dialog", nullptr));
+        SecondWindow->setWindowTitle(QApplication::translate("SecondWindow", "Wykresy", nullptr));
     } // retranslateUi
 
 };
