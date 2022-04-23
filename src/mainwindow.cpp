@@ -1,5 +1,6 @@
 #include "../inc/mainwindow.hh"
 #include "ui_mainwindow.h"
+#include "secondwindow.hh"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -13,3 +14,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_pushButton_clicked()
+{
+    SecondWindow SecondWindow;
+    SecondWindow.setModal(true);
+    SecondWindow.exec();
+}
