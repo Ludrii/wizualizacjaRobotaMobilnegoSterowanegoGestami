@@ -12,18 +12,29 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QGridLayout>
+#include "inc/qcustomplot.h"
 
 QT_BEGIN_NAMESPACE
 
 class Ui_SecondWindow
 {
 public:
+    QGridLayout *gridLayout;
+    QCustomPlot *customPlot;
 
     void setupUi(QDialog *SecondWindow)
     {
         if (SecondWindow->objectName().isEmpty())
             SecondWindow->setObjectName(QString::fromUtf8("SecondWindow"));
-        SecondWindow->resize(400, 300);
+        SecondWindow->resize(554, 477);
+        gridLayout = new QGridLayout(SecondWindow);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        customPlot = new QCustomPlot(SecondWindow);
+        customPlot->setObjectName(QString::fromUtf8("customPlot"));
+
+        gridLayout->addWidget(customPlot, 0, 0, 1, 1);
+
 
         retranslateUi(SecondWindow);
 

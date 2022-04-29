@@ -15,6 +15,8 @@ public:
     explicit SecondWindow(QWidget *parent = nullptr);
     ~SecondWindow();
 
+private slots:
+    void makePlot();
 private:
     Ui::SecondWindow *ui;
 };
