@@ -23,14 +23,19 @@ void SecondWindow::makePlot()
 {
     openSerialPort();
 
+    ui->customPlot->legend->setVisible(true);
     ui->customPlot->addGraph();
     ui->customPlot->graph(0)->setPen(QPen(QColor(255, 0, 0)));
+    ui->customPlot->graph(0)->setName("Czujnik 1.");
     ui->customPlot->addGraph();
     ui->customPlot->graph(1)->setPen(QPen(QColor(0, 255, 0)));
+    ui->customPlot->graph(1)->setName("Czujnik 2.");
     ui->customPlot->addGraph();
     ui->customPlot->graph(2)->setPen(QPen(QColor(0, 0, 255)));
+    ui->customPlot->graph(2)->setName("Czujnik 3.");
     ui->customPlot->addGraph();
-    ui->customPlot->graph(3)->setPen(QPen(QColor(255, 255, 0)));
+    ui->customPlot->graph(3)->setName("Czujnik 4.");
+    ui->customPlot->graph(3)->setPen(QPen(QColor(0, 0, 0)));
 
     QSharedPointer<QCPAxisTickerTime> timeTicker(new QCPAxisTickerTime);
     timeTicker->setTimeFormat("%m:%s");
