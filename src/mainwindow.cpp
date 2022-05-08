@@ -18,7 +18,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    SecondWindow SecondWindow;
-    SecondWindow.setModal(true);
-    SecondWindow.exec();
+    SecondWindow sW;
+    sW.setModal(true);
+    sW.UstawLacze(_wLacze);
+    sW.exec();
 }

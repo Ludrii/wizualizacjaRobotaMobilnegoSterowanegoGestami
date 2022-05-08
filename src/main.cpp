@@ -2,25 +2,25 @@
 #include <fcntl.h>
 #include <iostream>
 #include <QApplication>
+#include "inc/odbior.hh"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    w.show();
+    Komunikacja LaczeKom;
 
-    int fd=open("/dev/ptmx",O_RDWR|O_NOCTTY);
-    if(fd==-1)
+    if(argc<2)
     {
-        std::cerr<<"Error opening file"<<std::endl;
-        return -1;
+        std::cout<<"Error"<<std::endl;
+        return 1;
     }
 
-    grantpt(fd);
-    unlockpt(fd);
+    LaczeKom.UstawNazwePortu(argv[1]);
 
-    char* pts_name=ptsname(fd);
-    std::cout<<"ptsname: "<<pts_name<<std::endl;
+    //LaczeKom.UstawNazwePortu("/dev/pts/4");
+    w.UstawLacze(&LaczeKom);
+    w.show();
 
     return a.exec();
 }

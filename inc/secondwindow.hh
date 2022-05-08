@@ -3,9 +3,12 @@
 
 #include <QDialog>
 #include <QTime>
-#include <QtSerialPort/QSerialPort>
+#include <QSerialPort>
 #include <array>
 #include <iostream>
+#include <QDebug>
+#include <QCoreApplication>
+#include "inc/odbior.hh"
 
 namespace Ui {
 class SecondWindow;
@@ -18,13 +21,17 @@ class SecondWindow : public QDialog
 public:
     explicit SecondWindow(QWidget *parent = nullptr);
     ~SecondWindow();
+    Komunikacja  *_wLacze = nullptr;
+    QSerialPort serial;
+    QTimer *timer;
+    void UstawLacze(Komunikacja *wLaczeKom) { _wLacze = wLaczeKom; }
 
 private slots:
+    void openSerialPort();
     void makePlot();
     void realtimeDataSlot();
 private:
     Ui::SecondWindow *ui;
-    QSerialPort serial;
 };
 
 #endif // SECONDWINDOW_HH
