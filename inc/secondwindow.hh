@@ -21,14 +21,13 @@ class SecondWindow : public QDialog
 public:
     explicit SecondWindow(QWidget *parent = nullptr);
     ~SecondWindow();
-    Komunikacja  *_wLacze = nullptr;
-    QSerialPort serial;
-    QTimer *timer;
-    void UstawLacze(Komunikacja *wLaczeKom) { _wLacze = wLaczeKom; }
+    std::array<int,4> *wData = nullptr;
+    QSerialPort *wSerial = nullptr;
+    void setArray(std::array<int,4> *wArray) { wData = wArray; }
+    void setSerial(QSerialPort *_wSerial) { wSerial = _wSerial; }
+    void makePlot();
 
 private slots:
-    void openSerialPort();
-    void makePlot();
     void realtimeDataSlot();
 private:
     Ui::SecondWindow *ui;

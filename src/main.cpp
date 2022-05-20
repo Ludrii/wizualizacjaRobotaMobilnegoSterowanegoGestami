@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
     LaczeKom.UstawNazwePortu(argv[1]);
 
-    //LaczeKom.UstawNazwePortu("/dev/pts/4");
+    //LaczeKom.UstawNazwePortu("/dev/pts/4"); // potrzebne przy debugowaniu
     w.UstawLacze(&LaczeKom);
     w.show();
 

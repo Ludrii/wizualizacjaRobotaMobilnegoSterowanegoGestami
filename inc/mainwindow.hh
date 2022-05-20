@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "inc/odbior.hh"
+#include <QLCDNumber>
+#include <QThread>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,11 +17,19 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     Komunikacja  *_wLacze = nullptr;
+    QSerialPort serial;
+    QTimer *timer;
+    std::array<int,4>  data;
     void UstawLacze(Komunikacja *wLaczeKom) { _wLacze = wLaczeKom; }
 
 
 private slots:
     void on_pushButton_clicked();
+    void lcdNumber();
+    void openSerialPort();
+    void getData();
+    void progressBar();
+    void greenLedOn();
 
 private:
     Ui::MainWindow *ui;

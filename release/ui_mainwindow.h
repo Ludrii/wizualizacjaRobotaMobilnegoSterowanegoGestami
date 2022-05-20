@@ -35,9 +35,6 @@ public:
     QWidget *centralwidget;
     QGridLayout *gridLayout_3;
     QGridLayout *gridLayout;
-    QHBoxLayout *horizontalLayout;
-    QGraphicsView *graphicsView;
-    QLabel *label;
     QHBoxLayout *horizontalLayout_2;
     QLCDNumber *lcdNumber;
     QLabel *label_2;
@@ -47,6 +44,9 @@ public:
     QVBoxLayout *verticalLayout_2;
     QLabel *label_4;
     QGraphicsView *graphicsView_2;
+    QHBoxLayout *horizontalLayout;
+    QLabel *led;
+    QLabel *label;
     QGridLayout *gridLayout_2;
     QGraphicsView *graphicsView_3;
     QSpacerItem *horizontalSpacer;
@@ -59,32 +59,13 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(618, 388);
+        MainWindow->resize(579, 476);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout_3 = new QGridLayout(centralwidget);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
-        graphicsView = new QGraphicsView(centralwidget);
-        graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
-        graphicsView->setMaximumSize(QSize(40, 40));
-
-        horizontalLayout->addWidget(graphicsView);
-
-        label = new QLabel(centralwidget);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setMaximumSize(QSize(300, 500));
-        label->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
-
-        horizontalLayout->addWidget(label);
-
-
-        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 1);
-
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         lcdNumber = new QLCDNumber(centralwidget);
@@ -134,6 +115,31 @@ public:
 
         gridLayout->addLayout(verticalLayout_2, 3, 0, 1, 1);
 
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
+        led = new QLabel(centralwidget);
+        led->setObjectName(QString::fromUtf8("led"));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(led->sizePolicy().hasHeightForWidth());
+        led->setSizePolicy(sizePolicy);
+        led->setAutoFillBackground(true);
+        led->setPixmap(QPixmap(QString::fromUtf8("../../menu-belka-dialog/res/img/led/led_red.png")));
+
+        horizontalLayout->addWidget(led);
+
+        label = new QLabel(centralwidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setMaximumSize(QSize(300, 500));
+        label->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        horizontalLayout->addWidget(label);
+
+
+        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 1);
+
 
         gridLayout_3->addLayout(gridLayout, 0, 0, 1, 1);
 
@@ -159,7 +165,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 618, 22));
+        menubar->setGeometry(QRect(0, 0, 579, 22));
         menuwizualizacjaRobotaMobilnegoSterowanegoGestami = new QMenu(menubar);
         menuwizualizacjaRobotaMobilnegoSterowanegoGestami->setObjectName(QString::fromUtf8("menuwizualizacjaRobotaMobilnegoSterowanegoGestami"));
         MainWindow->setMenuBar(menubar);
@@ -177,10 +183,11 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        label->setText(QApplication::translate("MainWindow", "Stan po\305\202\304\205czenia aplikacji", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "Szybko\305\233\304\207", nullptr));
         label_3->setText(QApplication::translate("MainWindow", "Poziom baterii", nullptr));
         label_4->setText(QApplication::translate("MainWindow", "Wskazania czujnik\303\263w", nullptr));
+        led->setText(QString());
+        label->setText(QApplication::translate("MainWindow", "Stan po\305\202\304\205czenia aplikacji", nullptr));
         pushButton->setText(QApplication::translate("MainWindow", "Wskazania czujnik\303\263w", nullptr));
         menuwizualizacjaRobotaMobilnegoSterowanegoGestami->setTitle(QApplication::translate("MainWindow", "wizualizacjaRobotaMobilnegoSterowanegoGestami", nullptr));
     } // retranslateUi

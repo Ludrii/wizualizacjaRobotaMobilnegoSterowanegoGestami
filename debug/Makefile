@@ -67,7 +67,26 @@ OBJECTS       = odbior.o \
 		moc_mainwindow.o \
 		moc_qcustomplot.o \
 		moc_secondwindow.o
-DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
+DIST          = ../img/led/led_blue.png \
+		../img/led/led_green.png \
+		../img/led/led_lightGray.png \
+		../img/led/led_red.png \
+		../img/led/led_yellow-00.png \
+		../img/led/led_yellow-01.png \
+		../img/led/led_yellow-02.png \
+		../img/led/led_yellow-03.png \
+		../img/led/led_yellow-04.png \
+		../img/led/led_yellow-05.png \
+		../img/led/led_yellow-06.png \
+		../img/led/led_yellow-07.png \
+		../img/led/led_yellow-08.png \
+		../img/led/led_yellow-09.png \
+		../img/led/led_yellow-10.png \
+		../img/led/led_yellow-11.png \
+		../img/led/led_yellow.png \
+		../img/misc/exit.png \
+		../img/misc/settings.png \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/sanitize.conf \

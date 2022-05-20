@@ -42,3 +42,24 @@ TRANSLATIONS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    img/led/led_blue.png \
+    img/led/led_green.png \
+    img/led/led_lightGray.png \
+    img/led/led_red.png \
+    img/led/led_yellow-00.png \
+    img/led/led_yellow-01.png \
+    img/led/led_yellow-02.png \
+    img/led/led_yellow-03.png \
+    img/led/led_yellow-04.png \
+    img/led/led_yellow-05.png \
+    img/led/led_yellow-06.png \
+    img/led/led_yellow-07.png \
+    img/led/led_yellow-08.png \
+    img/led/led_yellow-09.png \
+    img/led/led_yellow-10.png \
+    img/led/led_yellow-11.png \
+    img/led/led_yellow.png \
+    img/misc/exit.png \
+    img/misc/settings.png

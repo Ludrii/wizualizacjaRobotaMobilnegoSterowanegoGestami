@@ -1,9 +1,7 @@
 #!/bin/bash
 
-echo "Do którego pts pisać?"
-read PTS
 while true
 do
-    echo `shuf -i 0-8 -n 4 | tee "/dev/pts/$PTS"`
+    echo `shuf -i 0-8 -n 4 | tee $1`
     sleep 1
 done
