@@ -22,7 +22,6 @@ public:
     std::array<int,4>  data;
     void UstawLacze(Komunikacja *wLaczeKom) { _wLacze = wLaczeKom; }
 
-
 private slots:
     void on_pushButton_clicked();
     void lcdNumber();

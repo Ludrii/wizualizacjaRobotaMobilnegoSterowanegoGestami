@@ -25,7 +25,6 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     SecondWindow sW(this);
-    sW.setModal(true);
     sW.setArray(&data);
     sW.setSerial(&serial);
     sW.makePlot();

@@ -10,22 +10,19 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenu>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "inc/figurewidget.hh"
 
 QT_BEGIN_NAMESPACE
 
@@ -33,26 +30,21 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QGridLayout *gridLayout_3;
-    QGridLayout *gridLayout;
+    QGridLayout *gridLayout_2;
+    QHBoxLayout *horizontalLayout;
+    QLabel *led;
+    QLabel *label;
     QHBoxLayout *horizontalLayout_2;
     QLCDNumber *lcdNumber;
     QLabel *label_2;
     QVBoxLayout *verticalLayout;
     QLabel *label_3;
     QProgressBar *progressBar;
-    QVBoxLayout *verticalLayout_2;
-    QLabel *label_4;
-    QGraphicsView *graphicsView_2;
-    QHBoxLayout *horizontalLayout;
-    QLabel *led;
-    QLabel *label;
-    QGridLayout *gridLayout_2;
-    QGraphicsView *graphicsView_3;
+    QGridLayout *gridLayout;
     QSpacerItem *horizontalSpacer;
     QPushButton *pushButton;
-    QMenuBar *menubar;
-    QMenu *menuwizualizacjaRobotaMobilnegoSterowanegoGestami;
+    QLabel *label_4;
+    FigureWidget *robocik;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -62,59 +54,8 @@ public:
         MainWindow->resize(579, 476);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        gridLayout_3 = new QGridLayout(centralwidget);
-        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
-        gridLayout = new QGridLayout();
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        lcdNumber = new QLCDNumber(centralwidget);
-        lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
-
-        horizontalLayout_2->addWidget(lcdNumber);
-
-        label_2 = new QLabel(centralwidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
-
-        horizontalLayout_2->addWidget(label_2);
-
-
-        gridLayout->addLayout(horizontalLayout_2, 1, 0, 1, 1);
-
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        label_3 = new QLabel(centralwidget);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setAlignment(Qt::AlignCenter);
-
-        verticalLayout->addWidget(label_3);
-
-        progressBar = new QProgressBar(centralwidget);
-        progressBar->setObjectName(QString::fromUtf8("progressBar"));
-        progressBar->setValue(24);
-
-        verticalLayout->addWidget(progressBar);
-
-
-        gridLayout->addLayout(verticalLayout, 2, 0, 1, 1);
-
-        verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        label_4 = new QLabel(centralwidget);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setAlignment(Qt::AlignCenter);
-
-        verticalLayout_2->addWidget(label_4);
-
-        graphicsView_2 = new QGraphicsView(centralwidget);
-        graphicsView_2->setObjectName(QString::fromUtf8("graphicsView_2"));
-
-        verticalLayout_2->addWidget(graphicsView_2);
-
-
-        gridLayout->addLayout(verticalLayout_2, 3, 0, 1, 1);
-
+        gridLayout_2 = new QGridLayout(centralwidget);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
@@ -138,42 +79,72 @@ public:
         horizontalLayout->addWidget(label);
 
 
-        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 1);
+        gridLayout_2->addLayout(horizontalLayout, 0, 0, 1, 1);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        lcdNumber = new QLCDNumber(centralwidget);
+        lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
+        lcdNumber->setMaximumSize(QSize(16777215, 60));
+
+        horizontalLayout_2->addWidget(lcdNumber);
+
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        horizontalLayout_2->addWidget(label_2);
 
 
-        gridLayout_3->addLayout(gridLayout, 0, 0, 1, 1);
+        gridLayout_2->addLayout(horizontalLayout_2, 1, 0, 1, 1);
 
-        gridLayout_2 = new QGridLayout();
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        graphicsView_3 = new QGraphicsView(centralwidget);
-        graphicsView_3->setObjectName(QString::fromUtf8("graphicsView_3"));
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        label_3 = new QLabel(centralwidget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
-        gridLayout_2->addWidget(graphicsView_3, 0, 0, 1, 2);
+        verticalLayout->addWidget(label_3);
 
+        progressBar = new QProgressBar(centralwidget);
+        progressBar->setObjectName(QString::fromUtf8("progressBar"));
+        progressBar->setValue(24);
+
+        verticalLayout->addWidget(progressBar);
+
+
+        gridLayout_2->addLayout(verticalLayout, 2, 0, 1, 1);
+
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         horizontalSpacer = new QSpacerItem(78, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        gridLayout_2->addItem(horizontalSpacer, 1, 0, 1, 1);
+        gridLayout->addItem(horizontalSpacer, 2, 0, 1, 1);
 
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
-        gridLayout_2->addWidget(pushButton, 1, 1, 1, 1);
+        gridLayout->addWidget(pushButton, 2, 1, 1, 1);
+
+        label_4 = new QLabel(centralwidget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setMaximumSize(QSize(16777215, 60));
+        label_4->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_4, 0, 0, 1, 2);
+
+        robocik = new FigureWidget(centralwidget);
+        robocik->setObjectName(QString::fromUtf8("robocik"));
+
+        gridLayout->addWidget(robocik, 1, 0, 1, 2);
 
 
-        gridLayout_3->addLayout(gridLayout_2, 0, 1, 1, 1);
+        gridLayout_2->addLayout(gridLayout, 0, 1, 3, 1);
 
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 579, 22));
-        menuwizualizacjaRobotaMobilnegoSterowanegoGestami = new QMenu(menubar);
-        menuwizualizacjaRobotaMobilnegoSterowanegoGestami->setObjectName(QString::fromUtf8("menuwizualizacjaRobotaMobilnegoSterowanegoGestami"));
-        MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
-
-        menubar->addAction(menuwizualizacjaRobotaMobilnegoSterowanegoGestami->menuAction());
 
         retranslateUi(MainWindow);
 
@@ -183,13 +154,12 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        label_2->setText(QApplication::translate("MainWindow", "Szybko\305\233\304\207", nullptr));
-        label_3->setText(QApplication::translate("MainWindow", "Poziom baterii", nullptr));
-        label_4->setText(QApplication::translate("MainWindow", "Wskazania czujnik\303\263w", nullptr));
         led->setText(QString());
         label->setText(QApplication::translate("MainWindow", "Stan po\305\202\304\205czenia aplikacji", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "Wskazania czujnik\303\263w", nullptr));
-        menuwizualizacjaRobotaMobilnegoSterowanegoGestami->setTitle(QApplication::translate("MainWindow", "wizualizacjaRobotaMobilnegoSterowanegoGestami", nullptr));
+        label_2->setText(QApplication::translate("MainWindow", "Szybko\305\233\304\207", nullptr));
+        label_3->setText(QApplication::translate("MainWindow", "Poziom baterii", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Poka\305\274 wykresy", nullptr));
+        label_4->setText(QApplication::translate("MainWindow", "Wskazania czujnik\303\263w", nullptr));
     } // retranslateUi
 
 };

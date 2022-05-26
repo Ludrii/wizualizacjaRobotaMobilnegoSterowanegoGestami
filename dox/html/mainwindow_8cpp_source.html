@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>wRMSG: Plik źródłowy /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/src/mainwindow.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">wRMSG
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mainwindow_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">mainwindow.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mainwindow_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mainwindow_8hh.html">inc/mainwindow.hh</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;ui_mainwindow.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="secondwindow_8hh.html">inc/secondwindow.hh</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="qcustomplot_8h.html">inc/qcustomplot.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">    6</a></span>&#160;<a class="code" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow::MainWindow</a>(QWidget *parent)</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    : QMainWindow(parent)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    , ui(new <a class="code" href="namespace_ui.html">Ui</a>::<a class="code" href="class_main_window.html">MainWindow</a>)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#acf4a0872c4c77d8f43a2ec66ed849b58">setupUi</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_main_window.html#a356578805ed1248a7f2807434cb0e5ee">timer</a> = <span class="keyword">new</span> QTimer;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    QTimer::singleShot(1000,<span class="keyword">this</span>, SLOT(openSerialPort()));</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    connect(&amp;<a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>, SIGNAL(readyRead()), <span class="keyword">this</span>, SLOT(getData()));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    connect(&amp;<a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>, SIGNAL(readyRead()), <span class="keyword">this</span>, SLOT(lcdNumber()));</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    connect(&amp;<a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>, SIGNAL(readyRead()), <span class="keyword">this</span>, SLOT(progressBar()));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">   18</a></span>&#160;<a class="code" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">delete</span> ui;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>.close();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> MainWindow::on_pushButton_clicked()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_second_window.html">SecondWindow</a> sW(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    sW.setArray(&amp;<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    sW.setSerial(&amp;<a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    sW.makePlot();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    sW.exec();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> MainWindow::lcdNumber()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#ae7a7c202aa4d1093bd0d57e95adeb934">lcdNumber</a>-&gt;display(10*<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(0));</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> MainWindow::openSerialPort()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a>-&gt;<a class="code" href="class_komunikacja.html#aaa1e5c8b98cc07518518cbe956a01481">SkojarzObiektPortu</a>(&amp;<a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>.setBaudRate(QSerialPort::Baud115200);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>.setFlowControl(QSerialPort::NoFlowControl);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>.setStopBits(QSerialPort::OneStop);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>.setDataBits(QSerialPort::Data8);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>.setParity(QSerialPort::NoParity);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>.setPortName(QString::fromStdString(<a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a>-&gt;<a class="code" href="class_komunikacja.html#ae301d1451b9b6f1360113fcc69980fd9">_NazwaPortu</a>));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>.open(QSerialPort::ReadOnly))</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;:( Blad otwarcia portu &quot;</span> &lt;&lt; <a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a>-&gt;<a class="code" href="class_komunikacja.html#ae301d1451b9b6f1360113fcc69980fd9">_NazwaPortu</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        greenLedOn();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> MainWindow::getData()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> QByteArray byteArray = <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>.readAll();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">const</span> QString string(byteArray);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QStringList list;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    list=<span class="keywordtype">string</span>.split(QRegExp(<span class="stringliteral">&quot;\\s+&quot;</span>));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;4;i++)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(i)=list.at(i).toInt();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> MainWindow::progressBar()</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#a3310fb0a17f0aff07db695fbc82c3abc">progressBar</a>-&gt;setValue(10*<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(1));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> MainWindow::greenLedOn()</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#a8a1aee885b11f9c7d55afe1a917c0111">led</a>-&gt;setPixmap(QPixmap(<span class="stringliteral">&quot;../img/led/led_green.png&quot;</span>));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aqcustomplot_8h_html"><div class="ttname"><a href="qcustomplot_8h.html">qcustomplot.h</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a92d2e44f31ed9946d8f2613f53e86a61"><div class="ttname"><a href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">MainWindow::serial</a></div><div class="ttdeci">QSerialPort serial</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00020">mainwindow.hh:20</a></div></div>
+<div class="ttc" id="aclass_ui___main_window_html_ae7a7c202aa4d1093bd0d57e95adeb934"><div class="ttname"><a href="class_ui___main_window.html#ae7a7c202aa4d1093bd0d57e95adeb934">Ui_MainWindow::lcdNumber</a></div><div class="ttdeci">QLCDNumber * lcdNumber</div><div class="ttdef"><b>Definition:</b> <a href="debug_2ui__mainwindow_8h_source.html#l00045">ui_mainwindow.h:45</a></div></div>
+<div class="ttc" id="asecondwindow_8hh_html"><div class="ttname"><a href="secondwindow_8hh.html">secondwindow.hh</a></div></div>
+<div class="ttc" id="aclass_komunikacja_html_ae301d1451b9b6f1360113fcc69980fd9"><div class="ttname"><a href="class_komunikacja.html#ae301d1451b9b6f1360113fcc69980fd9">Komunikacja::_NazwaPortu</a></div><div class="ttdeci">std::string _NazwaPortu</div><div class="ttdef"><b>Definition:</b> <a href="odbior_8hh_source.html#l00011">odbior.hh:11</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a356578805ed1248a7f2807434cb0e5ee"><div class="ttname"><a href="class_main_window.html#a356578805ed1248a7f2807434cb0e5ee">MainWindow::timer</a></div><div class="ttdeci">QTimer * timer</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00021">mainwindow.hh:21</a></div></div>
+<div class="ttc" id="amainwindow_8hh_html"><div class="ttname"><a href="mainwindow_8hh.html">mainwindow.hh</a></div></div>
+<div class="ttc" id="aclass_ui___main_window_html_acf4a0872c4c77d8f43a2ec66ed849b58"><div class="ttname"><a href="class_ui___main_window.html#acf4a0872c4c77d8f43a2ec66ed849b58">Ui_MainWindow::setupUi</a></div><div class="ttdeci">void setupUi(QMainWindow *MainWindow)</div><div class="ttdef"><b>Definition:</b> <a href="debug_2ui__mainwindow_8h_source.html#l00064">ui_mainwindow.h:64</a></div></div>
+<div class="ttc" id="aclass_ui___main_window_html_a3310fb0a17f0aff07db695fbc82c3abc"><div class="ttname"><a href="class_ui___main_window.html#a3310fb0a17f0aff07db695fbc82c3abc">Ui_MainWindow::progressBar</a></div><div class="ttdeci">QProgressBar * progressBar</div><div class="ttdef"><b>Definition:</b> <a href="debug_2ui__mainwindow_8h_source.html#l00049">ui_mainwindow.h:49</a></div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="debug_2ui__mainwindow_8h_source.html#l00197">ui_mainwindow.h:197</a></div></div>
+<div class="ttc" id="aclass_komunikacja_html_aaa1e5c8b98cc07518518cbe956a01481"><div class="ttname"><a href="class_komunikacja.html#aaa1e5c8b98cc07518518cbe956a01481">Komunikacja::SkojarzObiektPortu</a></div><div class="ttdeci">void SkojarzObiektPortu(QSerialPort *wPort)</div><div class="ttdef"><b>Definition:</b> <a href="odbior_8hh_source.html#l00016">odbior.hh:16</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a16e7807d8461b21efa581578c9da7917"><div class="ttname"><a href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">MainWindow::_wLacze</a></div><div class="ttdeci">Komunikacja * _wLacze</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00019">mainwindow.hh:19</a></div></div>
+<div class="ttc" id="aclass_second_window_html"><div class="ttname"><a href="class_second_window.html">SecondWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="secondwindow_8hh_source.html#l00017">secondwindow.hh:17</a></div></div>
+<div class="ttc" id="aclass_ui___main_window_html_a8a1aee885b11f9c7d55afe1a917c0111"><div class="ttname"><a href="class_ui___main_window.html#a8a1aee885b11f9c7d55afe1a917c0111">Ui_MainWindow::led</a></div><div class="ttdeci">QLabel * led</div><div class="ttdef"><b>Definition:</b> <a href="debug_2ui__mainwindow_8h_source.html#l00054">ui_mainwindow.h:54</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ae5154a2c04e0848be87395387597e7d0"><div class="ttname"><a href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">MainWindow::data</a></div><div class="ttdeci">std::array&lt; int, 4 &gt; data</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00022">mainwindow.hh:22</a></div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00013">mainwindow.hh:13</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a996c5a2b6f77944776856f08ec30858d"><div class="ttname"><a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00006">mainwindow.cpp:6</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00018">mainwindow.cpp:18</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="mainwindow_8cpp.html">mainwindow.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

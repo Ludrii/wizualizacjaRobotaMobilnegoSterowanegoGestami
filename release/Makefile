@@ -52,18 +52,22 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../src/odbior.cpp \
+SOURCES       = ../src/figurewidget.cpp \
+		../src/odbior.cpp \
 		../src/qcustomplot.cpp \
 		../src/secondwindow.cpp \
 		../src/main.cpp \
-		../src/mainwindow.cpp moc_mainwindow.cpp \
+		../src/mainwindow.cpp moc_figurewidget.cpp \
+		moc_mainwindow.cpp \
 		moc_qcustomplot.cpp \
 		moc_secondwindow.cpp
-OBJECTS       = odbior.o \
+OBJECTS       = figurewidget.o \
+		odbior.o \
 		qcustomplot.o \
 		secondwindow.o \
 		main.o \
 		mainwindow.o \
+		moc_figurewidget.o \
 		moc_mainwindow.o \
 		moc_qcustomplot.o \
 		moc_secondwindow.o
@@ -162,10 +166,13 @@ DIST          = ../img/led/led_blue.png \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		../../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro ../inc/mainwindow.hh \
+		../../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro figurewidget.hh \
+		../inc/figurewidget.hh \
+		../inc/mainwindow.hh \
 		../inc/odbior.hh \
 		../inc/qcustomplot.h \
-		../inc/secondwindow.hh ../src/odbior.cpp \
+		../inc/secondwindow.hh ../src/figurewidget.cpp \
+		../src/odbior.cpp \
 		../src/qcustomplot.cpp \
 		../src/secondwindow.cpp \
 		../src/main.cpp \
@@ -351,8 +358,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../inc/mainwindow.hh ../inc/odbior.hh ../inc/qcustomplot.h ../inc/secondwindow.hh $(DISTDIR)/
-	$(COPY_FILE) --parents ../src/odbior.cpp ../src/qcustomplot.cpp ../src/secondwindow.cpp ../src/main.cpp ../src/mainwindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents figurewidget.hh ../inc/figurewidget.hh ../inc/mainwindow.hh ../inc/odbior.hh ../inc/qcustomplot.h ../inc/secondwindow.hh $(DISTDIR)/
+	$(COPY_FILE) --parents ../src/figurewidget.cpp ../src/odbior.cpp ../src/qcustomplot.cpp ../src/secondwindow.cpp ../src/main.cpp ../src/mainwindow.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../ui/secondwindow.ui ../ui/mainwindow.ui $(DISTDIR)/
 	$(COPY_FILE) --parents lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.ts $(DISTDIR)/
 
@@ -386,11 +393,17 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 	g++ -pipe -O2 -std=gnu++11 -Wall -W -dM -E -o moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_mainwindow.cpp moc_qcustomplot.cpp moc_secondwindow.cpp
+compiler_moc_header_make_all: moc_figurewidget.cpp moc_mainwindow.cpp moc_qcustomplot.cpp moc_secondwindow.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp moc_qcustomplot.cpp moc_secondwindow.cpp
+	-$(DEL_FILE) moc_figurewidget.cpp moc_mainwindow.cpp moc_qcustomplot.cpp moc_secondwindow.cpp
+moc_figurewidget.cpp: ../inc/figurewidget.hh \
+		moc_predefs.h \
+		/usr/lib/qt5/bin/moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/release/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/figurewidget.hh -o moc_figurewidget.cpp
+
 moc_mainwindow.cpp: ../inc/mainwindow.hh \
 		../inc/odbior.hh \
+		../inc/figurewidget.hh \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/release/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/mainwindow.hh -o moc_mainwindow.cpp
@@ -431,6 +444,9 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 
 ####### Compile
 
+figurewidget.o: ../src/figurewidget.cpp ../inc/figurewidget.hh
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o figurewidget.o ../src/figurewidget.cpp
+
 odbior.o: ../src/odbior.cpp ../inc/odbior.hh
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o odbior.o ../src/odbior.cpp
 
@@ -444,15 +460,20 @@ secondwindow.o: ../src/secondwindow.cpp ../inc/secondwindow.hh \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o secondwindow.o ../src/secondwindow.cpp
 
 main.o: ../src/main.cpp ../inc/mainwindow.hh \
-		../inc/odbior.hh
+		../inc/odbior.hh \
+		../inc/figurewidget.hh
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../src/main.cpp
 
 mainwindow.o: ../src/mainwindow.cpp ../inc/mainwindow.hh \
 		../inc/odbior.hh \
+		../inc/figurewidget.hh \
 		ui_mainwindow.h \
 		../inc/secondwindow.hh \
 		../inc/qcustomplot.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../src/mainwindow.cpp
+
+moc_figurewidget.o: moc_figurewidget.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_figurewidget.o moc_figurewidget.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
