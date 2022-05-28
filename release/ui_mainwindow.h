@@ -135,6 +135,11 @@ public:
 
         robocik = new FigureWidget(centralwidget);
         robocik->setObjectName(QString::fromUtf8("robocik"));
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(robocik->sizePolicy().hasHeightForWidth());
+        robocik->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(robocik, 1, 0, 1, 2);
 

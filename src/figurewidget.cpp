@@ -1,16 +1,17 @@
-#include "../inc/figurewidget.hh"
+#include "inc/figurewidget.hh"
 #include <QtGui>
 
 FigureWidget::FigureWidget(QWidget *parent) : QWidget(parent)
 {
-
+    QPainter painter(this);
 }
 
 void FigureWidget::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);
     auto size = this->size();
-    auto offset = 4;
+    auto width = this->width();
+    auto height = this->height();
 
-    painter.drawEllipse(0,0,size.width()-offset,size.height()-offset);
+    painter.drawRect(width/4,height/4,width/2,height/2);
 }
