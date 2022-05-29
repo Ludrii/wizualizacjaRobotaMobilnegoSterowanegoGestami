@@ -20,7 +20,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    src/figurewidget.cpp \
     src/odbior.cpp \
     src/qcustomplot.cpp \
     src/secondwindow.cpp \
@@ -29,7 +28,6 @@ SOURCES += \
 
 HEADERS += \
     figurewidget.hh \
-    inc/figurewidget.hh \
     inc/mainwindow.hh \
     inc/odbior.hh \
     inc/qcustomplot.h \

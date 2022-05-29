@@ -104,6 +104,13 @@
     </item>
     <item row="0" column="1" rowspan="3">
      <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Pokaż wykresy</string>
+        </property>
+       </widget>
+      </item>
       <item row="2" column="0">
        <spacer name="horizontalSpacer">
         <property name="orientation">
@@ -116,13 +123,6 @@
          </size>
         </property>
        </spacer>
-      </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>Pokaż wykresy</string>
-        </property>
-       </widget>
       </item>
       <item row="0" column="0" colspan="2">
        <widget class="QLabel" name="label_4">
@@ -141,14 +141,7 @@
        </widget>
       </item>
       <item row="1" column="0" colspan="2">
-       <widget class="FigureWidget" name="robocik" native="true">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-       </widget>
+       <widget class="QGraphicsView" name="graphicsView"/>
       </item>
      </layout>
     </item>
@@ -156,14 +149,6 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>FigureWidget</class>
-   <extends>QWidget</extends>
-   <header>figurewidget.hh</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

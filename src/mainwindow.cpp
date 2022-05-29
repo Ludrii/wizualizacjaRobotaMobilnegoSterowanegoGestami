@@ -9,10 +9,22 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     timer = new QTimer;
+    scene = new QGraphicsScene(this);
+    ui->graphicsView->setScene(scene);
+    auto w = ui->graphicsView->width();
+    auto h = ui->graphicsView->height();
+    rect0 = scene->addRect(w/4,h/4,w/4,h/4);
+    rect1 = scene->addRect(w/2,h/4,w/4,h/4);
+    rect2 = scene->addRect(w/4,h/2,w/4,h/4);
+    rect3 = scene->addRect(w/2,h/2,w/4,h/4);
+    QBrush czerwony(Qt::red);
+    QBrush zolty(Qt::yellow);
+    QBrush zielony(Qt::green);
     QTimer::singleShot(1000,this, SLOT(openSerialPort()));
     connect(&serial, SIGNAL(readyRead()), this, SLOT(getData()));
     connect(&serial, SIGNAL(readyRead()), this, SLOT(lcdNumber()));
     connect(&serial, SIGNAL(readyRead()), this, SLOT(progressBar()));
+    connect(&serial, SIGNAL(readyRead()), this, SLOT(draw()));
 }
 
 MainWindow::~MainWindow()
@@ -79,4 +91,60 @@ void MainWindow::progressBar()
 void MainWindow::greenLedOn()
 {
     ui->led->setPixmap(QPixmap("../img/led/led_green.png"));
+}
+
+void MainWindow::draw()
+{
+    if(data.at(0)<=2)
+    {
+        rect0->setBrush(Qt::red);
+    }
+    else if(data.at(0)<=4)
+    {
+        rect0->setBrush(Qt::yellow);
+    }
+    else
+    {
+        rect0->setBrush(Qt::green);
+    }
+    rect0->update();
+    if(data.at(1)<=2)
+    {
+        rect1->setBrush(Qt::red);
+    }
+    else if(data.at(1)<=4)
+    {
+        rect1->setBrush(Qt::yellow);
+    }
+    else
+    {
+        rect1->setBrush(Qt::green);
+    }
+    rect1->update();
+    if(data.at(2)<=2)
+    {
+        rect2->setBrush(Qt::red);
+    }
+    else if(data.at(2)<=4)
+    {
+        rect2->setBrush(Qt::yellow);
+    }
+    else
+    {
+        rect2->setBrush(Qt::green);
+    }
+    rect2->update();
+    if(data.at(3)<=2)
+    {
+        rect3->setBrush(Qt::red);
+    }
+    else if(data.at(3)<=4)
+    {
+        rect3->setBrush(Qt::yellow);
+    }
+    else
+    {
+        rect3->setBrush(Qt::green);
+    }
+    rect3->update();
 }

@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLCDNumber>
@@ -22,7 +23,6 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include "inc/figurewidget.hh"
 
 QT_BEGIN_NAMESPACE
 
@@ -41,10 +41,10 @@ public:
     QLabel *label_3;
     QProgressBar *progressBar;
     QGridLayout *gridLayout;
-    QSpacerItem *horizontalSpacer;
     QPushButton *pushButton;
+    QSpacerItem *horizontalSpacer;
     QLabel *label_4;
-    FigureWidget *robocik;
+    QGraphicsView *graphicsView;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -117,14 +117,14 @@ public:
 
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        horizontalSpacer = new QSpacerItem(78, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer, 2, 0, 1, 1);
-
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
         gridLayout->addWidget(pushButton, 2, 1, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(78, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer, 2, 0, 1, 1);
 
         label_4 = new QLabel(centralwidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
@@ -133,15 +133,10 @@ public:
 
         gridLayout->addWidget(label_4, 0, 0, 1, 2);
 
-        robocik = new FigureWidget(centralwidget);
-        robocik->setObjectName(QString::fromUtf8("robocik"));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(robocik->sizePolicy().hasHeightForWidth());
-        robocik->setSizePolicy(sizePolicy1);
+        graphicsView = new QGraphicsView(centralwidget);
+        graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
 
-        gridLayout->addWidget(robocik, 1, 0, 1, 2);
+        gridLayout->addWidget(graphicsView, 1, 0, 1, 2);
 
 
         gridLayout_2->addLayout(gridLayout, 0, 1, 3, 1);

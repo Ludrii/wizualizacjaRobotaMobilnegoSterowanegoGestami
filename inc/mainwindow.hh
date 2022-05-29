@@ -5,6 +5,11 @@
 #include "inc/odbior.hh"
 #include <QLCDNumber>
 #include <QThread>
+#include <QBrush>
+#include <QtGui>
+#include <QtCore>
+#include <QDialog>
+#include <QGraphicsScene>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -29,8 +34,14 @@ private slots:
     void getData();
     void progressBar();
     void greenLedOn();
+    void draw();
 
 private:
     Ui::MainWindow *ui;
+    QGraphicsScene *scene;
+    QGraphicsRectItem *rect0;
+    QGraphicsRectItem *rect1;
+    QGraphicsRectItem *rect2;
+    QGraphicsRectItem *rect3;
 };
 #endif // MAINWINDOW_HH
