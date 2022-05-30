@@ -13,13 +13,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->setScene(scene);
     auto w = ui->graphicsView->width();
     auto h = ui->graphicsView->height();
-    rect0 = scene->addRect(w/4,h/4,w/4,h/4);
-    rect1 = scene->addRect(w/2,h/4,w/4,h/4);
-    rect2 = scene->addRect(w/4,h/2,w/4,h/4);
-    rect3 = scene->addRect(w/2,h/2,w/4,h/4);
-    QBrush czerwony(Qt::red);
-    QBrush zolty(Qt::yellow);
-    QBrush zielony(Qt::green);
+    rect0 = scene->addRect(w/2,h/2,w/2,h/2);
+    rect1 = scene->addRect(w,h/2,w/2,h/2);
+    rect2 = scene->addRect(w/2,h,w/2,h/2);
+    rect3 = scene->addRect(w,h,w/2,h/2);
     QTimer::singleShot(1000,this, SLOT(openSerialPort()));
     connect(&serial, SIGNAL(readyRead()), this, SLOT(getData()));
     connect(&serial, SIGNAL(readyRead()), this, SLOT(lcdNumber()));

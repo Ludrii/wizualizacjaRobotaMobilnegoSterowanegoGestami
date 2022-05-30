@@ -118,6 +118,7 @@ var hierarchy =
     [ "QPainter", null, [
       [ "QCPPainter", "class_q_c_p_painter.html", null ]
     ] ],
+    [ "qt_meta_stringdata_FigureWidget_t", "structqt__meta__stringdata___figure_widget__t.html", null ],
     [ "qt_meta_stringdata_MainWindow_t", "structqt__meta__stringdata___main_window__t.html", null ],
     [ "qt_meta_stringdata_QCP_t", "structqt__meta__stringdata___q_c_p__t.html", null ],
     [ "qt_meta_stringdata_QCPAbstractItem_t", "structqt__meta__stringdata___q_c_p_abstract_item__t.html", null ],

@@ -92,50 +92,60 @@ $(document).ready(function(){initNavTree('mainwindow_8hh_source.html',''); initR
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="odbior_8hh.html">inc/odbior.hh</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QLCDNumber&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QThread&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;QT_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> { <span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a>; }</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;QT_END_NAMESPACE</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_main_window.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">   19</a></span>&#160;    <a class="code" href="class_komunikacja.html">Komunikacja</a>  *<a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">   20</a></span>&#160;    QSerialPort <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_main_window.html#a356578805ed1248a7f2807434cb0e5ee">   21</a></span>&#160;    QTimer *<a class="code" href="class_main_window.html#a356578805ed1248a7f2807434cb0e5ee">timer</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">   22</a></span>&#160;    std::array&lt;int,4&gt;  <a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_main_window.html#ad20a34deb7669825e0ae522db7c5e740">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad20a34deb7669825e0ae522db7c5e740">UstawLacze</a>(<a class="code" href="class_komunikacja.html">Komunikacja</a> *wLaczeKom) { <a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a> = wLaczeKom; }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> on_pushButton_clicked();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> lcdNumber();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> openSerialPort();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> getData();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> progressBar();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> greenLedOn();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_ui_1_1_main_window.html">Ui::MainWindow</a> *ui;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_HH</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QBrush&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QtGui&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QtCore&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QGraphicsScene&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;QT_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> { <span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a>; }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;QT_END_NAMESPACE</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_main_window.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">   24</a></span>&#160;    <a class="code" href="class_komunikacja.html">Komunikacja</a>  *<a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">   25</a></span>&#160;    QSerialPort <a class="code" href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">serial</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_main_window.html#a356578805ed1248a7f2807434cb0e5ee">   26</a></span>&#160;    QTimer *<a class="code" href="class_main_window.html#a356578805ed1248a7f2807434cb0e5ee">timer</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">   27</a></span>&#160;    std::array&lt;int,4&gt;  <a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_main_window.html#ad20a34deb7669825e0ae522db7c5e740">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad20a34deb7669825e0ae522db7c5e740">UstawLacze</a>(<a class="code" href="class_komunikacja.html">Komunikacja</a> *wLaczeKom) { <a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a> = wLaczeKom; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> on_pushButton_clicked();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> lcdNumber();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> openSerialPort();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> getData();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> progressBar();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> greenLedOn();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> draw();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_ui_1_1_main_window.html">Ui::MainWindow</a> *ui;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QGraphicsScene *scene;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QGraphicsRectItem *rect0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QGraphicsRectItem *rect1;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QGraphicsRectItem *rect2;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QGraphicsRectItem *rect3;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_HH</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_main_window_html_a92d2e44f31ed9946d8f2613f53e86a61"><div class="ttname"><a href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">MainWindow::serial</a></div><div class="ttdeci">QSerialPort serial</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00020">mainwindow.hh:20</a></div></div>
-<div class="ttc" id="aclass_main_window_html_ad20a34deb7669825e0ae522db7c5e740"><div class="ttname"><a href="class_main_window.html#ad20a34deb7669825e0ae522db7c5e740">MainWindow::UstawLacze</a></div><div class="ttdeci">void UstawLacze(Komunikacja *wLaczeKom)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00023">mainwindow.hh:23</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a92d2e44f31ed9946d8f2613f53e86a61"><div class="ttname"><a href="class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61">MainWindow::serial</a></div><div class="ttdeci">QSerialPort serial</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00025">mainwindow.hh:25</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ad20a34deb7669825e0ae522db7c5e740"><div class="ttname"><a href="class_main_window.html#ad20a34deb7669825e0ae522db7c5e740">MainWindow::UstawLacze</a></div><div class="ttdeci">void UstawLacze(Komunikacja *wLaczeKom)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00028">mainwindow.hh:28</a></div></div>
 <div class="ttc" id="aclass_komunikacja_html"><div class="ttname"><a href="class_komunikacja.html">Komunikacja</a></div><div class="ttdef"><b>Definition:</b> <a href="odbior_8hh_source.html#l00007">odbior.hh:7</a></div></div>
-<div class="ttc" id="aclass_main_window_html_a356578805ed1248a7f2807434cb0e5ee"><div class="ttname"><a href="class_main_window.html#a356578805ed1248a7f2807434cb0e5ee">MainWindow::timer</a></div><div class="ttdeci">QTimer * timer</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00021">mainwindow.hh:21</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a356578805ed1248a7f2807434cb0e5ee"><div class="ttname"><a href="class_main_window.html#a356578805ed1248a7f2807434cb0e5ee">MainWindow::timer</a></div><div class="ttdeci">QTimer * timer</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00026">mainwindow.hh:26</a></div></div>
 <div class="ttc" id="aodbior_8hh_html"><div class="ttname"><a href="odbior_8hh.html">odbior.hh</a></div></div>
 <div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="debug_2ui__mainwindow_8h_source.html#l00197">ui_mainwindow.h:197</a></div></div>
-<div class="ttc" id="aclass_main_window_html_a16e7807d8461b21efa581578c9da7917"><div class="ttname"><a href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">MainWindow::_wLacze</a></div><div class="ttdeci">Komunikacja * _wLacze</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00019">mainwindow.hh:19</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a16e7807d8461b21efa581578c9da7917"><div class="ttname"><a href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">MainWindow::_wLacze</a></div><div class="ttdeci">Komunikacja * _wLacze</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00024">mainwindow.hh:24</a></div></div>
 <div class="ttc" id="aclass_ui_1_1_main_window_html"><div class="ttname"><a href="class_ui_1_1_main_window.html">Ui::MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="debug_2ui__mainwindow_8h_source.html#l00198">ui_mainwindow.h:198</a></div></div>
-<div class="ttc" id="aclass_main_window_html_ae5154a2c04e0848be87395387597e7d0"><div class="ttname"><a href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">MainWindow::data</a></div><div class="ttdeci">std::array&lt; int, 4 &gt; data</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00022">mainwindow.hh:22</a></div></div>
-<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00013">mainwindow.hh:13</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ae5154a2c04e0848be87395387597e7d0"><div class="ttname"><a href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">MainWindow::data</a></div><div class="ttdeci">std::array&lt; int, 4 &gt; data</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00027">mainwindow.hh:27</a></div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00018">mainwindow.hh:18</a></div></div>
 <div class="ttc" id="aclass_main_window_html_a996c5a2b6f77944776856f08ec30858d"><div class="ttname"><a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00006">mainwindow.cpp:6</a></div></div>
-<div class="ttc" id="aclass_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00018">mainwindow.cpp:18</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00027">mainwindow.cpp:27</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -78,6 +78,7 @@ var annotated_dup =
     [ "QCPTextElement", "class_q_c_p_text_element.html", "class_q_c_p_text_element" ],
     [ "QCPVector2D", "class_q_c_p_vector2_d.html", "class_q_c_p_vector2_d" ],
     [ "QCustomPlot", "class_q_custom_plot.html", "class_q_custom_plot" ],
+    [ "qt_meta_stringdata_FigureWidget_t", "structqt__meta__stringdata___figure_widget__t.html", "structqt__meta__stringdata___figure_widget__t" ],
     [ "qt_meta_stringdata_MainWindow_t", "structqt__meta__stringdata___main_window__t.html", "structqt__meta__stringdata___main_window__t" ],
     [ "qt_meta_stringdata_QCP_t", "structqt__meta__stringdata___q_c_p__t.html", "structqt__meta__stringdata___q_c_p__t" ],
     [ "qt_meta_stringdata_QCPAbstractItem_t", "structqt__meta__stringdata___q_c_p_abstract_item__t.html", "structqt__meta__stringdata___q_c_p_abstract_item__t" ],
