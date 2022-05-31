@@ -7,7 +7,7 @@ The generic data container for one-\/dimensional plottables.
 
 
 
-{\ttfamily \#include $<$qcustomplot.\+h$>$}
+{\ttfamily \#include $<$qcustomplot.\+hh$>$}
 
 \doxysubsection*{Typy publiczne}
 \begin{DoxyCompactItemize}
@@ -137,7 +137,7 @@ The template parameter {\ttfamily Data\+Type} is the type of the stored data poi
  Returns the range this data point spans in the value axis coordinate. If the data is single-\/valued (e.\+g. \mbox{\hyperlink{class_q_c_p_graph_data}{Q\+C\+P\+Graph\+Data}}), this is simply a range with both lower and upper set to the main data point value. However if the data points can represent multiple values at once (e.\+g \mbox{\hyperlink{class_q_c_p_financial_data}{Q\+C\+P\+Financial\+Data}} with its {\itshape high}, {\itshape low}, {\itshape open} and {\itshape close} values at each {\itshape key}) this method should return the range those values span. This method is used for example when determining the automatic axis rescaling of value axes (\mbox{\hyperlink{class_q_c_p_axis_a499345f02ebce4b23d8ccec96e58daa9}{Q\+C\+P\+Axis\+::rescale}}). \end{DoxyItemize}
 
 
-Definicja w linii 2578 pliku qcustomplot.\+h.
+Definicja w linii 2578 pliku qcustomplot.\+hh.
 
 
 
@@ -151,7 +151,7 @@ typedef Q\+Vector$<$Data\+Type$>$\+::\mbox{\hyperlink{class_q_c_p_data_container
 
 
 
-Definicja w linii 2581 pliku qcustomplot.\+h.
+Definicja w linii 2581 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a1bb453c3ae37d1ee5268878acb3a9d29}\label{class_q_c_p_data_container_a1bb453c3ae37d1ee5268878acb3a9d29}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!iterator@{iterator}}
@@ -162,7 +162,7 @@ typedef Q\+Vector$<$Data\+Type$>$\+::\mbox{\hyperlink{class_q_c_p_data_container
 
 
 
-Definicja w linii 2582 pliku qcustomplot.\+h.
+Definicja w linii 2582 pliku qcustomplot.\+hh.
 
 
 
@@ -176,7 +176,7 @@ Definicja w linii 2582 pliku qcustomplot.\+h.
 
 Constructs a \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}} used for plottable classes that represent a series of key-\/sorted data 
 
-Definicja w linii 2771 pliku qcustomplot.\+h.
+Definicja w linii 2771 pliku qcustomplot.\+hh.
 
 
 
@@ -197,7 +197,7 @@ Adds the provided single data point to the current data.
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2905 pliku qcustomplot.\+h.
+Definicja w linii 2905 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a42b98bd994307ccd163a43d576f91ad9}\label{class_q_c_p_data_container_a42b98bd994307ccd163a43d576f91ad9}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!add@{add}}
@@ -215,7 +215,7 @@ Adds the provided {\itshape data} to the current data in this container.
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2836 pliku qcustomplot.\+h.
+Definicja w linii 2836 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a51d2a4c9ce4baf5e950b767d26673972}\label{class_q_c_p_data_container_a51d2a4c9ce4baf5e950b767d26673972}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!add@{add}}
@@ -233,7 +233,7 @@ If you can guarantee that the data points in {\itshape data} have ascending orde
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2868 pliku qcustomplot.\+h.
+Definicja w linii 2868 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_ae90c7457a052b223539906e6bddc0a92}\label{class_q_c_p_data_container_ae90c7457a052b223539906e6bddc0a92}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!at@{at}}
@@ -246,7 +246,7 @@ Returns a const iterator to the element with the specified {\itshape index}. If 
 
 You can use this method to easily obtain iterators from a \mbox{\hyperlink{class_q_c_p_data_range}{Q\+C\+P\+Data\+Range}}, see the data selection page for an example. 
 
-Definicja w linii 2614 pliku qcustomplot.\+h.
+Definicja w linii 2614 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a64f0f1621ca46de2352eaf87476db9b1}\label{class_q_c_p_data_container_a64f0f1621ca46de2352eaf87476db9b1}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!autoSqueeze@{autoSqueeze}}
@@ -257,7 +257,7 @@ bool \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}}$<$ 
 
 
 
-Definicja w linii 2589 pliku qcustomplot.\+h.
+Definicja w linii 2589 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a80032518413ab8f418f7c81182fd06cb}\label{class_q_c_p_data_container_a80032518413ab8f418f7c81182fd06cb}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!begin@{begin}}
@@ -270,7 +270,7 @@ Returns a non-\/const iterator to the first data point in this container.
 
 You can manipulate the data points in-\/place through the non-\/const iterators, but great care must be taken when manipulating the sort key of a data point, see \mbox{\hyperlink{class_q_c_p_data_container_a75da92e33063b63d6da5014683591d45}{sort}}, or the detailed description of this class. 
 
-Definicja w linii 2610 pliku qcustomplot.\+h.
+Definicja w linii 2610 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a7e2b29736c6fd761649bda1a54ba967f}\label{class_q_c_p_data_container_a7e2b29736c6fd761649bda1a54ba967f}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!clear@{clear}}
@@ -286,7 +286,7 @@ Removes all data points.
 \end{DoxySeeAlso}
 
 
-Definicja w linii 3003 pliku qcustomplot.\+h.
+Definicja w linii 3003 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a49d7622999e2de67fa2331626a3159aa}\label{class_q_c_p_data_container_a49d7622999e2de67fa2331626a3159aa}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!constBegin@{constBegin}}
@@ -297,7 +297,7 @@ Definicja w linii 3003 pliku qcustomplot.\+h.
 
 Returns a const iterator to the first data point in this container. 
 
-Definicja w linii 2608 pliku qcustomplot.\+h.
+Definicja w linii 2608 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_aa7f7cf239b85b1a28de3d675cc5b3da1}\label{class_q_c_p_data_container_aa7f7cf239b85b1a28de3d675cc5b3da1}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!constEnd@{constEnd}}
@@ -308,7 +308,7 @@ Definicja w linii 2608 pliku qcustomplot.\+h.
 
 Returns a const iterator to the element past the last data point in this container. 
 
-Definicja w linii 2609 pliku qcustomplot.\+h.
+Definicja w linii 2609 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_aece90eeb2ba8d3c46d3d94023630fbc7}\label{class_q_c_p_data_container_aece90eeb2ba8d3c46d3d94023630fbc7}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!dataRange@{dataRange}}
@@ -319,7 +319,7 @@ Definicja w linii 2609 pliku qcustomplot.\+h.
 
 Returns a \mbox{\hyperlink{class_q_c_p_data_range}{Q\+C\+P\+Data\+Range}} encompassing the entire data set of this container. This means the begin index of the returned range is 0, and the end index is \mbox{\hyperlink{class_q_c_p_data_container_a8e9b262c739672e13472d0d45b720258}{size}}. 
 
-Definicja w linii 2617 pliku qcustomplot.\+h.
+Definicja w linii 2617 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_acf66dfad83fe041380f5e0491e7676f2}\label{class_q_c_p_data_container_acf66dfad83fe041380f5e0491e7676f2}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!end@{end}}
@@ -332,7 +332,7 @@ Returns a non-\/const iterator to the element past the last data point in this c
 
 You can manipulate the data points in-\/place through the non-\/const iterators, but great care must be taken when manipulating the sort key of a data point, see \mbox{\hyperlink{class_q_c_p_data_container_a75da92e33063b63d6da5014683591d45}{sort}}, or the detailed description of this class. 
 
-Definicja w linii 2611 pliku qcustomplot.\+h.
+Definicja w linii 2611 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a2ad8a5399072d99a242d3a6d2d7e278a}\label{class_q_c_p_data_container_a2ad8a5399072d99a242d3a6d2d7e278a}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!findBegin@{findBegin}}
@@ -354,7 +354,7 @@ If the container is empty, returns \mbox{\hyperlink{class_q_c_p_data_container_a
 \end{DoxySeeAlso}
 
 
-Definicja w linii 3070 pliku qcustomplot.\+h.
+Definicja w linii 3070 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_afb8b8f23cc2b7234a793a25ce79fe48f}\label{class_q_c_p_data_container_afb8b8f23cc2b7234a793a25ce79fe48f}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!findEnd@{findEnd}}
@@ -376,7 +376,7 @@ If the container is empty, \mbox{\hyperlink{class_q_c_p_data_container_aa7f7cf23
 \end{DoxySeeAlso}
 
 
-Definicja w linii 3097 pliku qcustomplot.\+h.
+Definicja w linii 3097 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a7bdebfccd2f9f84bf032882f9d6b00a8}\label{class_q_c_p_data_container_a7bdebfccd2f9f84bf032882f9d6b00a8}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!isEmpty@{isEmpty}}
@@ -387,7 +387,7 @@ bool \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}}$<$ 
 
 Returns whether this container holds no data points. 
 
-Definicja w linii 2588 pliku qcustomplot.\+h.
+Definicja w linii 2588 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_aba6e1a93c21ccc56a432b4a02c9d0ed2}\label{class_q_c_p_data_container_aba6e1a93c21ccc56a432b4a02c9d0ed2}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!keyRange@{keyRange}}
@@ -407,7 +407,7 @@ If the Data\+Type reports that its main key is equal to the sort key ({\itshape 
 \end{DoxySeeAlso}
 
 
-Definicja w linii 3124 pliku qcustomplot.\+h.
+Definicja w linii 3124 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_aa1b36f5ae86a5a5a0b92141d3a0945c4}\label{class_q_c_p_data_container_aa1b36f5ae86a5a5a0b92141d3a0945c4}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!limitIteratorsToDataRange@{limitIteratorsToDataRange}}
@@ -420,7 +420,7 @@ Makes sure {\itshape begin} and {\itshape end} mark a data range that is both wi
 
 This function doesn\textquotesingle{}t require for {\itshape data\+Range} to be within the bounds of this data container\textquotesingle{}s valid range. 
 
-Definicja w linii 3335 pliku qcustomplot.\+h.
+Definicja w linii 3335 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a83c25ac14be1c920df85e797ee75c982}\label{class_q_c_p_data_container_a83c25ac14be1c920df85e797ee75c982}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!performAutoSqueeze@{performAutoSqueeze}}
@@ -431,7 +431,7 @@ void \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}}$<$ 
 
 
 
-Definicja w linii 3383 pliku qcustomplot.\+h.
+Definicja w linii 3383 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_aae8cdb2bcc3b900ec22f26df3e7d67c7}\label{class_q_c_p_data_container_aae8cdb2bcc3b900ec22f26df3e7d67c7}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!preallocateGrow@{preallocateGrow}}
@@ -442,7 +442,7 @@ void \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}}$<$ 
 
 
 
-Definicja w linii 3353 pliku qcustomplot.\+h.
+Definicja w linii 3353 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a2dbded7f0732bacf9db48fdfbbb620bc}\label{class_q_c_p_data_container_a2dbded7f0732bacf9db48fdfbbb620bc}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!remove@{remove}}
@@ -460,7 +460,7 @@ Removes a single data point at {\itshape sort\+Key}. If the position is not know
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2983 pliku qcustomplot.\+h.
+Definicja w linii 2983 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_ae5f569a120648b167efa78835f12fd38}\label{class_q_c_p_data_container_ae5f569a120648b167efa78835f12fd38}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!remove@{remove}}
@@ -476,7 +476,7 @@ Removes all data points with (sort-\/)keys between {\itshape sort\+Key\+From} an
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2961 pliku qcustomplot.\+h.
+Definicja w linii 2961 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_abbe5d87ffc10b5aeffa5bb42cf03aa3c}\label{class_q_c_p_data_container_abbe5d87ffc10b5aeffa5bb42cf03aa3c}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!removeAfter@{removeAfter}}
@@ -492,7 +492,7 @@ Removes all data points with (sort-\/)keys greater than or equal to {\itshape so
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2944 pliku qcustomplot.\+h.
+Definicja w linii 2944 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_aa7f74cbce304b0369e1626c3798e1eda}\label{class_q_c_p_data_container_aa7f74cbce304b0369e1626c3798e1eda}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!removeBefore@{removeBefore}}
@@ -508,7 +508,7 @@ Removes all data points with (sort-\/)keys smaller than or equal to {\itshape so
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2929 pliku qcustomplot.\+h.
+Definicja w linii 2929 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_ae7042bd534fc3ce7befa2ce3f790b5bf}\label{class_q_c_p_data_container_ae7042bd534fc3ce7befa2ce3f790b5bf}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!set@{set}}
@@ -526,7 +526,7 @@ Replaces the current data in this container with the provided {\itshape data}.
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2804 pliku qcustomplot.\+h.
+Definicja w linii 2804 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_aff99fffbb26597a354c4bc8312596ab2}\label{class_q_c_p_data_container_aff99fffbb26597a354c4bc8312596ab2}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!set@{set}}
@@ -546,7 +546,7 @@ If you can guarantee that the data points in {\itshape data} have ascending orde
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2820 pliku qcustomplot.\+h.
+Definicja w linii 2820 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a233f866760a78950d2a393c1a4bc54b5}\label{class_q_c_p_data_container_a233f866760a78950d2a393c1a4bc54b5}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!setAutoSqueeze@{setAutoSqueeze}}
@@ -559,7 +559,7 @@ Sets whether the container automatically decides when to release memory from its
 
 If auto squeeze is disabled, you can manually decide when to release pre-\//postallocation with \mbox{\hyperlink{class_q_c_p_data_container_a82fcc511def22287fc62579d0706387c}{squeeze}}. 
 
-Definicja w linii 2787 pliku qcustomplot.\+h.
+Definicja w linii 2787 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a8e9b262c739672e13472d0d45b720258}\label{class_q_c_p_data_container_a8e9b262c739672e13472d0d45b720258}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!size@{size}}
@@ -570,7 +570,7 @@ int \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}}$<$ D
 
 Returns the number of data points in the container. 
 
-Definicja w linii 2587 pliku qcustomplot.\+h.
+Definicja w linii 2587 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a75da92e33063b63d6da5014683591d45}\label{class_q_c_p_data_container_a75da92e33063b63d6da5014683591d45}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!sort@{sort}}
@@ -583,7 +583,7 @@ Re-\/sorts all data points in the container by their sort key.
 
 When setting, adding or removing points using the \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}} interface (\mbox{\hyperlink{class_q_c_p_data_container_ae7042bd534fc3ce7befa2ce3f790b5bf}{set}}, \mbox{\hyperlink{class_q_c_p_data_container_a42b98bd994307ccd163a43d576f91ad9}{add}}, \mbox{\hyperlink{class_q_c_p_data_container_ae5f569a120648b167efa78835f12fd38}{remove}}, etc.), the container makes sure to always stay in a sorted state such that a full resort is never necessary. However, if you choose to directly manipulate the sort key on data points by accessing and modifying it through the non-\/const iterators (\mbox{\hyperlink{class_q_c_p_data_container_a80032518413ab8f418f7c81182fd06cb}{begin}}, \mbox{\hyperlink{class_q_c_p_data_container_acf66dfad83fe041380f5e0491e7676f2}{end}}), it is your responsibility to bring the container back into a sorted state before any other methods are called on it. This can be achieved by calling this method immediately after finishing the sort key manipulation. 
 
-Definicja w linii 3022 pliku qcustomplot.\+h.
+Definicja w linii 3022 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a82fcc511def22287fc62579d0706387c}\label{class_q_c_p_data_container_a82fcc511def22287fc62579d0706387c}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!squeeze@{squeeze}}
@@ -598,7 +598,7 @@ Note that \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}
 
 The parameters {\itshape pre\+Allocation} and {\itshape post\+Allocation} control whether pre-\/ and/or post allocation should be freed, respectively. 
 
-Definicja w linii 3038 pliku qcustomplot.\+h.
+Definicja w linii 3038 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a35a102dc2424d1228fc374d9313efbe9}\label{class_q_c_p_data_container_a35a102dc2424d1228fc374d9313efbe9}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!valueRange@{valueRange}}
@@ -618,7 +618,7 @@ Use {\itshape sign\+Domain} to control which sign of the value coordinates shoul
 \end{DoxySeeAlso}
 
 
-Definicja w linii 3247 pliku qcustomplot.\+h.
+Definicja w linii 3247 pliku qcustomplot.\+hh.
 
 
 
@@ -637,7 +637,7 @@ Returns whether the sort key of {\itshape a} is less than the sort key of {\itsh
 \end{DoxySeeAlso}
 
 
-Definicja w linii 2575 pliku qcustomplot.\+h.
+Definicja w linii 2575 pliku qcustomplot.\+hh.
 
 
 
@@ -651,7 +651,7 @@ bool \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}}$<$ 
 
 
 
-Definicja w linii 2622 pliku qcustomplot.\+h.
+Definicja w linii 2622 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a74906b4da829849c4062b5337c72585d}\label{class_q_c_p_data_container_a74906b4da829849c4062b5337c72585d}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!mData@{mData}}
@@ -662,7 +662,7 @@ Q\+Vector$<$Data\+Type$>$ \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+
 
 
 
-Definicja w linii 2625 pliku qcustomplot.\+h.
+Definicja w linii 2625 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_ab2115bf023c29691f441eaf1889de84a}\label{class_q_c_p_data_container_ab2115bf023c29691f441eaf1889de84a}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!mPreallocIteration@{mPreallocIteration}}
@@ -673,7 +673,7 @@ int \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}}$<$ D
 
 
 
-Definicja w linii 2627 pliku qcustomplot.\+h.
+Definicja w linii 2627 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_data_container_a3554d3ad00e69f7ce057efa00ea6f4b2}\label{class_q_c_p_data_container_a3554d3ad00e69f7ce057efa00ea6f4b2}} 
 \index{QCPDataContainer$<$ DataType $>$@{QCPDataContainer$<$ DataType $>$}!mPreallocSize@{mPreallocSize}}
@@ -684,10 +684,10 @@ int \mbox{\hyperlink{class_q_c_p_data_container}{Q\+C\+P\+Data\+Container}}$<$ D
 
 
 
-Definicja w linii 2626 pliku qcustomplot.\+h.
+Definicja w linii 2626 pliku qcustomplot.\+hh.
 
 
 
 Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
 \item 
-/media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/inc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\end{DoxyCompactItemize}
+/media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/inc/\mbox{\hyperlink{qcustomplot_8hh}{qcustomplot.\+hh}}\end{DoxyCompactItemize}

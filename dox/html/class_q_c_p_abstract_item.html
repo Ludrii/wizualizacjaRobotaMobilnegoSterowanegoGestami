@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('class_q_c_p_abstract_item.html',''); i
 <p>The abstract base class for all items in a plot.  
  <a href="class_q_c_p_abstract_item.html#details">Więcej...</a></p>
 
-<p><code>#include &lt;<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla QCPAbstractItem</div>
 <div class="dyncontent">
@@ -156,7 +156,7 @@ Sygnały</h2></td></tr>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a9922507d8b4503a1fe1ed0b1030e23b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a9922507d8b4503a1fe1ed0b1030e23b6">QCPAbstractItem</a> (<a class="el" href="class_q_custom_plot.html">QCustomPlot</a> *<a class="el" href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">parentPlot</a>)</td></tr>
 <tr class="separator:a9922507d8b4503a1fe1ed0b1030e23b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5120698bef63cbaa8544e9f47a2f4abc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a5120698bef63cbaa8544e9f47a2f4abc">~QCPAbstractItem</a> () <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:a5120698bef63cbaa8544e9f47a2f4abc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a5120698bef63cbaa8544e9f47a2f4abc">~QCPAbstractItem</a> () <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:a5120698bef63cbaa8544e9f47a2f4abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42715ad5f3d7fca6854025fa5636f436"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a42715ad5f3d7fca6854025fa5636f436">clipToAxisRect</a> () const</td></tr>
 <tr class="separator:a42715ad5f3d7fca6854025fa5636f436"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +174,7 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a8a8e32a55bc478b849756a78c2d87fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a203de94ad586cc44d16c9565f49d3378"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a203de94ad586cc44d16c9565f49d3378">setSelected</a> (bool <a class="el" href="class_q_c_p_abstract_item.html#aa069fba320a13639f119f82ad29ead96">selected</a>)</td></tr>
 <tr class="separator:a203de94ad586cc44d16c9565f49d3378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac75a4bdcba0ce51ae22eacebb16a9dcd"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#ac75a4bdcba0ce51ae22eacebb16a9dcd">selectTest</a> (const QPointF &amp;pos, bool onlySelectable, QVariant *details=nullptr) const <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a>=0</td></tr>
+<tr class="memitem:ac75a4bdcba0ce51ae22eacebb16a9dcd"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#ac75a4bdcba0ce51ae22eacebb16a9dcd">selectTest</a> (const QPointF &amp;pos, bool onlySelectable, QVariant *details=nullptr) const <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a>=0</td></tr>
 <tr class="separator:ac75a4bdcba0ce51ae22eacebb16a9dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a709f655ac3f7f22d452714134662b454"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_q_c_p_item_position.html">QCPItemPosition</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a709f655ac3f7f22d452714134662b454">positions</a> () const</td></tr>
 <tr class="separator:a709f655ac3f7f22d452714134662b454"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,17 +214,17 @@ Metody publiczne</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Metody chronione</h2></td></tr>
-<tr class="memitem:aceb5f99c361cf023c7cbe7339ea29571"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_q_c_p.html#a2ad6bb6281c7c2d593d4277b44c2b037">QCP::Interaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#aceb5f99c361cf023c7cbe7339ea29571">selectionCategory</a> () const <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:aceb5f99c361cf023c7cbe7339ea29571"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_q_c_p.html#a2ad6bb6281c7c2d593d4277b44c2b037">QCP::Interaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#aceb5f99c361cf023c7cbe7339ea29571">selectionCategory</a> () const <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:aceb5f99c361cf023c7cbe7339ea29571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ad60000f29afe11035e1f791dcbd45a"><td class="memItemLeft" align="right" valign="top">virtual QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a6ad60000f29afe11035e1f791dcbd45a">clipRect</a> () const <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:a6ad60000f29afe11035e1f791dcbd45a"><td class="memItemLeft" align="right" valign="top">virtual QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a6ad60000f29afe11035e1f791dcbd45a">clipRect</a> () const <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:a6ad60000f29afe11035e1f791dcbd45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5579ce9ec7cad202499886b042448b10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a5579ce9ec7cad202499886b042448b10">applyDefaultAntialiasingHint</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) const <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:a5579ce9ec7cad202499886b042448b10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a5579ce9ec7cad202499886b042448b10">applyDefaultAntialiasingHint</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) const <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:a5579ce9ec7cad202499886b042448b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a007fdab79c935a5da5aa04a21d268c18"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a007fdab79c935a5da5aa04a21d268c18">draw</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a>=0</td></tr>
+<tr class="memitem:a007fdab79c935a5da5aa04a21d268c18"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#a007fdab79c935a5da5aa04a21d268c18">draw</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a>=0</td></tr>
 <tr class="separator:a007fdab79c935a5da5aa04a21d268c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4b969c58797f39c9c0b6c07c7869d17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#aa4b969c58797f39c9c0b6c07c7869d17">selectEvent</a> (QMouseEvent *event, bool additive, const QVariant &amp;details, bool *selectionStateChanged) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:aa4b969c58797f39c9c0b6c07c7869d17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#aa4b969c58797f39c9c0b6c07c7869d17">selectEvent</a> (QMouseEvent *event, bool additive, const QVariant &amp;details, bool *selectionStateChanged) <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:aa4b969c58797f39c9c0b6c07c7869d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9093798cb07a861dcc73f93ca16c0c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#af9093798cb07a861dcc73f93ca16c0c1">deselectEvent</a> (bool *selectionStateChanged) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:af9093798cb07a861dcc73f93ca16c0c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#af9093798cb07a861dcc73f93ca16c0c1">deselectEvent</a> (bool *selectionStateChanged) <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:af9093798cb07a861dcc73f93ca16c0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada5bad4e1196c4fc0d0d12328e24b8f2"><td class="memItemLeft" align="right" valign="top">virtual QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_abstract_item.html#ada5bad4e1196c4fc0d0d12328e24b8f2">anchorPixelPosition</a> (int anchorId) const</td></tr>
 <tr class="separator:ada5bad4e1196c4fc0d0d12328e24b8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,7 +352,7 @@ Providing anchors</h2>
 </div><!-- fragment --><p>and create it in the constructor with the <a class="el" href="class_q_c_p_abstract_item.html#af3fc92527802078ca395138748b629a7">createAnchor</a> function, assigning it a name and an anchor id (an integer enumerating all anchors on the item, you may create an own enum for this). Since anchors can be placed anywhere, relative to the item's position(s), your item needs to provide the position of every anchor with the reimplementation of the <a class="el" href="class_q_c_p_abstract_item.html#ada5bad4e1196c4fc0d0d12328e24b8f2">anchorPixelPosition</a>(int anchorId) function.</p>
 <p>In essence the <a class="el" href="class_q_c_p_item_anchor.html" title="An anchor of an item to which positions can be attached to.">QCPItemAnchor</a> is merely an intermediary that itself asks your item for the pixel position when anything attached to the anchor needs to know the coordinates. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03676">3676</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03676">3676</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a9922507d8b4503a1fe1ed0b1030e23b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9922507d8b4503a1fe1ed0b1030e23b6">&#9670;&nbsp;</a></span>QCPAbstractItem()</h2>
@@ -489,7 +489,7 @@ Providing anchors</h2>
 <p>Returns all anchors of the item in a list. Note that since a position (<a class="el" href="class_q_c_p_item_position.html" title="Manages the position of an item.">QCPItemPosition</a>) is always also an anchor, the list will also contain the positions of this item.</p>
 <dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="class_q_c_p_abstract_item.html#a709f655ac3f7f22d452714134662b454">positions</a>, <a class="el" href="class_q_c_p_abstract_item.html#a139c255ea8831642fac91748e29a5adb">anchor</a> </dd></dl>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03706">3706</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03706">3706</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -594,7 +594,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03690">3690</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03690">3690</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -795,7 +795,7 @@ Providing anchors</h2>
 <p>Returns all positions of the item in a list.</p>
 <dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="class_q_c_p_abstract_item.html#a81d1ecfea3368b836cf9675a0045e659">anchors</a>, <a class="el" href="class_q_c_p_abstract_item.html#a2589c3d298f9a576d77d9addb440a18d">position</a> </dd></dl>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03705">3705</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03705">3705</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -866,7 +866,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03692">3692</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03692">3692</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -921,7 +921,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03693">3693</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03693">3693</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1203,7 +1203,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03744">3744</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03744">3744</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1227,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03743">3743</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03743">3743</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1252,7 +1252,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03720">3720</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03720">3720</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1276,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03718">3718</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03718">3718</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1300,7 +1300,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03717">3717</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03717">3717</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1324,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03719">3719</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03719">3719</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1348,7 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03721">3721</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03721">3721</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1372,23 +1372,23 @@ Providing anchors</h2>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l03721">3721</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l03721">3721</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a></li>
+<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a></li>
 <li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/debug/<a class="el" href="debug_2moc__qcustomplot_8cpp_source.html">moc_qcustomplot.cpp</a></li>
 <li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/src/<a class="el" href="qcustomplot_8cpp_source.html">qcustomplot.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_q_c_p_item_position_html"><div class="ttname"><a href="class_q_c_p_item_position.html">QCPItemPosition</a></div><div class="ttdoc">Manages the position of an item.</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8h_source.html#l03606">qcustomplot.h:3606</a></div></div>
+<div class="ttc" id="aclass_q_c_p_item_position_html"><div class="ttname"><a href="class_q_c_p_item_position.html">QCPItemPosition</a></div><div class="ttdoc">Manages the position of an item.</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8hh_source.html#l03606">qcustomplot.hh:3606</a></div></div>
 <div class="ttc" id="aclass_q_c_p_abstract_item_html_a75036d39c4d4e2e1a7dd145fff915d32"><div class="ttname"><a href="class_q_c_p_abstract_item.html#a75036d39c4d4e2e1a7dd145fff915d32">QCPAbstractItem::createPosition</a></div><div class="ttdeci">QCPItemPosition * createPosition(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8cpp_source.html#l13186">qcustomplot.cpp:13186</a></div></div>
-<div class="ttc" id="aclass_q_c_p_layerable_html_a473edb813a4c1929d6b6a8fe3ff3faf7"><div class="ttname"><a href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">QCPLayerable::parentPlot</a></div><div class="ttdeci">QCustomPlot * parentPlot() const</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8h_source.html#l00732">qcustomplot.h:732</a></div></div>
-<div class="ttc" id="aclass_q_custom_plot_html"><div class="ttname"><a href="class_q_custom_plot.html">QCustomPlot</a></div><div class="ttdoc">The central class of the library. This is the QWidget which displays the plot and interacts with the ...</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8h_source.html#l03753">qcustomplot.h:3753</a></div></div>
-<div class="ttc" id="aclass_q_c_p_abstract_item_html"><div class="ttname"><a href="class_q_c_p_abstract_item.html">QCPAbstractItem</a></div><div class="ttdoc">The abstract base class for all items in a plot.</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8h_source.html#l03676">qcustomplot.h:3676</a></div></div>
-<div class="ttc" id="aclass_q_c_p_item_anchor_html"><div class="ttname"><a href="class_q_c_p_item_anchor.html">QCPItemAnchor</a></div><div class="ttdoc">An anchor of an item to which positions can be attached to.</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8h_source.html#l03568">qcustomplot.h:3568</a></div></div>
+<div class="ttc" id="aclass_q_c_p_layerable_html_a473edb813a4c1929d6b6a8fe3ff3faf7"><div class="ttname"><a href="class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7">QCPLayerable::parentPlot</a></div><div class="ttdeci">QCustomPlot * parentPlot() const</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8hh_source.html#l00732">qcustomplot.hh:732</a></div></div>
+<div class="ttc" id="aclass_q_custom_plot_html"><div class="ttname"><a href="class_q_custom_plot.html">QCustomPlot</a></div><div class="ttdoc">The central class of the library. This is the QWidget which displays the plot and interacts with the ...</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8hh_source.html#l03753">qcustomplot.hh:3753</a></div></div>
+<div class="ttc" id="aclass_q_c_p_abstract_item_html"><div class="ttname"><a href="class_q_c_p_abstract_item.html">QCPAbstractItem</a></div><div class="ttdoc">The abstract base class for all items in a plot.</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8hh_source.html#l03676">qcustomplot.hh:3676</a></div></div>
+<div class="ttc" id="aclass_q_c_p_item_anchor_html"><div class="ttname"><a href="class_q_c_p_item_anchor.html">QCPItemAnchor</a></div><div class="ttdoc">An anchor of an item to which positions can be attached to.</div><div class="ttdef"><b>Definition:</b> <a href="qcustomplot_8hh_source.html#l03568">qcustomplot.hh:3568</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

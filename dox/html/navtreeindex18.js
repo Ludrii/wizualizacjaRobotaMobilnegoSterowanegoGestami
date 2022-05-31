@@ -1,5 +1,18 @@
 var NAVTREEINDEX18 =
 {
+"structqt__meta__stringdata___q_c_p_color_scale__t.html#afca49a2ef4f897a520ebdb366cf142bc":[2,0,94,0],
+"structqt__meta__stringdata___q_c_p_color_scale_axis_rect_private__t.html":[2,0,95],
+"structqt__meta__stringdata___q_c_p_color_scale_axis_rect_private__t.html#a7af1330a160fd63c7871f39e801f68b2":[2,0,95,0],
+"structqt__meta__stringdata___q_c_p_color_scale_axis_rect_private__t.html#aea3e1a0680408e2135ff33931690106a":[2,0,95,1],
+"structqt__meta__stringdata___q_c_p_curve__t.html":[2,0,96],
+"structqt__meta__stringdata___q_c_p_curve__t.html#a6c890c6ad50080022cc448d4572a58d8":[2,0,96,0],
+"structqt__meta__stringdata___q_c_p_curve__t.html#afdf3ad4dbaef5d9bcaa208faa84b4b2b":[2,0,96,1],
+"structqt__meta__stringdata___q_c_p_error_bars__t.html":[2,0,97],
+"structqt__meta__stringdata___q_c_p_error_bars__t.html#a0c1d81402f426451de67539634bc394f":[2,0,97,0],
+"structqt__meta__stringdata___q_c_p_error_bars__t.html#a4156125b9e0e682b9aa12e7d2da870be":[2,0,97,1],
+"structqt__meta__stringdata___q_c_p_financial__t.html":[2,0,98],
+"structqt__meta__stringdata___q_c_p_financial__t.html#a4cb54630ee207a141d168257a0b9f11e":[2,0,98,0],
+"structqt__meta__stringdata___q_c_p_financial__t.html#a823f8ead49f5c06d31ffbaffd8695cc8":[2,0,98,1],
 "structqt__meta__stringdata___q_c_p_graph__t.html":[2,0,99],
 "structqt__meta__stringdata___q_c_p_graph__t.html#a3292f3d33ea061a1299d1c727a9e0788":[2,0,99,1],
 "structqt__meta__stringdata___q_c_p_graph__t.html#aef768bfc9aa8b57ddd273556a42baa3c":[2,0,99,0],

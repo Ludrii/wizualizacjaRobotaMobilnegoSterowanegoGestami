@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('class_q_c_p_abstract_paint_buffer.html
 <p>The abstract base class for paint buffers, which define the rendering backend.  
  <a href="class_q_c_p_abstract_paint_buffer.html#details">Więcej...</a></p>
 
-<p><code>#include &lt;<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla QCPAbstractPaintBuffer</div>
 <div class="dyncontent">
@@ -152,7 +152,7 @@ Atrybuty chronione</h2></td></tr>
 <p>A paint buffer manages both a surface to draw onto, and the matching paint device. The size of the surface can be changed via <a class="el" href="class_q_c_p_abstract_paint_buffer.html#a8b68c3cd36533f1a4a23b5ce8cd66f01">setSize</a>. External classes (<a class="el" href="class_q_custom_plot.html">QCustomPlot</a> and <a class="el" href="class_q_c_p_layer.html">QCPLayer</a>) request a painter via <a class="el" href="class_q_c_p_abstract_paint_buffer.html#a9e9f29b19c033cf02fb96f1a148463f3">startPainting</a> and then perform the draw calls. Once the painting is complete, <a class="el" href="class_q_c_p_abstract_paint_buffer.html#a41b0dc6e7744f19fae09f8532c207dc1">donePainting</a> is called, so the paint buffer implementation can do clean up if necessary. Before rendering a frame, each paint buffer is usually filled with a color using <a class="el" href="class_q_c_p_abstract_paint_buffer.html#a9e253f4541dfc01992b77e8830bd7722">clear</a> (usually the color is <code>Qt::transparent</code>), to remove the contents of the previous frame.</p>
 <p>The simplest paint buffer implementation is <a class="el" href="class_q_c_p_paint_buffer_pixmap.html">QCPPaintBufferPixmap</a> which allows regular software rendering via the raster engine. Hardware accelerated rendering via pixel buffers and frame buffer objects is provided by QCPPaintBufferGlPbuffer and QCPPaintBufferGlFbo. They are used automatically if <a class="el" href="class_q_custom_plot.html#a7db1adc09016329f3aef7c60da935789">QCustomPlot::setOpenGl</a> is enabled. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00539">539</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00539">539</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a3ce532c12f10b81697108835755641e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ce532c12f10b81697108835755641e2">&#9670;&nbsp;</a></span>QCPAbstractPaintBuffer()</h2>
@@ -275,7 +275,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00548">548</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00548">548</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -304,7 +304,7 @@ Atrybuty chronione</h2></td></tr>
 <p>If you have acquired a <a class="el" href="class_q_c_p_painter.html">QCPPainter</a> to paint onto this paint buffer via <a class="el" href="class_q_c_p_abstract_paint_buffer.html#a9e9f29b19c033cf02fb96f1a148463f3">startPainting</a>, call this method as soon as you are done with the painting operations and have deleted the painter.</p>
 <p>paint buffer subclasses may use this method to perform any type of cleanup that is necessary. The default implementation does nothing. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00557">557</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00557">557</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -360,7 +360,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00547">547</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00547">547</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -486,7 +486,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00546">546</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00546">546</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -542,7 +542,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00564">564</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00564">564</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -566,7 +566,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00567">567</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00567">567</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -590,12 +590,12 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00563">563</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00563">563</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a></li>
+<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a></li>
 <li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/src/<a class="el" href="qcustomplot_8cpp_source.html">qcustomplot.cpp</a></li>
 </ul>
 </div><!-- contents -->

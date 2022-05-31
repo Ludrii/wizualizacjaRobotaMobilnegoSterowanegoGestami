@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('class_q_c_p_color_map_data.html',''); 
 <p>Holds the two-dimensional data of a <a class="el" href="class_q_c_p_color_map.html" title="A plottable representing a two-dimensional color map in a plot.">QCPColorMap</a> plottable.  
  <a href="class_q_c_p_color_map_data.html#details">Więcej...</a></p>
 
-<p><code>#include &lt;<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>&gt;</code></p>
 <div class="dynheader">
 Diagram współpracy dla QCPColorMapData:</div>
 <div class="dyncontent">
@@ -206,7 +206,7 @@ Przyjaciele</h2></td></tr>
 <p>A <a class="el" href="class_q_c_p_color_map_data.html">QCPColorMapData</a> also holds an on-demand two-dimensional array of alpha values which (if allocated) has the same size as the data map. It can be accessed via <a class="el" href="class_q_c_p_color_map_data.html#aaf7de5b34c58f38d8f4c1ceb064a876c">setAlpha</a>, <a class="el" href="class_q_c_p_color_map_data.html#a93e2a549d7702bc849cd48a585294657">fillAlpha</a> and <a class="el" href="class_q_c_p_color_map_data.html#a14d08b9c3720cd719400079b86d3906b">clearAlpha</a>. The memory for the alpha map is only allocated if needed, i.e. on the first call of <a class="el" href="class_q_c_p_color_map_data.html#aaf7de5b34c58f38d8f4c1ceb064a876c">setAlpha</a>. <a class="el" href="class_q_c_p_color_map_data.html#a14d08b9c3720cd719400079b86d3906b">clearAlpha</a> restores full opacity and frees the alpha map.</p>
 <p>This class also buffers the minimum and maximum values that are in the data set, to provide <a class="el" href="class_q_c_p_color_map.html#a856608fa3dd1cc290bcd5f29a5575774">QCPColorMap::rescaleDataRange</a> with the necessary information quickly. Setting a cell to a value that is greater than the current maximum increases this maximum to the new value. However, setting the cell that currently holds the maximum value to a smaller value doesn't decrease the maximum again, because finding the true new maximum would require going through the entire data array, which might be time consuming. The same holds for the data minimum. This functionality is given by <a class="el" href="class_q_c_p_color_map_data.html#ab235ade8a4d64bd3adb26a99b3dd57ee">recalculateDataBounds</a>, such that you can decide when it is sensible to find the true current minimum and maximum. The method <a class="el" href="class_q_c_p_color_map.html#a856608fa3dd1cc290bcd5f29a5575774">QCPColorMap::rescaleDataRange</a> offers a convenience parameter <em>recalculateDataBounds</em> which may be set to true to automatically call <a class="el" href="class_q_c_p_color_map_data.html#ab235ade8a4d64bd3adb26a99b3dd57ee">recalculateDataBounds</a> internally. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l05985">5985</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l05985">5985</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="aac9d8eb81e18e240d89d56c01933fd23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac9d8eb81e18e240d89d56c01933fd23">&#9670;&nbsp;</a></span>QCPColorMapData() <span class="overload">[1/2]</span></h2>
@@ -571,7 +571,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l05998">5998</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l05998">5998</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -643,7 +643,7 @@ Przyjaciele</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether this instance carries no data. This is equivalent to having a size where at least one of the dimensions is 0 (see <a class="el" href="class_q_c_p_color_map_data.html#a0d9ff35c299d0478b682bfbcdd9c097e">setSize</a>). </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06020">6020</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06020">6020</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -670,7 +670,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l05996">5996</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l05996">5996</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -697,7 +697,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l05994">5994</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l05994">5994</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1046,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l05997">5997</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l05997">5997</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1073,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l05995">5995</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l05995">5995</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1098,7 +1098,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06038">6038</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06038">6038</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1123,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06032">6032</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06032">6032</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1147,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06031">6031</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06031">6031</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1171,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06033">6033</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06033">6033</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1195,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06034">6034</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06034">6034</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1219,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06028">6028</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06028">6028</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1243,7 +1243,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06027">6027</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06027">6027</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1267,7 +1267,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06026">6026</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06026">6026</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1291,7 +1291,7 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06027">6027</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06027">6027</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -1315,12 +1315,12 @@ Przyjaciele</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l06026">6026</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l06026">6026</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a></li>
+<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a></li>
 <li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/src/<a class="el" href="qcustomplot_8cpp_source.html">qcustomplot.cpp</a></li>
 </ul>
 </div><!-- contents -->

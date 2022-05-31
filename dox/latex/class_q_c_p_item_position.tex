@@ -7,7 +7,7 @@ Manages the position of an item.
 
 
 
-{\ttfamily \#include $<$qcustomplot.\+h$>$}
+{\ttfamily \#include $<$qcustomplot.\+hh$>$}
 
 
 
@@ -41,7 +41,7 @@ enum \mbox{\hyperlink{class_q_c_p_item_position_aad9936c22bf43e3d358552f6e86dbdc
 \item 
 \mbox{\hyperlink{class_q_c_p_item_position_a6519a552bd9766354644ec24d1f26622}{Q\+C\+P\+Item\+Position}} (\mbox{\hyperlink{class_q_custom_plot}{Q\+Custom\+Plot}} $\ast$parent\+Plot, \mbox{\hyperlink{class_q_c_p_abstract_item}{Q\+C\+P\+Abstract\+Item}} $\ast$parent\+Item, const Q\+String \&\mbox{\hyperlink{class_q_c_p_item_anchor_aad37cdf5a3f63428f61be739014e212e}{name}})
 \item 
-virtual \mbox{\hyperlink{class_q_c_p_item_position_a21f585ffa8d8e3a6ba0cc450701bca5a}{$\sim$\+Q\+C\+P\+Item\+Position}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual \mbox{\hyperlink{class_q_c_p_item_position_a21f585ffa8d8e3a6ba0cc450701bca5a}{$\sim$\+Q\+C\+P\+Item\+Position}} () \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
 \mbox{\hyperlink{class_q_c_p_item_position_aad9936c22bf43e3d358552f6e86dbdc8}{Position\+Type}} \mbox{\hyperlink{class_q_c_p_item_position_abfd74d86bd799306ce0295ffe433bdfc}{type}} () const
 \item 
@@ -67,7 +67,7 @@ Q\+PointF \mbox{\hyperlink{class_q_c_p_item_position_aa4ecf5b04c67049c05d37619e0
 \item 
 \mbox{\hyperlink{class_q_c_p_axis_rect}{Q\+C\+P\+Axis\+Rect}} $\ast$ \mbox{\hyperlink{class_q_c_p_item_position_ae4081cfe7575f922f403c6e3a2ce7891}{axis\+Rect}} () const
 \item 
-virtual Q\+PointF \mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixel\+Position}} () const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual Q\+PointF \mbox{\hyperlink{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}{pixel\+Position}} () const \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
 void \mbox{\hyperlink{class_q_c_p_item_position_aa476abf71ed8fa4c537457ebb1a754ad}{set\+Type}} (\mbox{\hyperlink{class_q_c_p_item_position_aad9936c22bf43e3d358552f6e86dbdc8}{Position\+Type}} \mbox{\hyperlink{class_q_c_p_item_position_abfd74d86bd799306ce0295ffe433bdfc}{type}})
 \item 
@@ -94,7 +94,7 @@ void \mbox{\hyperlink{class_q_c_p_item_position_a8d4f858f2089973967cf9cb81970ef0
 \doxysubsection*{Metody chronione}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{class_q_c_p_item_position}{Q\+C\+P\+Item\+Position}} $\ast$ \mbox{\hyperlink{class_q_c_p_item_position_a008ff9ebe645a963671b68bcf7f7a1c0}{to\+Q\+C\+P\+Item\+Position}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual \mbox{\hyperlink{class_q_c_p_item_position}{Q\+C\+P\+Item\+Position}} $\ast$ \mbox{\hyperlink{class_q_c_p_item_position_a008ff9ebe645a963671b68bcf7f7a1c0}{to\+Q\+C\+P\+Item\+Position}} () \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Atrybuty chronione}
 \begin{DoxyCompactItemize}
@@ -132,7 +132,7 @@ Note that every \mbox{\hyperlink{class_q_c_p_item_position}{Q\+C\+P\+Item\+Posit
 
 To set the apparent pixel position on the \mbox{\hyperlink{class_q_custom_plot}{Q\+Custom\+Plot}} surface directly, use \mbox{\hyperlink{class_q_c_p_item_position_a8d4f858f2089973967cf9cb81970ef0a}{set\+Pixel\+Position}}. This works no matter what type this \mbox{\hyperlink{class_q_c_p_item_position}{Q\+C\+P\+Item\+Position}} is or what parent-\/child situation it is in, as \mbox{\hyperlink{class_q_c_p_item_position_a8d4f858f2089973967cf9cb81970ef0a}{set\+Pixel\+Position}} transforms the coordinates appropriately, to make the position appear at the specified pixel values. 
 
-Definicja w linii 3606 pliku qcustomplot.\+h.
+Definicja w linii 3606 pliku qcustomplot.\+hh.
 
 
 
@@ -168,7 +168,7 @@ pt\+Plot\+Coords&Dynamic positioning at a plot coordinate defined by two axes (s
 \end{DoxyEnumFields}
 
 
-Definicja w linii 3616 pliku qcustomplot.\+h.
+Definicja w linii 3616 pliku qcustomplot.\+hh.
 
 
 
@@ -214,7 +214,7 @@ Definicja w linii 12246 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 3639 pliku qcustomplot.\+h.
+Definicja w linii 3639 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a6fc519f1b73722a8d0cff7d4d647407e}\label{class_q_c_p_item_position_a6fc519f1b73722a8d0cff7d4d647407e}} 
 \index{QCPItemPosition@{QCPItemPosition}!key@{key}}
@@ -224,7 +224,7 @@ Definicja w linii 3639 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3637 pliku qcustomplot.\+h.
+Definicja w linii 3637 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a9ad34861fbfd8be8b8270c16f879169c}\label{class_q_c_p_item_position_a9ad34861fbfd8be8b8270c16f879169c}} 
 \index{QCPItemPosition@{QCPItemPosition}!keyAxis@{keyAxis}}
@@ -234,7 +234,7 @@ Definicja w linii 3637 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3640 pliku qcustomplot.\+h.
+Definicja w linii 3640 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a0a87f9dce1af6cc9b510785991bcf1c6}\label{class_q_c_p_item_position_a0a87f9dce1af6cc9b510785991bcf1c6}} 
 \index{QCPItemPosition@{QCPItemPosition}!parentAnchor@{parentAnchor}}
@@ -251,7 +251,7 @@ If different parent anchors were set for X and Y (\mbox{\hyperlink{class_q_c_p_i
 \end{DoxySeeAlso}
 
 
-Definicja w linii 3634 pliku qcustomplot.\+h.
+Definicja w linii 3634 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a605cb8b2cf6044d3d03cb1a894faf98a}\label{class_q_c_p_item_position_a605cb8b2cf6044d3d03cb1a894faf98a}} 
 \index{QCPItemPosition@{QCPItemPosition}!parentAnchorX@{parentAnchorX}}
@@ -261,7 +261,7 @@ Definicja w linii 3634 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3635 pliku qcustomplot.\+h.
+Definicja w linii 3635 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_aa40afec791a4339b09572922ca425ec2}\label{class_q_c_p_item_position_aa40afec791a4339b09572922ca425ec2}} 
 \index{QCPItemPosition@{QCPItemPosition}!parentAnchorY@{parentAnchorY}}
@@ -271,7 +271,7 @@ Definicja w linii 3635 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3636 pliku qcustomplot.\+h.
+Definicja w linii 3636 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}\label{class_q_c_p_item_position_a8be9a4787635433edecc75164beb748d}} 
 \index{QCPItemPosition@{QCPItemPosition}!pixelPosition@{pixelPosition}}
@@ -482,7 +482,7 @@ Reimplementowana z \mbox{\hyperlink{class_q_c_p_item_anchor_ac54b20120669950255a
 
 
 
-Definicja w linii 3667 pliku qcustomplot.\+h.
+Definicja w linii 3667 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_abfd74d86bd799306ce0295ffe433bdfc}\label{class_q_c_p_item_position_abfd74d86bd799306ce0295ffe433bdfc}} 
 \index{QCPItemPosition@{QCPItemPosition}!type@{type}}
@@ -499,7 +499,7 @@ If different types were set for X and Y (\mbox{\hyperlink{class_q_c_p_item_posit
 \end{DoxySeeAlso}
 
 
-Definicja w linii 3631 pliku qcustomplot.\+h.
+Definicja w linii 3631 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a1415911868835701c04250566bfc681d}\label{class_q_c_p_item_position_a1415911868835701c04250566bfc681d}} 
 \index{QCPItemPosition@{QCPItemPosition}!typeX@{typeX}}
@@ -509,7 +509,7 @@ Definicja w linii 3631 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3632 pliku qcustomplot.\+h.
+Definicja w linii 3632 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_ae47bac6f679c58f9e1c78dc63d56f331}\label{class_q_c_p_item_position_ae47bac6f679c58f9e1c78dc63d56f331}} 
 \index{QCPItemPosition@{QCPItemPosition}!typeY@{typeY}}
@@ -519,7 +519,7 @@ Definicja w linii 3632 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3633 pliku qcustomplot.\+h.
+Definicja w linii 3633 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_acfcf86f840a7366a4299bff593d5d636}\label{class_q_c_p_item_position_acfcf86f840a7366a4299bff593d5d636}} 
 \index{QCPItemPosition@{QCPItemPosition}!value@{value}}
@@ -529,7 +529,7 @@ Definicja w linii 3633 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3638 pliku qcustomplot.\+h.
+Definicja w linii 3638 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a356ac94e7e73d88deb7f2841c0d0c734}\label{class_q_c_p_item_position_a356ac94e7e73d88deb7f2841c0d0c734}} 
 \index{QCPItemPosition@{QCPItemPosition}!valueAxis@{valueAxis}}
@@ -539,7 +539,7 @@ Definicja w linii 3638 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3641 pliku qcustomplot.\+h.
+Definicja w linii 3641 pliku qcustomplot.\+hh.
 
 
 
@@ -552,7 +552,7 @@ Definicja w linii 3641 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3662 pliku qcustomplot.\+h.
+Definicja w linii 3662 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a4ff3931ad115603dfb4c7000b24bb415}\label{class_q_c_p_item_position_a4ff3931ad115603dfb4c7000b24bb415}} 
 \index{QCPItemPosition@{QCPItemPosition}!mKey@{mKey}}
@@ -562,7 +562,7 @@ Definicja w linii 3662 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3663 pliku qcustomplot.\+h.
+Definicja w linii 3663 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a63967a33933231e92f68c8ce06bfc37e}\label{class_q_c_p_item_position_a63967a33933231e92f68c8ce06bfc37e}} 
 \index{QCPItemPosition@{QCPItemPosition}!mKeyAxis@{mKeyAxis}}
@@ -572,7 +572,7 @@ Definicja w linii 3663 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3661 pliku qcustomplot.\+h.
+Definicja w linii 3661 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a41b4641d18c90997b9c01bf304181bf0}\label{class_q_c_p_item_position_a41b4641d18c90997b9c01bf304181bf0}} 
 \index{QCPItemPosition@{QCPItemPosition}!mParentAnchorX@{mParentAnchorX}}
@@ -582,7 +582,7 @@ Definicja w linii 3661 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3664 pliku qcustomplot.\+h.
+Definicja w linii 3664 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_afc6142a6a09c8fa41c44d3d54fadd737}\label{class_q_c_p_item_position_afc6142a6a09c8fa41c44d3d54fadd737}} 
 \index{QCPItemPosition@{QCPItemPosition}!mParentAnchorY@{mParentAnchorY}}
@@ -592,7 +592,7 @@ Definicja w linii 3664 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3664 pliku qcustomplot.\+h.
+Definicja w linii 3664 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_ae2a617dce057c5f3ec6878c1823aa291}\label{class_q_c_p_item_position_ae2a617dce057c5f3ec6878c1823aa291}} 
 \index{QCPItemPosition@{QCPItemPosition}!mPositionTypeX@{mPositionTypeX}}
@@ -602,7 +602,7 @@ Definicja w linii 3664 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3660 pliku qcustomplot.\+h.
+Definicja w linii 3660 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a47c96c0ef4380e1af4aaa7c2265c260b}\label{class_q_c_p_item_position_a47c96c0ef4380e1af4aaa7c2265c260b}} 
 \index{QCPItemPosition@{QCPItemPosition}!mPositionTypeY@{mPositionTypeY}}
@@ -612,7 +612,7 @@ Definicja w linii 3660 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3660 pliku qcustomplot.\+h.
+Definicja w linii 3660 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a67bf5df69f587d53731724a7d61c6c3f}\label{class_q_c_p_item_position_a67bf5df69f587d53731724a7d61c6c3f}} 
 \index{QCPItemPosition@{QCPItemPosition}!mValue@{mValue}}
@@ -622,7 +622,7 @@ Definicja w linii 3660 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3663 pliku qcustomplot.\+h.
+Definicja w linii 3663 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_item_position_a505dc2da24ba274452c1c817fcaba011}\label{class_q_c_p_item_position_a505dc2da24ba274452c1c817fcaba011}} 
 \index{QCPItemPosition@{QCPItemPosition}!mValueAxis@{mValueAxis}}
@@ -632,11 +632,11 @@ Definicja w linii 3663 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 3661 pliku qcustomplot.\+h.
+Definicja w linii 3661 pliku qcustomplot.\+hh.
 
 
 
 Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
 \item 
-/media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/inc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+/media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/inc/\mbox{\hyperlink{qcustomplot_8hh}{qcustomplot.\+hh}}\item 
 /media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/src/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

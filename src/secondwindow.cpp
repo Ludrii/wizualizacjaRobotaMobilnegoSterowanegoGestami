@@ -1,6 +1,5 @@
 #include "inc/secondwindow.hh"
 #include "ui_secondwindow.h"
-#include "inc/odbior.hh"
 
 SecondWindow::SecondWindow(QWidget *parent) :
     QDialog(parent),

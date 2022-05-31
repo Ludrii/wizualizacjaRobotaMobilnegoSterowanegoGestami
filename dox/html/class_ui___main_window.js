@@ -14,6 +14,7 @@ var class_ui___main_window =
     [ "horizontalLayout", "class_ui___main_window.html#ae7104d878681f568e492c5bd0f653157", null ],
     [ "horizontalLayout_2", "class_ui___main_window.html#a9ee21d2c2bc000e7a8ba931bacfc5a69", null ],
     [ "horizontalSpacer", "class_ui___main_window.html#ae189b5a48fa6e6f4b6775f1f832afe9c", null ],
+    [ "horizontalSpacer_2", "class_ui___main_window.html#a9a022556cf8ce3fa47e51d79cb222ab0", null ],
     [ "label", "class_ui___main_window.html#a78edcdd12ea78c06d7e80f322c8882f9", null ],
     [ "label_2", "class_ui___main_window.html#a2f5576686ce98bcc41bd1b1eca07e56a", null ],
     [ "label_3", "class_ui___main_window.html#a253fbc5b44941384321b7c58cf96cc65", null ],
@@ -26,5 +27,9 @@ var class_ui___main_window =
     [ "pushButton", "class_ui___main_window.html#aa2f2c48d459c5b5eda62071b8d750fed", null ],
     [ "statusbar", "class_ui___main_window.html#a07519bbb9a350befd6feb4e84ef299fd", null ],
     [ "verticalLayout", "class_ui___main_window.html#a649287f742c9a33b8444116dccb1b72b", null ],
-    [ "verticalLayout_2", "class_ui___main_window.html#a0c01bad60d9f422a1258e710635a2f65", null ]
+    [ "verticalLayout_2", "class_ui___main_window.html#afbe60c634b3214ee76ff9e1fa70c7801", null ],
+    [ "verticalSpacer", "class_ui___main_window.html#a8384329c3663ff274e926a12024aab52", null ],
+    [ "verticalSpacer_2", "class_ui___main_window.html#adc1f5fdd97fb3729999c56902d0fa591", null ],
+    [ "verticalSpacer_3", "class_ui___main_window.html#ac845bdf6b5b5237378a7b067808b7a31", null ],
+    [ "verticalSpacer_4", "class_ui___main_window.html#a298e82ba0cc2500cd61f393f493e4529", null ]
 ];

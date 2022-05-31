@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('class_q_c_p_axis_ticker_log.html','');
 <p>Specialized axis ticker suited for logarithmic axes.  
  <a href="class_q_c_p_axis_ticker_log.html#details">Więcej...</a></p>
 
-<p><code>#include &lt;<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla QCPAxisTickerLog</div>
 <div class="dyncontent">
@@ -148,9 +148,9 @@ Metody publiczne</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Metody chronione</h2></td></tr>
-<tr class="memitem:a352fef7ae68837acd26e35188aa86167"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_log.html#a352fef7ae68837acd26e35188aa86167">getSubTickCount</a> (double tickStep) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:a352fef7ae68837acd26e35188aa86167"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_log.html#a352fef7ae68837acd26e35188aa86167">getSubTickCount</a> (double tickStep) <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:a352fef7ae68837acd26e35188aa86167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8873a8d1d2b9392d8f7a73218c889ab"><td class="memItemLeft" align="right" valign="top">virtual QVector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_log.html#af8873a8d1d2b9392d8f7a73218c889ab">createTickVector</a> (double tickStep, const <a class="el" href="class_q_c_p_range.html">QCPRange</a> &amp;range) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:af8873a8d1d2b9392d8f7a73218c889ab"><td class="memItemLeft" align="right" valign="top">virtual QVector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_log.html#af8873a8d1d2b9392d8f7a73218c889ab">createTickVector</a> (double tickStep, const <a class="el" href="class_q_c_p_range.html">QCPRange</a> &amp;range) <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:af8873a8d1d2b9392d8f7a73218c889ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_q_c_p_axis_ticker"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_q_c_p_axis_ticker')"><img src="closed.png" alt="-"/>&#160;Metody chronione dziedziczone z <a class="el" href="class_q_c_p_axis_ticker.html">QCPAxisTicker</a></td></tr>
 <tr class="memitem:a910d69bcec2de37e92d8d4e1ecf201e2 inherit pro_methods_class_q_c_p_axis_ticker"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker.html#a910d69bcec2de37e92d8d4e1ecf201e2">getTickStep</a> (const <a class="el" href="class_q_c_p_range.html">QCPRange</a> &amp;range)</td></tr>
@@ -206,7 +206,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </div>
 <p>The ticker can be created and assigned to an axis like this: </p><div class="fragment"></div><!-- fragment --><p> Note that the nature of logarithmic ticks imply that there exists a smallest possible tick step, corresponding to one multiplication by the log base. If the user zooms in further than that, no new ticks would appear, leading to very sparse or even no axis ticks on the axis. To prevent this situation, this ticker falls back to regular tick generation if the axis range would be covered by too few logarithmically placed ticks. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02002">2002</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02002">2002</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="af3cb86ea5eef2023c0b96b5260c4cbdf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3cb86ea5eef2023c0b96b5260c4cbdf">&#9670;&nbsp;</a></span>QCPAxisTickerLog()</h2>
@@ -322,7 +322,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02008">2008</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02008">2008</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02009">2009</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02009">2009</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02017">2017</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02017">2017</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -441,7 +441,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02021">2021</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02021">2021</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -465,12 +465,12 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02018">2018</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02018">2018</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a></li>
+<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a></li>
 <li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/src/<a class="el" href="qcustomplot_8cpp_source.html">qcustomplot.cpp</a></li>
 </ul>
 </div><!-- contents -->

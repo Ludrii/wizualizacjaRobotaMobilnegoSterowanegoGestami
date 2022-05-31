@@ -31,15 +31,21 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QGridLayout *gridLayout_2;
+    QVBoxLayout *verticalLayout_2;
+    QSpacerItem *verticalSpacer_4;
     QHBoxLayout *horizontalLayout;
     QLabel *led;
     QLabel *label;
+    QSpacerItem *horizontalSpacer_2;
+    QSpacerItem *verticalSpacer_3;
     QHBoxLayout *horizontalLayout_2;
     QLCDNumber *lcdNumber;
     QLabel *label_2;
+    QSpacerItem *verticalSpacer_2;
     QVBoxLayout *verticalLayout;
     QLabel *label_3;
     QProgressBar *progressBar;
+    QSpacerItem *verticalSpacer;
     QGridLayout *gridLayout;
     QPushButton *pushButton;
     QSpacerItem *horizontalSpacer;
@@ -56,9 +62,14 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout_2 = new QGridLayout(centralwidget);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer_4);
+
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
         led = new QLabel(centralwidget);
         led->setObjectName(QString::fromUtf8("led"));
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -67,53 +78,95 @@ public:
         sizePolicy.setHeightForWidth(led->sizePolicy().hasHeightForWidth());
         led->setSizePolicy(sizePolicy);
         led->setAutoFillBackground(true);
-        led->setPixmap(QPixmap(QString::fromUtf8("../../menu-belka-dialog/res/img/led/led_red.png")));
+        led->setPixmap(QPixmap(QString::fromUtf8(":/img/img/led_red.png")));
+        led->setScaledContents(true);
+        led->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout->addWidget(led);
 
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
+        QSizePolicy sizePolicy1(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy1);
         label->setMaximumSize(QSize(300, 500));
+        label->setScaledContents(true);
         label->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout->addWidget(label);
 
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        gridLayout_2->addLayout(horizontalLayout, 0, 0, 1, 1);
+        horizontalLayout->addItem(horizontalSpacer_2);
+
+
+        verticalLayout_2->addLayout(horizontalLayout);
+
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer_3);
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         lcdNumber = new QLCDNumber(centralwidget);
         lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
-        lcdNumber->setMaximumSize(QSize(16777215, 60));
+        sizePolicy1.setHeightForWidth(lcdNumber->sizePolicy().hasHeightForWidth());
+        lcdNumber->setSizePolicy(sizePolicy1);
+        lcdNumber->setMinimumSize(QSize(100, 0));
+        lcdNumber->setMaximumSize(QSize(16777215, 16777215));
+        lcdNumber->setSegmentStyle(QLCDNumber::Filled);
 
         horizontalLayout_2->addWidget(lcdNumber);
 
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
+        sizePolicy1.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
+        label_2->setSizePolicy(sizePolicy1);
+        label_2->setScaledContents(true);
         label_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_2->addWidget(label_2);
 
 
-        gridLayout_2->addLayout(horizontalLayout_2, 1, 0, 1, 1);
+        verticalLayout_2->addLayout(horizontalLayout_2);
+
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer_2);
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
+        sizePolicy1.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
+        label_3->setSizePolicy(sizePolicy1);
+        label_3->setScaledContents(true);
         label_3->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
 
         verticalLayout->addWidget(label_3);
 
         progressBar = new QProgressBar(centralwidget);
         progressBar->setObjectName(QString::fromUtf8("progressBar"));
+        QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(progressBar->sizePolicy().hasHeightForWidth());
+        progressBar->setSizePolicy(sizePolicy2);
         progressBar->setValue(24);
 
         verticalLayout->addWidget(progressBar);
 
 
-        gridLayout_2->addLayout(verticalLayout, 2, 0, 1, 1);
+        verticalLayout_2->addLayout(verticalLayout);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer);
+
+
+        gridLayout_2->addLayout(verticalLayout_2, 0, 0, 1, 1);
 
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
@@ -139,7 +192,7 @@ public:
         gridLayout->addWidget(graphicsView, 1, 0, 1, 2);
 
 
-        gridLayout_2->addLayout(gridLayout, 0, 1, 3, 1);
+        gridLayout_2->addLayout(gridLayout, 0, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);

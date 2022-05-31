@@ -7,7 +7,7 @@ The abstract base class for all objects that form the layout system.
 
 
 
-{\ttfamily \#include $<$qcustomplot.\+h$>$}
+{\ttfamily \#include $<$qcustomplot.\+hh$>$}
 
 
 
@@ -44,7 +44,7 @@ enum \mbox{\hyperlink{class_q_c_p_layout_element_a0afb3e5773529e4bd20e448f81be4d
 \item 
 \mbox{\hyperlink{class_q_c_p_layout_element_a2c25c7bf27eaa1fad66807af855d8d81}{Q\+C\+P\+Layout\+Element}} (\mbox{\hyperlink{class_q_custom_plot}{Q\+Custom\+Plot}} $\ast$\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parent\+Plot}}=nullptr)
 \item 
-virtual \mbox{\hyperlink{class_q_c_p_layout_element_a2fa26d3d22a2854c4da1d80f188db961}{$\sim$\+Q\+C\+P\+Layout\+Element}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual \mbox{\hyperlink{class_q_c_p_layout_element_a2fa26d3d22a2854c4da1d80f188db961}{$\sim$\+Q\+C\+P\+Layout\+Element}} () \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
 \mbox{\hyperlink{class_q_c_p_layout}{Q\+C\+P\+Layout}} $\ast$ \mbox{\hyperlink{class_q_c_p_layout_element_a4efdcbde9d28f410e5ef166c9d691deb}{layout}} () const
 \item 
@@ -96,7 +96,7 @@ virtual Q\+Size \mbox{\hyperlink{class_q_c_p_layout_element_ad96efb977a26e360e8a
 \item 
 virtual Q\+List$<$ \mbox{\hyperlink{class_q_c_p_layout_element}{Q\+C\+P\+Layout\+Element}} $\ast$ $>$ \mbox{\hyperlink{class_q_c_p_layout_element_a76dec8cb31e498994a944d7647a43309}{elements}} (bool recursive) const
 \item 
-virtual double \mbox{\hyperlink{class_q_c_p_layout_element_a62d60f1b0ee9bb23e38811d71586d79c}{select\+Test}} (const Q\+PointF \&pos, bool only\+Selectable, Q\+Variant $\ast$details=nullptr) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual double \mbox{\hyperlink{class_q_c_p_layout_element_a62d60f1b0ee9bb23e38811d71586d79c}{select\+Test}} (const Q\+PointF \&pos, bool only\+Selectable, Q\+Variant $\ast$details=nullptr) const \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Metody chronione}
 \begin{DoxyCompactItemize}
@@ -105,11 +105,11 @@ virtual int \mbox{\hyperlink{class_q_c_p_layout_element_a005c9f0fe84bc1591a2cf2c
 \item 
 virtual void \mbox{\hyperlink{class_q_c_p_layout_element_a765f041a73af0c2de41b41a5a03e31a4}{layout\+Changed}} ()
 \item 
-virtual void \mbox{\hyperlink{class_q_c_p_layout_element_a0a8f18141bcf46cf40ad4c13324ff346}{apply\+Default\+Antialiasing\+Hint}} (\mbox{\hyperlink{class_q_c_p_painter}{Q\+C\+P\+Painter}} $\ast$painter) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual void \mbox{\hyperlink{class_q_c_p_layout_element_a0a8f18141bcf46cf40ad4c13324ff346}{apply\+Default\+Antialiasing\+Hint}} (\mbox{\hyperlink{class_q_c_p_painter}{Q\+C\+P\+Painter}} $\ast$painter) const \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
-virtual void \mbox{\hyperlink{class_q_c_p_layout_element_ad1c597b1d608cfdd86e7b76819a94cfb}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{Q\+C\+P\+Painter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual void \mbox{\hyperlink{class_q_c_p_layout_element_ad1c597b1d608cfdd86e7b76819a94cfb}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{Q\+C\+P\+Painter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
-virtual void \mbox{\hyperlink{class_q_c_p_layout_element_ab4bb5c5a958451f5f153fdce350f13cf}{parent\+Plot\+Initialized}} (\mbox{\hyperlink{class_q_custom_plot}{Q\+Custom\+Plot}} $\ast$\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parent\+Plot}}) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual void \mbox{\hyperlink{class_q_c_p_layout_element_ab4bb5c5a958451f5f153fdce350f13cf}{parent\+Plot\+Initialized}} (\mbox{\hyperlink{class_q_custom_plot}{Q\+Custom\+Plot}} $\ast$\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parent\+Plot}}) \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Atrybuty chronione}
 \begin{DoxyCompactItemize}
@@ -157,7 +157,7 @@ Layout elements can be placed in layouts (base class \mbox{\hyperlink{class_q_c_
 
 Thus in \mbox{\hyperlink{class_q_custom_plot}{Q\+Custom\+Plot}} one can divide layout elements into two categories\+: The ones that are invisible by themselves, because they don\textquotesingle{}t draw anything. Their only purpose is to manage the position and size of other layout elements. This category of layout elements usually use \mbox{\hyperlink{class_q_c_p_layout}{Q\+C\+P\+Layout}} as base class. Then there is the category of layout elements which actually draw something. For example, \mbox{\hyperlink{class_q_c_p_axis_rect}{Q\+C\+P\+Axis\+Rect}}, \mbox{\hyperlink{class_q_c_p_legend}{Q\+C\+P\+Legend}} and \mbox{\hyperlink{class_q_c_p_text_element}{Q\+C\+P\+Text\+Element}} are of this category. This does not necessarily mean that the latter category can\textquotesingle{}t have child layout elements. \mbox{\hyperlink{class_q_c_p_legend}{Q\+C\+P\+Legend}} for instance, actually derives from \mbox{\hyperlink{class_q_c_p_layout_grid}{Q\+C\+P\+Layout\+Grid}} and the individual legend items are child layout elements in the grid layout. 
 
-Definicja w linii 1203 pliku qcustomplot.\+h.
+Definicja w linii 1203 pliku qcustomplot.\+hh.
 
 
 
@@ -185,7 +185,7 @@ scr\+Outer\+Rect&Minimum/\+Maximum size constraints apply to outer rect, thus in
 \end{DoxyEnumFields}
 
 
-Definicja w linii 1235 pliku qcustomplot.\+h.
+Definicja w linii 1235 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374d}\label{class_q_c_p_layout_element_a0d83360e05735735aaf6d7983c56374d}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!UpdatePhase@{UpdatePhase}}
@@ -209,7 +209,7 @@ up\+Layout&Final phase in which the layout system places the rects of the elemen
 \end{DoxyEnumFields}
 
 
-Definicja w linii 1221 pliku qcustomplot.\+h.
+Definicja w linii 1221 pliku qcustomplot.\+hh.
 
 
 
@@ -253,7 +253,7 @@ Reimplementowana w \mbox{\hyperlink{class_q_c_p_polar_axis_angular_ae29231b68e31
 
 
 
-Definicja w linii 1292 pliku qcustomplot.\+h.
+Definicja w linii 1292 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a2585bc8c5cc70ee712909751a2fc8909}\label{class_q_c_p_layout_element_a2585bc8c5cc70ee712909751a2fc8909}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!autoMargins@{autoMargins}}
@@ -263,7 +263,7 @@ Definicja w linii 1292 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1249 pliku qcustomplot.\+h.
+Definicja w linii 1249 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a005c9f0fe84bc1591a2cf2c46fd477b4}\label{class_q_c_p_layout_element_a005c9f0fe84bc1591a2cf2c46fd477b4}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!calculateAutoMargin@{calculateAutoMargin}}
@@ -295,7 +295,7 @@ Reimplementowana w \mbox{\hyperlink{class_q_c_p_abstract_legend_item_a14ce0b09f5
 
 
 
-Definicja w linii 1293 pliku qcustomplot.\+h.
+Definicja w linii 1293 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a76dec8cb31e498994a944d7647a43309}\label{class_q_c_p_layout_element_a76dec8cb31e498994a944d7647a43309}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!elements@{elements}}
@@ -324,7 +324,7 @@ Definicja w linii 3508 pliku qcustomplot.\+cpp.
 
 Returns the parent layout of this layout element. 
 
-Definicja w linii 1244 pliku qcustomplot.\+h.
+Definicja w linii 1244 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a765f041a73af0c2de41b41a5a03e31a4}\label{class_q_c_p_layout_element_a765f041a73af0c2de41b41a5a03e31a4}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!layoutChanged@{layoutChanged}}
@@ -348,7 +348,7 @@ Definicja w linii 3584 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 1253 pliku qcustomplot.\+h.
+Definicja w linii 1253 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_ac8d1139a81a1625860647e307ae2b733}\label{class_q_c_p_layout_element_ac8d1139a81a1625860647e307ae2b733}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!marginGroups@{marginGroups}}
@@ -358,7 +358,7 @@ Definicja w linii 1253 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1254 pliku qcustomplot.\+h.
+Definicja w linii 1254 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}\label{class_q_c_p_layout_element_af4ac9450aa2d60863bf3a8ea0c940c9d}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!margins@{margins}}
@@ -368,7 +368,7 @@ Definicja w linii 1254 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1247 pliku qcustomplot.\+h.
+Definicja w linii 1247 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_ad96efb977a26e360e8a64a4c1e56456d}\label{class_q_c_p_layout_element_ad96efb977a26e360e8a64a4c1e56456d}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!maximumOuterSizeHint@{maximumOuterSizeHint}}
@@ -398,7 +398,7 @@ Definicja w linii 3496 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 1251 pliku qcustomplot.\+h.
+Definicja w linii 1251 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a5eae30e28f28d73fd1c56409c011393e}\label{class_q_c_p_layout_element_a5eae30e28f28d73fd1c56409c011393e}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!minimumMargins@{minimumMargins}}
@@ -408,7 +408,7 @@ Definicja w linii 1251 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1248 pliku qcustomplot.\+h.
+Definicja w linii 1248 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a46789036c4fcb190fa374f91321d7c09}\label{class_q_c_p_layout_element_a46789036c4fcb190fa374f91321d7c09}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!minimumOuterSizeHint@{minimumOuterSizeHint}}
@@ -438,7 +438,7 @@ Definicja w linii 3477 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 1250 pliku qcustomplot.\+h.
+Definicja w linii 1250 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a2a32a12a6161c9dffbadeb9cc585510c}\label{class_q_c_p_layout_element_a2a32a12a6161c9dffbadeb9cc585510c}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!outerRect@{outerRect}}
@@ -453,7 +453,7 @@ Returns the outer rect of this layout element. The outer rect is the inner rect 
 \end{DoxySeeAlso}
 
 
-Definicja w linii 1246 pliku qcustomplot.\+h.
+Definicja w linii 1246 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_ab4bb5c5a958451f5f153fdce350f13cf}\label{class_q_c_p_layout_element_ab4bb5c5a958451f5f153fdce350f13cf}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!parentPlotInitialized@{parentPlotInitialized}}
@@ -488,7 +488,7 @@ In some cases, the area between outer and inner rect is left blank. In other cas
 \end{DoxySeeAlso}
 
 
-Definicja w linii 1245 pliku qcustomplot.\+h.
+Definicja w linii 1245 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a62d60f1b0ee9bb23e38811d71586d79c}\label{class_q_c_p_layout_element_a62d60f1b0ee9bb23e38811d71586d79c}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!selectTest@{selectTest}}
@@ -682,7 +682,7 @@ Definicja w linii 3373 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 1252 pliku qcustomplot.\+h.
+Definicja w linii 1252 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a929c2ec62e0e0e1d8418eaa802e2af9b}\label{class_q_c_p_layout_element_a929c2ec62e0e0e1d8418eaa802e2af9b}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!update@{update}}
@@ -713,7 +713,7 @@ Definicja w linii 3436 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 1300 pliku qcustomplot.\+h.
+Definicja w linii 1300 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_ad077a686e85ab6fa03dcb2fd37fc499a}\label{class_q_c_p_layout_element_ad077a686e85ab6fa03dcb2fd37fc499a}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!QCPMarginGroup@{QCPMarginGroup}}
@@ -723,7 +723,7 @@ Definicja w linii 1300 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1301 pliku qcustomplot.\+h.
+Definicja w linii 1301 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a1cdf9df76adcfae45261690aa0ca2198}\label{class_q_c_p_layout_element_a1cdf9df76adcfae45261690aa0ca2198}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!QCustomPlot@{QCustomPlot}}
@@ -733,7 +733,7 @@ Definicja w linii 1301 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1299 pliku qcustomplot.\+h.
+Definicja w linii 1299 pliku qcustomplot.\+hh.
 
 
 
@@ -746,7 +746,7 @@ Definicja w linii 1299 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1284 pliku qcustomplot.\+h.
+Definicja w linii 1284 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_aeafbbc1130e02eee663c5326761fc963}\label{class_q_c_p_layout_element_aeafbbc1130e02eee663c5326761fc963}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!mMarginGroups@{mMarginGroups}}
@@ -756,7 +756,7 @@ Definicja w linii 1284 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1285 pliku qcustomplot.\+h.
+Definicja w linii 1285 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_ac2a32b99ee527ca5dfff9da03628fe94}\label{class_q_c_p_layout_element_ac2a32b99ee527ca5dfff9da03628fe94}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!mMargins@{mMargins}}
@@ -766,7 +766,7 @@ Definicja w linii 1285 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1283 pliku qcustomplot.\+h.
+Definicja w linii 1283 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a64a387973fd4addac842028c89088998}\label{class_q_c_p_layout_element_a64a387973fd4addac842028c89088998}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!mMaximumSize@{mMaximumSize}}
@@ -776,7 +776,7 @@ Definicja w linii 1283 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1280 pliku qcustomplot.\+h.
+Definicja w linii 1280 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a5ba71f25d1af4bb092b28df618538e63}\label{class_q_c_p_layout_element_a5ba71f25d1af4bb092b28df618538e63}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!mMinimumMargins@{mMinimumMargins}}
@@ -786,7 +786,7 @@ Definicja w linii 1280 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1283 pliku qcustomplot.\+h.
+Definicja w linii 1283 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_affef747c81632de33f08483b7fd10d01}\label{class_q_c_p_layout_element_affef747c81632de33f08483b7fd10d01}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!mMinimumSize@{mMinimumSize}}
@@ -796,7 +796,7 @@ Definicja w linii 1283 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1280 pliku qcustomplot.\+h.
+Definicja w linii 1280 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_a07bb4973379e75cb0fa5b032c1d24afd}\label{class_q_c_p_layout_element_a07bb4973379e75cb0fa5b032c1d24afd}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!mOuterRect@{mOuterRect}}
@@ -806,7 +806,7 @@ Definicja w linii 1280 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1282 pliku qcustomplot.\+h.
+Definicja w linii 1282 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_ae7c75c25549608bd688bdb65d4c38066}\label{class_q_c_p_layout_element_ae7c75c25549608bd688bdb65d4c38066}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!mParentLayout@{mParentLayout}}
@@ -816,7 +816,7 @@ Definicja w linii 1282 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1279 pliku qcustomplot.\+h.
+Definicja w linii 1279 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}\label{class_q_c_p_layout_element_ad8896f05550389f7b9e92c9e6cdf6e01}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!mRect@{mRect}}
@@ -826,7 +826,7 @@ Definicja w linii 1279 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1282 pliku qcustomplot.\+h.
+Definicja w linii 1282 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_layout_element_acc012635b1ae178ff3c4da8a3af303a2}\label{class_q_c_p_layout_element_acc012635b1ae178ff3c4da8a3af303a2}} 
 \index{QCPLayoutElement@{QCPLayoutElement}!mSizeConstraintRect@{mSizeConstraintRect}}
@@ -836,11 +836,11 @@ Definicja w linii 1282 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 1281 pliku qcustomplot.\+h.
+Definicja w linii 1281 pliku qcustomplot.\+hh.
 
 
 
 Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
 \item 
-/media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/inc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+/media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/inc/\mbox{\hyperlink{qcustomplot_8hh}{qcustomplot.\+hh}}\item 
 /media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/src/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

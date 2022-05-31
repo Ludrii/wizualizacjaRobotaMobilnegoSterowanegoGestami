@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dsnone_4163',['dsNone',['../class_q_c_p_axis_ticker_date_time.html#af2c7c60821a6234ca7a172f42ef7f1d8a02076ab726129e1ab9e0f999d4314309',1,'QCPAxisTickerDateTime']]],
-  ['dsuniformdayinmonth_4164',['dsUniformDayInMonth',['../class_q_c_p_axis_ticker_date_time.html#af2c7c60821a6234ca7a172f42ef7f1d8a7889e1531db9ce1c5d8957b4f0de58ad',1,'QCPAxisTickerDateTime']]],
-  ['dsuniformtimeinday_4165',['dsUniformTimeInDay',['../class_q_c_p_axis_ticker_date_time.html#af2c7c60821a6234ca7a172f42ef7f1d8a39644957223102224f35662da3ab1a14',1,'QCPAxisTickerDateTime']]]
+  ['dsnone_4185',['dsNone',['../class_q_c_p_axis_ticker_date_time.html#af2c7c60821a6234ca7a172f42ef7f1d8a02076ab726129e1ab9e0f999d4314309',1,'QCPAxisTickerDateTime']]],
+  ['dsuniformdayinmonth_4186',['dsUniformDayInMonth',['../class_q_c_p_axis_ticker_date_time.html#af2c7c60821a6234ca7a172f42ef7f1d8a7889e1531db9ce1c5d8957b4f0de58ad',1,'QCPAxisTickerDateTime']]],
+  ['dsuniformtimeinday_4187',['dsUniformTimeInDay',['../class_q_c_p_axis_ticker_date_time.html#af2c7c60821a6234ca7a172f42ef7f1d8a39644957223102224f35662da3ab1a14',1,'QCPAxisTickerDateTime']]]
 ];

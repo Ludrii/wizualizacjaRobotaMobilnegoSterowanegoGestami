@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_q_c_p_data_range.html',''); init
 <p>Describes a data range given by begin and end index.  
  <a href="class_q_c_p_data_range.html#details">Więcej...</a></p>
 
-<p><code>#include &lt;<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
@@ -149,7 +149,7 @@ Funkcje powiązane</h2></td></tr>
 <p>QCustomPlot's data selection mechanism is based on <a class="el" href="class_q_c_p_data_selection.html">QCPDataSelection</a> and <a class="el" href="class_q_c_p_data_range.html" title="Describes a data range given by begin and end index.">QCPDataRange</a>.</p>
 <dl class="section note"><dt>Nota</dt><dd>Do not confuse <a class="el" href="class_q_c_p_data_range.html">QCPDataRange</a> with <a class="el" href="class_q_c_p_range.html">QCPRange</a>. A <a class="el" href="class_q_c_p_range.html">QCPRange</a> describes an interval in floating point plot coordinates, e.g. the current axis range. </dd></dl>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00914">914</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00914">914</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a49e72fd9bace1da9d875136dcc04c986"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49e72fd9bace1da9d875136dcc04c986">&#9670;&nbsp;</a></span>QCPDataRange() <span class="overload">[1/2]</span></h2>
@@ -239,7 +239,7 @@ Funkcje powiązane</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a data range where <em>changeBegin</em> and <em>changeEnd</em> were added to the begin and end indices, respectively. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00939">939</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00939">939</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ Funkcje powiązane</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00924">924</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00924">924</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -337,7 +337,7 @@ Funkcje powiązane</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00925">925</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00925">925</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -432,7 +432,7 @@ Funkcje powiązane</h2></td></tr>
 <p>Returns whether this range is empty, i.e. whether its begin index equals its end index.</p>
 <dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="class_q_c_p_data_range.html#ac6af055e509d1b691c244954ff1c5887">size</a>, <a class="el" href="class_q_c_p_data_range.html#a1e7836058f755c6ab9f11996477b7150">length</a> </dd></dl>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00935">935</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00935">935</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -461,7 +461,7 @@ Funkcje powiązane</h2></td></tr>
 <p>Returns whether this range is valid. A valid range has a begin index greater or equal to 0, and an end index greater or equal to the begin index.</p>
 <dl class="section note"><dt>Nota</dt><dd>Invalid ranges should be avoided and are never the result of any of <a class="el" href="class_q_custom_plot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ...">QCustomPlot</a>'s methods (unless they are themselves fed with invalid ranges). Do not pass invalid ranges to <a class="el" href="class_q_custom_plot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ...">QCustomPlot</a>'s methods. The invalid range is not inherently prevented in <a class="el" href="class_q_c_p_data_range.html" title="Describes a data range given by begin and end index.">QCPDataRange</a>, to allow temporary invalid begin/end values while manipulating the range. An invalid range is not necessarily empty (<a class="el" href="class_q_c_p_data_range.html#ac32e53fc05d6cd2eac96b96a7265d3b8">isEmpty</a>), since its <a class="el" href="class_q_c_p_data_range.html#a1e7836058f755c6ab9f11996477b7150">length</a> can be negative and thus non-zero. </dd></dl>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00934">934</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00934">934</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ Funkcje powiązane</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the number of data points described by this data range. Equivalent to <a class="el" href="class_q_c_p_data_range.html#ac6af055e509d1b691c244954ff1c5887">size</a>. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00927">927</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00927">927</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -517,7 +517,7 @@ Funkcje powiązane</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00921">921</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00921">921</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -545,7 +545,7 @@ Funkcje powiązane</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00920">920</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00920">920</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -576,7 +576,7 @@ Funkcje powiązane</h2></td></tr>
 <p>No checks or corrections are made to ensure the resulting range is valid (<a class="el" href="class_q_c_p_data_range.html#aae53a37472212dca0a7939963e20dba0">isValid</a>).</p>
 <dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="class_q_c_p_data_range.html#a277f1a9eafe70b9184d9c00b641ae5de">setEnd</a> </dd></dl>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00930">930</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00930">930</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -607,7 +607,7 @@ Funkcje powiązane</h2></td></tr>
 <p>No checks or corrections are made to ensure the resulting range is valid (<a class="el" href="class_q_c_p_data_range.html#aae53a37472212dca0a7939963e20dba0">isValid</a>).</p>
 <dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="class_q_c_p_data_range.html#a54ff59048e01e46ac4aefafc844626c6">setBegin</a> </dd></dl>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00931">931</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00931">931</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -636,7 +636,7 @@ Funkcje powiązane</h2></td></tr>
 <p>Returns the number of data points described by this data range. This is equal to the end index minus the begin index.</p>
 <dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="class_q_c_p_data_range.html#a1e7836058f755c6ab9f11996477b7150">length</a> </dd></dl>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l00926">926</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l00926">926</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -676,12 +676,12 @@ Funkcje powiązane</h2></td></tr>
 </div><div class="memdoc">
 <p>Prints <em>dataRange</em> in a human readable format to the qDebug output. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01087">1087</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01087">1087</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a></li>
+<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a></li>
 <li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/src/<a class="el" href="qcustomplot_8cpp_source.html">qcustomplot.cpp</a></li>
 </ul>
 </div><!-- contents -->

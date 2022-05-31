@@ -7,7 +7,7 @@ A plottable representing a financial stock chart.
 
 
 
-{\ttfamily \#include $<$qcustomplot.\+h$>$}
+{\ttfamily \#include $<$qcustomplot.\+hh$>$}
 
 
 
@@ -44,9 +44,9 @@ enum \mbox{\hyperlink{class_q_c_p_financial_a0f800e21ee98d646dfc6f8f89d10ebfb}{C
 \item 
 \mbox{\hyperlink{class_q_c_p_financial_a4702d5248feeb9d1ec6e3ce725b10b32}{Q\+C\+P\+Financial}} (\mbox{\hyperlink{class_q_c_p_axis}{Q\+C\+P\+Axis}} $\ast$\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{key\+Axis}}, \mbox{\hyperlink{class_q_c_p_axis}{Q\+C\+P\+Axis}} $\ast$\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{value\+Axis}})
 \item 
-virtual \mbox{\hyperlink{class_q_c_p_financial_ae7b6e68c951277b85590d1fbdb9268b3}{$\sim$\+Q\+C\+P\+Financial}} () \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual \mbox{\hyperlink{class_q_c_p_financial_ae7b6e68c951277b85590d1fbdb9268b3}{$\sim$\+Q\+C\+P\+Financial}} () \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
-Q\+Shared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8h_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} $>$ \mbox{\hyperlink{class_q_c_p_financial_aec3f666271cf48bd7b87d84fe3f8c074}{data}} () const
+Q\+Shared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8hh_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} $>$ \mbox{\hyperlink{class_q_c_p_financial_aec3f666271cf48bd7b87d84fe3f8c074}{data}} () const
 \item 
 \mbox{\hyperlink{class_q_c_p_financial_a0f800e21ee98d646dfc6f8f89d10ebfb}{Chart\+Style}} \mbox{\hyperlink{class_q_c_p_financial_a5243371c1fde30fdae00555d7760ec2d}{chart\+Style}} () const
 \item 
@@ -64,7 +64,7 @@ Q\+Pen \mbox{\hyperlink{class_q_c_p_financial_ae803fe25fdd6f0acacde4539590795ed}
 \item 
 Q\+Pen \mbox{\hyperlink{class_q_c_p_financial_a25d9a8f256e5ddcba56b6e2e7e968653}{pen\+Negative}} () const
 \item 
-void \mbox{\hyperlink{class_q_c_p_financial_a72089e75b8a50d18097526c3c79fdb85}{set\+Data}} (Q\+Shared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8h_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} $>$ \mbox{\hyperlink{class_q_c_p_financial_aec3f666271cf48bd7b87d84fe3f8c074}{data}})
+void \mbox{\hyperlink{class_q_c_p_financial_a72089e75b8a50d18097526c3c79fdb85}{set\+Data}} (Q\+Shared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8hh_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} $>$ \mbox{\hyperlink{class_q_c_p_financial_aec3f666271cf48bd7b87d84fe3f8c074}{data}})
 \item 
 void \mbox{\hyperlink{class_q_c_p_financial_a12992e669ed19d7bb48dbe601570cc05}{set\+Data}} (const Q\+Vector$<$ double $>$ \&keys, const Q\+Vector$<$ double $>$ \&open, const Q\+Vector$<$ double $>$ \&high, const Q\+Vector$<$ double $>$ \&low, const Q\+Vector$<$ double $>$ \&close, bool already\+Sorted=false)
 \item 
@@ -88,25 +88,25 @@ void \mbox{\hyperlink{class_q_c_p_financial_a372ac031e44a7a6c912d203556af96f7}{a
 \item 
 void \mbox{\hyperlink{class_q_c_p_financial_a688bbd052e00a02954ddb0068b378170}{add\+Data}} (double key, double open, double high, double low, double close)
 \item 
-virtual \mbox{\hyperlink{class_q_c_p_data_selection}{Q\+C\+P\+Data\+Selection}} \mbox{\hyperlink{class_q_c_p_financial_a3c5beb1ab028a1dba845fc9dcffc7cf4}{select\+Test\+Rect}} (const Q\+RectF \&rect, bool only\+Selectable) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual \mbox{\hyperlink{class_q_c_p_data_selection}{Q\+C\+P\+Data\+Selection}} \mbox{\hyperlink{class_q_c_p_financial_a3c5beb1ab028a1dba845fc9dcffc7cf4}{select\+Test\+Rect}} (const Q\+RectF \&rect, bool only\+Selectable) const \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
-virtual double \mbox{\hyperlink{class_q_c_p_financial_a8114a6d3ab6bea0a93d4b85401f29b52}{select\+Test}} (const Q\+PointF \&pos, bool only\+Selectable, Q\+Variant $\ast$details=nullptr) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual double \mbox{\hyperlink{class_q_c_p_financial_a8114a6d3ab6bea0a93d4b85401f29b52}{select\+Test}} (const Q\+PointF \&pos, bool only\+Selectable, Q\+Variant $\ast$details=nullptr) const \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
-virtual \mbox{\hyperlink{class_q_c_p_range}{Q\+C\+P\+Range}} \mbox{\hyperlink{class_q_c_p_financial_a15d68fb257113fef697356d65fa76559}{get\+Key\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{Q\+C\+P\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{Q\+C\+P\+::sd\+Both}}) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual \mbox{\hyperlink{class_q_c_p_range}{Q\+C\+P\+Range}} \mbox{\hyperlink{class_q_c_p_financial_a15d68fb257113fef697356d65fa76559}{get\+Key\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{Q\+C\+P\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{Q\+C\+P\+::sd\+Both}}) const \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
-virtual \mbox{\hyperlink{class_q_c_p_range}{Q\+C\+P\+Range}} \mbox{\hyperlink{class_q_c_p_financial_a82d862aa134d78853f98f8c57a03415b}{get\+Value\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{Q\+C\+P\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{Q\+C\+P\+::sd\+Both}}, const \mbox{\hyperlink{class_q_c_p_range}{Q\+C\+P\+Range}} \&in\+Key\+Range=\mbox{\hyperlink{class_q_c_p_range}{Q\+C\+P\+Range}}()) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual \mbox{\hyperlink{class_q_c_p_range}{Q\+C\+P\+Range}} \mbox{\hyperlink{class_q_c_p_financial_a82d862aa134d78853f98f8c57a03415b}{get\+Value\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{Q\+C\+P\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{Q\+C\+P\+::sd\+Both}}, const \mbox{\hyperlink{class_q_c_p_range}{Q\+C\+P\+Range}} \&in\+Key\+Range=\mbox{\hyperlink{class_q_c_p_range}{Q\+C\+P\+Range}}()) const \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Statyczne metody publiczne}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{qcustomplot_8h_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} \mbox{\hyperlink{class_q_c_p_financial_a9a058c035040d3939b8884f4aaccb1a7}{time\+Series\+To\+Ohlc}} (const Q\+Vector$<$ double $>$ \&time, const Q\+Vector$<$ double $>$ \&value, double time\+Bin\+Size, double time\+Bin\+Offset=0)
+static \mbox{\hyperlink{qcustomplot_8hh_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} \mbox{\hyperlink{class_q_c_p_financial_a9a058c035040d3939b8884f4aaccb1a7}{time\+Series\+To\+Ohlc}} (const Q\+Vector$<$ double $>$ \&time, const Q\+Vector$<$ double $>$ \&value, double time\+Bin\+Size, double time\+Bin\+Offset=0)
 \end{DoxyCompactItemize}
 \doxysubsection*{Metody chronione}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{class_q_c_p_financial_a4d62b7a618d609321adb5f5f1e31f446}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{Q\+C\+P\+Painter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual void \mbox{\hyperlink{class_q_c_p_financial_a4d62b7a618d609321adb5f5f1e31f446}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{Q\+C\+P\+Painter}} $\ast$painter) \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
-virtual void \mbox{\hyperlink{class_q_c_p_financial_a53f6ef2cddb650993f04c66e39a04942}{draw\+Legend\+Icon}} (\mbox{\hyperlink{class_q_c_p_painter}{Q\+C\+P\+Painter}} $\ast$painter, const Q\+RectF \&rect) const \mbox{\hyperlink{qcustomplot_8h_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+virtual void \mbox{\hyperlink{class_q_c_p_financial_a53f6ef2cddb650993f04c66e39a04942}{draw\+Legend\+Icon}} (\mbox{\hyperlink{class_q_c_p_painter}{Q\+C\+P\+Painter}} $\ast$painter, const Q\+RectF \&rect) const \mbox{\hyperlink{qcustomplot_8hh_a42cc5eaeb25b85f8b52d2a4b94c56f55}{Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
 \item 
 void \mbox{\hyperlink{class_q_c_p_financial_a2c77aab636f6bce6e0407b3f94e90d08}{draw\+Ohlc\+Plot}} (\mbox{\hyperlink{class_q_c_p_painter}{Q\+C\+P\+Painter}} $\ast$painter, const \mbox{\hyperlink{class_q_c_p_data_container_ae40a91f5cb0bcac61d727427449b7d15}{Q\+C\+P\+Financial\+Data\+Container\+::const\+\_\+iterator}} \&begin, const \mbox{\hyperlink{class_q_c_p_data_container_ae40a91f5cb0bcac61d727427449b7d15}{Q\+C\+P\+Financial\+Data\+Container\+::const\+\_\+iterator}} \&end, bool is\+Selected)
 \item 
@@ -178,7 +178,7 @@ which registers it with the \mbox{\hyperlink{class_q_custom_plot}{Q\+Custom\+Plo
 \end{DoxyCodeInclude}
 Here we have used the static helper method \mbox{\hyperlink{class_q_c_p_financial_a9a058c035040d3939b8884f4aaccb1a7}{time\+Series\+To\+Ohlc}}, to turn a time-\/price data series into a 24-\/hour binned open-\/high-\/low-\/close data series as \mbox{\hyperlink{class_q_c_p_financial}{Q\+C\+P\+Financial}} uses. 
 
-Definicja w linii 6152 pliku qcustomplot.\+h.
+Definicja w linii 6152 pliku qcustomplot.\+hh.
 
 
 
@@ -206,7 +206,7 @@ cs\+Candlestick&Candlestick representation. \\
 \end{DoxyEnumFields}
 
 
-Definicja w linii 6183 pliku qcustomplot.\+h.
+Definicja w linii 6183 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_aef1761dda71a53dc5269685e9e492626}\label{class_q_c_p_financial_aef1761dda71a53dc5269685e9e492626}} 
 \index{QCPFinancial@{QCPFinancial}!WidthType@{WidthType}}
@@ -235,7 +235,7 @@ wt\+Plot\+Coords&width is in key coordinates and thus scales with the key axis r
 \end{DoxyEnumFields}
 
 
-Definicja w linii 6172 pliku qcustomplot.\+h.
+Definicja w linii 6172 pliku qcustomplot.\+hh.
 
 
 
@@ -313,7 +313,7 @@ Definicja w linii 27267 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 6198 pliku qcustomplot.\+h.
+Definicja w linii 6198 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_ae922e75f3d5b8854369ac0bf1ebfb053}\label{class_q_c_p_financial_ae922e75f3d5b8854369ac0bf1ebfb053}} 
 \index{QCPFinancial@{QCPFinancial}!brushPositive@{brushPositive}}
@@ -323,7 +323,7 @@ Definicja w linii 6198 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6197 pliku qcustomplot.\+h.
+Definicja w linii 6197 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_a9783e91a33fd08a402b1a3821d43e471}\label{class_q_c_p_financial_a9783e91a33fd08a402b1a3821d43e471}} 
 \index{QCPFinancial@{QCPFinancial}!candlestickSelectTest@{candlestickSelectTest}}
@@ -343,17 +343,17 @@ Definicja w linii 27735 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 6193 pliku qcustomplot.\+h.
+Definicja w linii 6193 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_aec3f666271cf48bd7b87d84fe3f8c074}\label{class_q_c_p_financial_aec3f666271cf48bd7b87d84fe3f8c074}} 
 \index{QCPFinancial@{QCPFinancial}!data@{data}}
 \index{data@{data}!QCPFinancial@{QCPFinancial}}
 \doxysubsubsection{\texorpdfstring{data()}{data()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{qcustomplot_8h_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} $\ast$ Q\+C\+P\+Financial\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{qcustomplot_8hh_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} $\ast$ Q\+C\+P\+Financial\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Returns a pointer to the internal data storage of type \mbox{\hyperlink{qcustomplot_8h_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}}. You may use it to directly manipulate the data, which may be more convenient and faster than using the regular \mbox{\hyperlink{class_q_c_p_financial_a72089e75b8a50d18097526c3c79fdb85}{set\+Data}} or \mbox{\hyperlink{class_q_c_p_financial_a372ac031e44a7a6c912d203556af96f7}{add\+Data}} methods, in certain situations. 
+Returns a pointer to the internal data storage of type \mbox{\hyperlink{qcustomplot_8hh_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}}. You may use it to directly manipulate the data, which may be more convenient and faster than using the regular \mbox{\hyperlink{class_q_c_p_financial_a72089e75b8a50d18097526c3c79fdb85}{set\+Data}} or \mbox{\hyperlink{class_q_c_p_financial_a372ac031e44a7a6c912d203556af96f7}{add\+Data}} methods, in certain situations. 
 
-Definicja w linii 6192 pliku qcustomplot.\+h.
+Definicja w linii 6192 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_a4d62b7a618d609321adb5f5f1e31f446}\label{class_q_c_p_financial_a4d62b7a618d609321adb5f5f1e31f446}} 
 \index{QCPFinancial@{QCPFinancial}!draw@{draw}}
@@ -485,7 +485,7 @@ Definicja w linii 27688 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 6200 pliku qcustomplot.\+h.
+Definicja w linii 6200 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_ae803fe25fdd6f0acacde4539590795ed}\label{class_q_c_p_financial_ae803fe25fdd6f0acacde4539590795ed}} 
 \index{QCPFinancial@{QCPFinancial}!penPositive@{penPositive}}
@@ -495,7 +495,7 @@ Definicja w linii 6200 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6199 pliku qcustomplot.\+h.
+Definicja w linii 6199 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_afbe9e8cb0de3e9e789a9668b29cad098}\label{class_q_c_p_financial_afbe9e8cb0de3e9e789a9668b29cad098}} 
 \index{QCPFinancial@{QCPFinancial}!selectionHitBox@{selectionHitBox}}
@@ -617,7 +617,7 @@ Definicja w linii 27114 pliku qcustomplot.\+cpp.
 \index{QCPFinancial@{QCPFinancial}!setData@{setData}}
 \index{setData@{setData}!QCPFinancial@{QCPFinancial}}
 \doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Q\+C\+P\+Financial\+::set\+Data (\begin{DoxyParamCaption}\item[{Q\+Shared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8h_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} $>$}]{data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Q\+C\+P\+Financial\+::set\+Data (\begin{DoxyParamCaption}\item[{Q\+Shared\+Pointer$<$ \mbox{\hyperlink{qcustomplot_8hh_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} $>$}]{data }\end{DoxyParamCaption})}
 
 To jest metoda przeciążona, udostępniona dla wygody. Różni się od powyższej metody tylko zestawem akceptowanych argumentów.
 
@@ -720,7 +720,7 @@ Definicja w linii 27146 pliku qcustomplot.\+cpp.
 \index{QCPFinancial@{QCPFinancial}!timeSeriesToOhlc@{timeSeriesToOhlc}}
 \index{timeSeriesToOhlc@{timeSeriesToOhlc}!QCPFinancial@{QCPFinancial}}
 \doxysubsubsection{\texorpdfstring{timeSeriesToOhlc()}{timeSeriesToOhlc()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{qcustomplot_8h_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} Q\+C\+P\+Financial\+::time\+Series\+To\+Ohlc (\begin{DoxyParamCaption}\item[{const Q\+Vector$<$ double $>$ \&}]{time,  }\item[{const Q\+Vector$<$ double $>$ \&}]{value,  }\item[{double}]{time\+Bin\+Size,  }\item[{double}]{time\+Bin\+Offset = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{qcustomplot_8hh_ae36e482e04f19a54782f01ab38c354a6}{Q\+C\+P\+Financial\+Data\+Container}} Q\+C\+P\+Financial\+::time\+Series\+To\+Ohlc (\begin{DoxyParamCaption}\item[{const Q\+Vector$<$ double $>$ \&}]{time,  }\item[{const Q\+Vector$<$ double $>$ \&}]{value,  }\item[{double}]{time\+Bin\+Size,  }\item[{double}]{time\+Bin\+Offset = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 A convenience function that converts time series data ({\itshape value} against {\itshape time}) to O\+H\+LC binned data points. The return value can then be passed on to \mbox{\hyperlink{class_q_c_p_data_container_ae7042bd534fc3ce7befa2ce3f790b5bf}{Q\+C\+P\+Financial\+Data\+Container\+::set}}(const Q\+C\+P\+Financial\+Data\+Container\&).
 
@@ -738,7 +738,7 @@ Definicja w linii 27372 pliku qcustomplot.\+cpp.
 
 
 
-Definicja w linii 6196 pliku qcustomplot.\+h.
+Definicja w linii 6196 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_a12548f13658eda5833204ef60f524870}\label{class_q_c_p_financial_a12548f13658eda5833204ef60f524870}} 
 \index{QCPFinancial@{QCPFinancial}!width@{width}}
@@ -748,7 +748,7 @@ Definicja w linii 6196 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6194 pliku qcustomplot.\+h.
+Definicja w linii 6194 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_a7afa595e63800c072701e6e57d4ca9e2}\label{class_q_c_p_financial_a7afa595e63800c072701e6e57d4ca9e2}} 
 \index{QCPFinancial@{QCPFinancial}!widthType@{widthType}}
@@ -758,7 +758,7 @@ Definicja w linii 6194 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6195 pliku qcustomplot.\+h.
+Definicja w linii 6195 pliku qcustomplot.\+hh.
 
 
 
@@ -771,7 +771,7 @@ Definicja w linii 6195 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6250 pliku qcustomplot.\+h.
+Definicja w linii 6250 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_a1cdf9df76adcfae45261690aa0ca2198}\label{class_q_c_p_financial_a1cdf9df76adcfae45261690aa0ca2198}} 
 \index{QCPFinancial@{QCPFinancial}!QCustomPlot@{QCustomPlot}}
@@ -781,7 +781,7 @@ Definicja w linii 6250 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6249 pliku qcustomplot.\+h.
+Definicja w linii 6249 pliku qcustomplot.\+hh.
 
 
 
@@ -794,7 +794,7 @@ Definicja w linii 6249 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6233 pliku qcustomplot.\+h.
+Definicja w linii 6233 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_ab7e6eed16260a2f88ca6bd940dffea79}\label{class_q_c_p_financial_ab7e6eed16260a2f88ca6bd940dffea79}} 
 \index{QCPFinancial@{QCPFinancial}!mBrushPositive@{mBrushPositive}}
@@ -804,7 +804,7 @@ Definicja w linii 6233 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6233 pliku qcustomplot.\+h.
+Definicja w linii 6233 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_ab65c2ce8d6354451870bb44b894c1e92}\label{class_q_c_p_financial_ab65c2ce8d6354451870bb44b894c1e92}} 
 \index{QCPFinancial@{QCPFinancial}!mChartStyle@{mChartStyle}}
@@ -814,7 +814,7 @@ Definicja w linii 6233 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6229 pliku qcustomplot.\+h.
+Definicja w linii 6229 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_a263fbfefde2cc19c8d4024a8319c2bbb}\label{class_q_c_p_financial_a263fbfefde2cc19c8d4024a8319c2bbb}} 
 \index{QCPFinancial@{QCPFinancial}!mPenNegative@{mPenNegative}}
@@ -824,7 +824,7 @@ Definicja w linii 6229 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6234 pliku qcustomplot.\+h.
+Definicja w linii 6234 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_aa6599186f417ba615caebb3f6c762bd8}\label{class_q_c_p_financial_aa6599186f417ba615caebb3f6c762bd8}} 
 \index{QCPFinancial@{QCPFinancial}!mPenPositive@{mPenPositive}}
@@ -834,7 +834,7 @@ Definicja w linii 6234 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6234 pliku qcustomplot.\+h.
+Definicja w linii 6234 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_a6afe919190b884d9bac026cefcc8c0a8}\label{class_q_c_p_financial_a6afe919190b884d9bac026cefcc8c0a8}} 
 \index{QCPFinancial@{QCPFinancial}!mTwoColored@{mTwoColored}}
@@ -844,7 +844,7 @@ Definicja w linii 6234 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6232 pliku qcustomplot.\+h.
+Definicja w linii 6232 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_af630e5eb8485146b9c777e63fd1cf993}\label{class_q_c_p_financial_af630e5eb8485146b9c777e63fd1cf993}} 
 \index{QCPFinancial@{QCPFinancial}!mWidth@{mWidth}}
@@ -854,7 +854,7 @@ Definicja w linii 6232 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6230 pliku qcustomplot.\+h.
+Definicja w linii 6230 pliku qcustomplot.\+hh.
 
 \mbox{\Hypertarget{class_q_c_p_financial_a7926204997e04c9de9dbe1f092df125a}\label{class_q_c_p_financial_a7926204997e04c9de9dbe1f092df125a}} 
 \index{QCPFinancial@{QCPFinancial}!mWidthType@{mWidthType}}
@@ -864,11 +864,11 @@ Definicja w linii 6230 pliku qcustomplot.\+h.
 
 
 
-Definicja w linii 6231 pliku qcustomplot.\+h.
+Definicja w linii 6231 pliku qcustomplot.\+hh.
 
 
 
 Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
 \item 
-/media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/inc/\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+/media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/inc/\mbox{\hyperlink{qcustomplot_8hh}{qcustomplot.\+hh}}\item 
 /media/sf\+\_\+\+D\+\_\+\+D\+R\+I\+V\+E/\+Studia/6semestr/wds/wizualizacja\+Robota\+Mobilnego\+Sterowanego\+Gestami/src/\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

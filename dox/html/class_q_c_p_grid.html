@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('class_q_c_p_grid.html',''); initResiza
 <p>Responsible for drawing the grid of a <a class="el" href="class_q_c_p_axis.html" title="Manages a single axis inside a QCustomPlot.">QCPAxis</a>.  
  <a href="class_q_c_p_grid.html#details">Więcej...</a></p>
 
-<p><code>#include &lt;<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla QCPGrid</div>
 <div class="dyncontent">
@@ -189,9 +189,9 @@ Metody publiczne</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Metody chronione</h2></td></tr>
-<tr class="memitem:a64fa48e16b4629f5df2a5029ab6e761c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_grid.html#a64fa48e16b4629f5df2a5029ab6e761c">applyDefaultAntialiasingHint</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) const <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:a64fa48e16b4629f5df2a5029ab6e761c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_grid.html#a64fa48e16b4629f5df2a5029ab6e761c">applyDefaultAntialiasingHint</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) const <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:a64fa48e16b4629f5df2a5029ab6e761c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad9a312d998e2d170956334d4cb80be2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_grid.html#aad9a312d998e2d170956334d4cb80be2">draw</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:aad9a312d998e2d170956334d4cb80be2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_grid.html#aad9a312d998e2d170956334d4cb80be2">draw</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:aad9a312d998e2d170956334d4cb80be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee4e95d54acabbe298d6dda0dd86c0a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_grid.html#aee4e95d54acabbe298d6dda0dd86c0a4">drawGridLines</a> (<a class="el" href="class_q_c_p_painter.html">QCPPainter</a> *painter) const</td></tr>
 <tr class="separator:aee4e95d54acabbe298d6dda0dd86c0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,7 +271,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 <p>This class is tightly bound to <a class="el" href="class_q_c_p_axis.html" title="Manages a single axis inside a QCustomPlot.">QCPAxis</a>. Every axis owns a grid instance and uses it to draw the grid lines, sub grid lines and zero-line. You can interact with the grid of an axis via <a class="el" href="class_q_c_p_axis.html#a63f1dd2df663680d2a8d06c19592dd63">QCPAxis::grid</a>. Normally, you don't need to create an instance of <a class="el" href="class_q_c_p_grid.html" title="Responsible for drawing the grid of a QCPAxis.">QCPGrid</a> yourself.</p>
 <p>The axis and grid drawing was split into two classes to allow them to be placed on different layers (both <a class="el" href="class_q_c_p_axis.html" title="Manages a single axis inside a QCustomPlot.">QCPAxis</a> and <a class="el" href="class_q_c_p_grid.html" title="Responsible for drawing the grid of a QCPAxis.">QCPGrid</a> inherit from <a class="el" href="class_q_c_p_layerable.html" title="Base class for all drawable objects.">QCPLayerable</a>). Thus it is possible to have the grid in the background and the axes in the foreground, and any plottables/items in between. This described situation is the default setup, see the <a class="el" href="class_q_c_p_layer.html" title="A layer that may contain objects, to control the rendering order.">QCPLayer</a> documentation. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02034">2034</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02034">2034</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="acd1cdd2909625388a13048b698494a17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd1cdd2909625388a13048b698494a17">&#9670;&nbsp;</a></span>QCPGrid()</h2>
@@ -327,7 +327,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02050">2050</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02050">2050</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -354,7 +354,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02051">2051</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02051">2051</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02052">2052</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02052">2052</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02053">2053</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02053">2053</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -679,7 +679,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02049">2049</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02049">2049</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -706,7 +706,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02054">2054</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02054">2054</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -731,7 +731,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02081">2081</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02081">2081</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -756,7 +756,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02067">2067</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02067">2067</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -780,7 +780,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02067">2067</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02067">2067</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -804,7 +804,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02071">2071</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02071">2071</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -828,7 +828,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02068">2068</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02068">2068</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -852,7 +852,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02068">2068</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02068">2068</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -876,7 +876,7 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02066">2066</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02066">2066</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -900,12 +900,12 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l02068">2068</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l02068">2068</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a></li>
+<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a></li>
 <li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/src/<a class="el" href="qcustomplot_8cpp_source.html">qcustomplot.cpp</a></li>
 </ul>
 </div><!-- contents -->

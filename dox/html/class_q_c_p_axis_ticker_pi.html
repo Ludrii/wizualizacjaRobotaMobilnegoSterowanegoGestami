@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('class_q_c_p_axis_ticker_pi.html',''); 
 <p>Specialized axis ticker to display ticks in units of an arbitrary constant, for example pi.  
  <a href="class_q_c_p_axis_ticker_pi.html#details">Więcej...</a></p>
 
-<p><code>#include &lt;<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla QCPAxisTickerPi</div>
 <div class="dyncontent">
@@ -170,11 +170,11 @@ Metody publiczne</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Metody chronione</h2></td></tr>
-<tr class="memitem:a55301f0072983bd2d7c131a24e1779e7"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_pi.html#a55301f0072983bd2d7c131a24e1779e7">getTickStep</a> (const <a class="el" href="class_q_c_p_range.html">QCPRange</a> &amp;range) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:a55301f0072983bd2d7c131a24e1779e7"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_pi.html#a55301f0072983bd2d7c131a24e1779e7">getTickStep</a> (const <a class="el" href="class_q_c_p_range.html">QCPRange</a> &amp;range) <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:a55301f0072983bd2d7c131a24e1779e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c90f870da97c8670cfae4d04ff3ac7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_pi.html#a56c90f870da97c8670cfae4d04ff3ac7">getSubTickCount</a> (double tickStep) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:a56c90f870da97c8670cfae4d04ff3ac7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_pi.html#a56c90f870da97c8670cfae4d04ff3ac7">getSubTickCount</a> (double tickStep) <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:a56c90f870da97c8670cfae4d04ff3ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a087d931d4344b8a91d5cecceff7109"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_pi.html#a9a087d931d4344b8a91d5cecceff7109">getTickLabel</a> (double tick, const QLocale &amp;locale, QChar formatChar, int precision) <a class="el" href="qcustomplot_8h.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
+<tr class="memitem:a9a087d931d4344b8a91d5cecceff7109"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_pi.html#a9a087d931d4344b8a91d5cecceff7109">getTickLabel</a> (double tick, const QLocale &amp;locale, QChar formatChar, int precision) <a class="el" href="qcustomplot_8hh.html#a42cc5eaeb25b85f8b52d2a4b94c56f55">Q_DECL_OVERRIDE</a></td></tr>
 <tr class="separator:a9a087d931d4344b8a91d5cecceff7109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e30609aed5025d331cb61671f0115d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_q_c_p_axis_ticker_pi.html#a0e30609aed5025d331cb61671f0115d0">simplifyFraction</a> (int &amp;numerator, int &amp;denominator) const</td></tr>
 <tr class="separator:a0e30609aed5025d331cb61671f0115d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,7 +230,7 @@ Atrybuty chronione</h2></td></tr>
 <p>This <a class="el" href="class_q_c_p_axis_ticker.html" title="The base class tick generator used by QCPAxis to create tick positions and tick labels.">QCPAxisTicker</a> subclass generates ticks that are expressed with respect to a given symbolic constant with a numerical value specified with <a class="el" href="class_q_c_p_axis_ticker_pi.html#a36ce0651d2ec92edd36feac1619c2468">setPiValue</a> and an appearance in the tick labels specified with <a class="el" href="class_q_c_p_axis_ticker_pi.html#acfdcd4758a393bde4be12a50fb2017b5">setPiSymbol</a>.</p>
 <p>Ticks may be generated at fractions of the symbolic constant. How these fractions appear in the tick label can be configured with <a class="el" href="class_q_c_p_axis_ticker_pi.html#a760c8af6ca68178e607556c4e5049d71">setFractionStyle</a>.</p>
 <p>The ticker can be created and assigned to an axis like this: </p><div class="fragment"></div><!-- fragment -->
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01943">1943</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01943">1943</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja składowych wyliczanych</h2>
 <a id="a262f1534c7f0c79a7d5237f5d1e2c54c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a262f1534c7f0c79a7d5237f5d1e2c54c">&#9670;&nbsp;</a></span>FractionStyle</h2>
@@ -254,7 +254,7 @@ Atrybuty chronione</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01952">1952</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01952">1952</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -303,7 +303,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01964">1964</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01964">1964</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -480,7 +480,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01963">1963</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01963">1963</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -507,7 +507,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01961">1961</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01961">1961</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01962">1962</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01962">1962</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -779,7 +779,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01977">1977</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01977">1977</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -803,7 +803,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01976">1976</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01976">1976</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -827,7 +827,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01974">1974</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01974">1974</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -851,7 +851,7 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01980">1980</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01980">1980</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
@@ -875,12 +875,12 @@ Atrybuty chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8h_source.html#l01975">1975</a> pliku <a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="qcustomplot_8hh_source.html#l01975">1975</a> pliku <a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a>.</p>
 
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8h_source.html">qcustomplot.h</a></li>
+<li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/inc/<a class="el" href="qcustomplot_8hh_source.html">qcustomplot.hh</a></li>
 <li>/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/src/<a class="el" href="qcustomplot_8cpp_source.html">qcustomplot.cpp</a></li>
 </ul>
 </div><!-- contents -->

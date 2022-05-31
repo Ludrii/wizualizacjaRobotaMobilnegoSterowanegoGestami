@@ -30,7 +30,7 @@ HEADERS += \
     figurewidget.hh \
     inc/mainwindow.hh \
     inc/odbior.hh \
-    inc/qcustomplot.h \
+    inc/qcustomplot.hh \
     inc/secondwindow.hh
 
 FORMS += \
@@ -65,3 +65,6 @@ DISTFILES += \
     img/led/led_yellow.png \
     img/misc/exit.png \
     img/misc/settings.png
+
+RESOURCES += \
+    res.qrc

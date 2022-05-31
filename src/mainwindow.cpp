@@ -1,7 +1,7 @@
 #include "inc/mainwindow.hh"
 #include "ui_mainwindow.h"
 #include "inc/secondwindow.hh"
-#include "inc/qcustomplot.h"
+#include "inc/qcustomplot.hh"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -87,7 +87,7 @@ void MainWindow::progressBar()
 
 void MainWindow::greenLedOn()
 {
-    ui->led->setPixmap(QPixmap("../img/led/led_green.png"));
+    ui->led->setPixmap(QPixmap(":/img/img/led_green.png"));
 }
 
 void MainWindow::draw()

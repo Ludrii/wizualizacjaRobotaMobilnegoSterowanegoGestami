@@ -76,12 +76,12 @@ var NAVTREEINDEX =
 "class_q_c_p_polar_axis_radial.html#ad34c158db7a11352bd099ff057d1b669",
 "class_q_c_p_scatter_style.html#adb31525af6b680e6f1b7472e43859349a7c92a110880d0ef2170dff3a5b4f7779",
 "class_q_custom_plot.html#a243867f445d2f4e35e00add2f589e1da",
-"debug_2moc__predefs_8h.html#a0b8ad52bece225cdae9c1b46c91c62a5",
-"debug_2moc__predefs_8h.html#aaab7817ee2e4bb88b5178e101e7ab2a6",
-"functions_t.html",
-"release_2moc__predefs_8h.html#a1e2f16909b04d907f56bcc56b288b17c",
-"release_2moc__predefs_8h.html#ac227f24525ec0825a758b2eb0869dc8f",
-"structqt__meta__stringdata___q_c_p_graph__t.html"
+"debug_2moc__predefs_8h.html#a08d4062230ffc8494f4be4f6447497e4",
+"debug_2moc__predefs_8h.html#aa808bc3159395526ac0c07d36b87dec1",
+"functions_p.html",
+"release_2moc__predefs_8h.html#a1801bfbb7ab3b0ff09a48c3d78bd97e2",
+"release_2moc__predefs_8h.html#ab6eb3d66486ef05ac7f1d489bfc675b4",
+"structqt__meta__stringdata___q_c_p_color_scale__t.html#afca49a2ef4f897a520ebdb366cf142bc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
