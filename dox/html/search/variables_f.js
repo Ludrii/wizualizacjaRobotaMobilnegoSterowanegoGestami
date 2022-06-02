@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['serial_4018',['serial',['../class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61',1,'MainWindow']]],
+  ['serial_4018',['serial',['../class_main_window.html#a9029411f21223671e111ff617fcece6a',1,'MainWindow']]],
   ['side_4019',['side',['../struct_q_c_p_label_painter_private_1_1_label_data.html#af7606f1262f0892069925803a95b8966',1,'QCPLabelPainterPrivate::LabelData']]],
   ['start_4020',['start',['../class_q_c_p_item_line.html#a602da607a09498b0f152ada1d6851bc5',1,'QCPItemLine::start()'],['../class_q_c_p_item_curve.html#a20c3b5ea31c33764f4f30c2ec7ae518b',1,'QCPItemCurve::start()']]],
   ['startdir_4021',['startDir',['../class_q_c_p_item_curve.html#aa124bf66c09cc51c627fb49db8bf8a7b',1,'QCPItemCurve']]],

@@ -5,6 +5,6 @@ var class_main_window =
     [ "UstawLacze", "class_main_window.html#ad20a34deb7669825e0ae522db7c5e740", null ],
     [ "_wLacze", "class_main_window.html#a16e7807d8461b21efa581578c9da7917", null ],
     [ "data", "class_main_window.html#ae5154a2c04e0848be87395387597e7d0", null ],
-    [ "serial", "class_main_window.html#a92d2e44f31ed9946d8f2613f53e86a61", null ],
+    [ "serial", "class_main_window.html#a9029411f21223671e111ff617fcece6a", null ],
     [ "timer", "class_main_window.html#a356578805ed1248a7f2807434cb0e5ee", null ]
 ];

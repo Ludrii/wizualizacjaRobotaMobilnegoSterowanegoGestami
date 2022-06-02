@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('release_2moc__mainwindow_8cpp_source.h
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QMetaType::Void,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QMetaType::Void,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QMetaType::Void,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QMetaType::Void,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QMetaType::Bool,</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QMetaType::Void,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QMetaType::Void,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QMetaType::Void,</div>
@@ -178,14 +178,14 @@ $(document).ready(function(){initNavTree('release_2moc__mainwindow_8cpp_source.h
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">case</span> 0: _t-&gt;on_pushButton_clicked(); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">case</span> 1: _t-&gt;lcdNumber(); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">case</span> 2: _t-&gt;openSerialPort(); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">case</span> 3: _t-&gt;getData(); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">case</span> 4: _t-&gt;progressBar(); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">case</span> 5: _t-&gt;greenLedOn(); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">case</span> 6: _t-&gt;draw(); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">default</span>: ;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    Q_UNUSED(_a);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">case</span> 3: { <span class="keywordtype">bool</span> _r = _t-&gt;getData();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">if</span> (_a[0]) *<span class="keyword">reinterpret_cast&lt;</span> <span class="keywordtype">bool</span>*<span class="keyword">&gt;</span>(_a[0]) = std::move(_r); }  <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">case</span> 4: _t-&gt;progressBar(); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">case</span> 5: _t-&gt;greenLedOn(); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">case</span> 6: _t-&gt;draw(); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">default</span>: ;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;QT_INIT_METAOBJECT <span class="keyword">const</span> QMetaObject <a class="code" href="namespace_q_c_p.html#ac729e267a05426c5ae3eba3064223f8a">MainWindow::staticMetaObject</a> = { {</div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('release_2moc__mainwindow_8cpp_source.h
 <div class="ttc" id="arelease_2moc__mainwindow_8cpp_html_a75bb9482d242cde0a06c9dbdc6b83abe"><div class="ttname"><a href="release_2moc__mainwindow_8cpp.html#a75bb9482d242cde0a06c9dbdc6b83abe">QT_MOC_LITERAL</a></div><div class="ttdeci">#define QT_MOC_LITERAL(idx, ofs, len)</div><div class="ttdef"><b>Definition:</b> <a href="release_2moc__mainwindow_8cpp_source.html#l00027">moc_mainwindow.cpp:27</a></div></div>
 <div class="ttc" id="astructqt__meta__stringdata___main_window__t_html_a092956d0ba2e51cd73092e8a5ebb6ce6"><div class="ttname"><a href="structqt__meta__stringdata___main_window__t.html#a092956d0ba2e51cd73092e8a5ebb6ce6">qt_meta_stringdata_MainWindow_t::data</a></div><div class="ttdeci">QByteArrayData data[8]</div><div class="ttdef"><b>Definition:</b> <a href="debug_2moc__mainwindow_8cpp_source.html#l00030">moc_mainwindow.cpp:30</a></div></div>
 <div class="ttc" id="astructqt__meta__stringdata___main_window__t_html_a1429d55e8ff99fc87595524386fcfbf5"><div class="ttname"><a href="structqt__meta__stringdata___main_window__t.html#a1429d55e8ff99fc87595524386fcfbf5">qt_meta_stringdata_MainWindow_t::stringdata0</a></div><div class="ttdeci">char stringdata0[90]</div><div class="ttdef"><b>Definition:</b> <a href="debug_2moc__mainwindow_8cpp_source.html#l00031">moc_mainwindow.cpp:31</a></div></div>
-<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00018">mainwindow.hh:18</a></div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00019">mainwindow.hh:19</a></div></div>
 <div class="ttc" id="astructqt__meta__stringdata___main_window__t_html"><div class="ttname"><a href="structqt__meta__stringdata___main_window__t.html">qt_meta_stringdata_MainWindow_t</a></div><div class="ttdef"><b>Definition:</b> <a href="debug_2moc__mainwindow_8cpp_source.html#l00023">moc_mainwindow.cpp:23</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -74,7 +74,7 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Bool,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -91,14 +91,14 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->on_pushButton_clicked(); break;
         case 1: _t->lcdNumber(); break;
         case 2: _t->openSerialPort(); break;
-        case 3: _t->getData(); break;
+        case 3: { bool _r = _t->getData();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         case 4: _t->progressBar(); break;
         case 5: _t->greenLedOn(); break;
         case 6: _t->draw(); break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = { {

@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    serial = new QSerialPort;
     timer = new QTimer;
     scene = new QGraphicsScene(this);
     ui->graphicsView->setScene(scene);
@@ -18,16 +19,16 @@ MainWindow::MainWindow(QWidget *parent)
     rect2 = scene->addRect(w/2,h,w/2,h/2);
     rect3 = scene->addRect(w,h,w/2,h/2);
     QTimer::singleShot(1000,this, SLOT(openSerialPort()));
-    connect(&serial, SIGNAL(readyRead()), this, SLOT(getData()));
-    connect(&serial, SIGNAL(readyRead()), this, SLOT(lcdNumber()));
-    connect(&serial, SIGNAL(readyRead()), this, SLOT(progressBar()));
-    connect(&serial, SIGNAL(readyRead()), this, SLOT(draw()));
+    connect(serial, SIGNAL(readyRead()), this, SLOT(getData()));
+    connect(serial, SIGNAL(readyRead()), this, SLOT(lcdNumber()));
+    connect(serial, SIGNAL(readyRead()), this, SLOT(progressBar()));
+    connect(serial, SIGNAL(readyRead()), this, SLOT(draw()));
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-    serial.close();
+    serial->close();
 }
 
 
@@ -35,7 +36,7 @@ void MainWindow::on_pushButton_clicked()
 {
     SecondWindow sW(this);
     sW.setArray(&data);
-    sW.setSerial(&serial);
+    sW.setSerial(serial);
     sW.makePlot();
     sW.exec();
 }
@@ -47,16 +48,16 @@ void MainWindow::lcdNumber()
 
 void MainWindow::openSerialPort()
 {
-    _wLacze->SkojarzObiektPortu(&serial);
+    _wLacze->SkojarzObiektPortu(serial);
 
-    serial.setBaudRate(QSerialPort::Baud115200);
-    serial.setFlowControl(QSerialPort::NoFlowControl);
-    serial.setStopBits(QSerialPort::OneStop);
-    serial.setDataBits(QSerialPort::Data8);
-    serial.setParity(QSerialPort::NoParity);
-    serial.setPortName(QString::fromStdString(_wLacze->_NazwaPortu));
+    serial->setBaudRate(QSerialPort::Baud115200);
+    serial->setFlowControl(QSerialPort::NoFlowControl);
+    serial->setStopBits(QSerialPort::OneStop);
+    serial->setDataBits(QSerialPort::Data8);
+    serial->setParity(QSerialPort::NoParity);
+    serial->setPortName(QString::fromStdString(_wLacze->_NazwaPortu));
 
-    if(!serial.open(QSerialPort::ReadOnly))
+    if(!serial->open(QSerialPort::ReadOnly))
     {
         std::cerr << ":( Blad otwarcia portu " << _wLacze->_NazwaPortu << std::endl;
     }
@@ -66,18 +67,34 @@ void MainWindow::openSerialPort()
     }
 }
 
-void MainWindow::getData()
+bool MainWindow::getData()
 {
-    const QByteArray byteArray = serial.readAll();
-    const QString string(byteArray);
-    QStringList list;
+    QTextStream stream(serial->readAll());
+    QString msgBegin, msgEnd;
+    std::array<int,5> temp;
+    int sumComputed;
 
-    list=string.split(QRegExp("\\s+"));
+    stream>>msgBegin;
+    if(msgBegin!="X")
+        return 1;
 
-    for(int i=0;i<4;i++)
+    for(int i=0;i<5;i++)
     {
-        data.at(i)=list.at(i).toInt();
+        stream>>temp.at(i);
     }
+
+    stream>>msgEnd;
+    if(msgEnd!="FC")
+        return 1;
+    sumComputed=temp.at(0)+2*temp.at(1)+3*temp.at(2)+4*temp.at(3);
+    if(sumComputed==temp.at(4))
+    {
+        for(int i=0;i<4;i++)
+        {
+            data.at(i)=temp.at(i);
+        }
+    }
+    return 0;
 }
 
 void MainWindow::progressBar()
