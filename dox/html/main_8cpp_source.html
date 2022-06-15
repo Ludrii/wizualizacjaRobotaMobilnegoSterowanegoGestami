@@ -94,33 +94,33 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">    7</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    QApplication a(argc, argv);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_main_window.html">MainWindow</a> w;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_komunikacja.html">Komunikacja</a> LaczeKom;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    QTranslator translator;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    QStringList languages;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    languages&lt;&lt;<span class="stringliteral">&quot;Polski&quot;</span>&lt;&lt;<span class="stringliteral">&quot;English&quot;</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_komunikacja.html">Komunikacja</a> LaczeKom;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    QTranslator translator;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    QStringList languages;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    languages&lt;&lt;<span class="stringliteral">&quot;Polski&quot;</span>&lt;&lt;<span class="stringliteral">&quot;English&quot;</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    if(argc&lt;2)</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    {</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">        std::cout&lt;&lt;&quot;Error&quot;&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">        return 1;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    LaczeKom.UstawNazwePortu(argv[1]);</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    LaczeKom.<a class="code" href="class_komunikacja.html#a6e9e93d2aaaff2a777460ffd055d9a4e">UstawNazwePortu</a>(<span class="stringliteral">&quot;/dev/pts/4&quot;</span>); <span class="comment">// potrzebne przy debugowaniu</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    w.<a class="code" href="class_main_window.html#ad20a34deb7669825e0ae522db7c5e740">UstawLacze</a>(&amp;LaczeKom);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span>(argc&lt;2)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        std::cout&lt;&lt;<span class="stringliteral">&quot;Error&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    LaczeKom.<a class="code" href="class_komunikacja.html#a6e9e93d2aaaff2a777460ffd055d9a4e">UstawNazwePortu</a>(argv[1]);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//LaczeKom.UstawNazwePortu(&quot;/dev/pts/4&quot;); // potrzebne przy debugowaniu</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QString lang = QInputDialog::getItem(NULL, <span class="stringliteral">&quot;Wybierz język&quot;</span>, <span class="stringliteral">&quot;Język&quot;</span>, languages);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QString lang = QInputDialog::getItem(NULL, <span class="stringliteral">&quot;Wybierz język&quot;</span>, <span class="stringliteral">&quot;Język&quot;</span>, languages);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span>(lang==<span class="stringliteral">&quot;English&quot;</span>)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        translator.load(<span class="stringliteral">&quot;:/lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.qm&quot;</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        a.installTranslator(&amp;translator);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span>(lang==<span class="stringliteral">&quot;English&quot;</span>)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        translator.load(<span class="stringliteral">&quot;:/lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.qm&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        a.installTranslator(&amp;translator);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_main_window.html">MainWindow</a> w;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    w.<a class="code" href="class_main_window.html#ad20a34deb7669825e0ae522db7c5e740">UstawLacze</a>(&amp;LaczeKom);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    w.show();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> a.exec();</div>
