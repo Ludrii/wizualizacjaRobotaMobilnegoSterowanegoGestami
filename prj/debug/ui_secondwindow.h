@@ -13,7 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGridLayout>
-#include "inc/qcustomplot.h"
+#include "inc/qcustomplot.hh"
 
 QT_BEGIN_NAMESPACE
 

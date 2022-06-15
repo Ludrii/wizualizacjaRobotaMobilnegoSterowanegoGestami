@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2022-06-02T16:01:51. -->
+<!-- Written by QtCreator 4.11.0, 2022-06-15T15:09:52. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -86,7 +86,7 @@
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj/debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -134,7 +134,7 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj/release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -302,8 +302,9 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/wizualizacjaRobotaMobilnegoSterowanegoGestami.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/wizualizacjaRobotaMobilnegoSterowanegoGestami.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">wizualizacjaRobotaMobilnegoSterowanegoGestami2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj/wizualizacjaRobotaMobilnegoSterowanegoGestami.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj/wizualizacjaRobotaMobilnegoSterowanegoGestami.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -313,9 +314,8 @@
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseTerminal">false</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/release</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/maciej/windows/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj/release</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

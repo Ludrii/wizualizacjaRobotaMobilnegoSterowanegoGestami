@@ -10,6 +10,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGridLayout>
@@ -29,6 +30,9 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *actionPrzet_umacz;
+    QAction *actionPolski;
+    QAction *actionEnglish;
     QWidget *centralwidget;
     QGridLayout *gridLayout_2;
     QVBoxLayout *verticalLayout_2;
@@ -51,13 +55,19 @@ public:
     QSpacerItem *horizontalSpacer;
     QLabel *label_4;
     QGraphicsView *graphicsView;
-    QStatusBar *statusbar;
+    QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(579, 476);
+        MainWindow->resize(932, 578);
+        actionPrzet_umacz = new QAction(MainWindow);
+        actionPrzet_umacz->setObjectName(QString::fromUtf8("actionPrzet_umacz"));
+        actionPolski = new QAction(MainWindow);
+        actionPolski->setObjectName(QString::fromUtf8("actionPolski"));
+        actionEnglish = new QAction(MainWindow);
+        actionEnglish->setObjectName(QString::fromUtf8("actionEnglish"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout_2 = new QGridLayout(centralwidget);
@@ -78,7 +88,7 @@ public:
         sizePolicy.setHeightForWidth(led->sizePolicy().hasHeightForWidth());
         led->setSizePolicy(sizePolicy);
         led->setAutoFillBackground(true);
-        led->setPixmap(QPixmap(QString::fromUtf8(":/img/img/led_red.png")));
+        led->setPixmap(QPixmap(QString::fromUtf8(":/img/led_red.png")));
         led->setScaledContents(true);
         led->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
@@ -195,9 +205,9 @@ public:
         gridLayout_2->addLayout(gridLayout, 0, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        MainWindow->setStatusBar(statusbar);
+        statusBar = new QStatusBar(MainWindow);
+        statusBar->setObjectName(QString::fromUtf8("statusBar"));
+        MainWindow->setStatusBar(statusBar);
 
         retranslateUi(MainWindow);
 
@@ -206,10 +216,13 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Okno g\305\202\303\263wne aplikacji", nullptr));
+        actionPrzet_umacz->setText(QApplication::translate("MainWindow", "Przet\305\202umacz", nullptr));
+        actionPolski->setText(QApplication::translate("MainWindow", "Polski", nullptr));
+        actionEnglish->setText(QApplication::translate("MainWindow", "English", nullptr));
         led->setText(QString());
         label->setText(QApplication::translate("MainWindow", "Stan po\305\202\304\205czenia aplikacji", nullptr));
-        label_2->setText(QApplication::translate("MainWindow", "Szybko\305\233\304\207", nullptr));
+        label_2->setText(QApplication::translate("MainWindow", "Szybko\305\233\304\207 (km/h)", nullptr));
         label_3->setText(QApplication::translate("MainWindow", "Poziom baterii", nullptr));
         pushButton->setText(QApplication::translate("MainWindow", "Poka\305\274 wykresy", nullptr));
         label_4->setText(QApplication::translate("MainWindow", "Wskazania czujnik\303\263w", nullptr));

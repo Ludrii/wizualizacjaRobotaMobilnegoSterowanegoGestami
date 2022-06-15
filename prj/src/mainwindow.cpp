@@ -1,7 +1,5 @@
 #include "inc/mainwindow.hh"
 #include "ui_mainwindow.h"
-#include "inc/secondwindow.hh"
-#include "inc/qcustomplot.hh"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -12,8 +10,9 @@ MainWindow::MainWindow(QWidget *parent)
     timer = new QTimer;
     scene = new QGraphicsScene(this);
     ui->graphicsView->setScene(scene);
-    auto w = ui->graphicsView->width();
-    auto h = ui->graphicsView->height();
+    ui->graphicsView->fitInView(0, 0, scene->width(), scene->height());
+    w = ui->graphicsView->width();
+    h = ui->graphicsView->height();
     rect0 = scene->addRect(w/2,h/2,w/2,h/2);
     rect1 = scene->addRect(w,h/2,w/2,h/2);
     rect2 = scene->addRect(w/2,h,w/2,h/2);
@@ -59,7 +58,7 @@ void MainWindow::openSerialPort()
 
     if(!serial->open(QSerialPort::ReadOnly))
     {
-        std::cerr << ":( Blad otwarcia portu " << _wLacze->_NazwaPortu << std::endl;
+        std::cerr <<":( Blad otwarcia portu "<< _wLacze->_NazwaPortu << std::endl;
     }
     else
     {
@@ -104,7 +103,7 @@ void MainWindow::progressBar()
 
 void MainWindow::greenLedOn()
 {
-    ui->led->setPixmap(QPixmap(":/img/img/led_green.png"));
+    ui->led->setPixmap(QPixmap(":/img/led_green.png"));
 }
 
 void MainWindow::draw()
@@ -161,4 +160,5 @@ void MainWindow::draw()
         rect3->setBrush(Qt::green);
     }
     rect3->update();
+    ui->graphicsView->fitInView( scene->sceneRect(), Qt::KeepAspectRatio );
 }

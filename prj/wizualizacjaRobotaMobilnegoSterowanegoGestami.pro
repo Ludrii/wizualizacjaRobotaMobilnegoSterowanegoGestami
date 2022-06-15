@@ -27,7 +27,6 @@ SOURCES += \
     src/mainwindow.cpp
 
 HEADERS += \
-    figurewidget.hh \
     inc/mainwindow.hh \
     inc/odbior.hh \
     inc/qcustomplot.hh \
@@ -64,7 +63,8 @@ DISTFILES += \
     img/led/led_yellow-11.png \
     img/led/led_yellow.png \
     img/misc/exit.png \
-    img/misc/settings.png
+    img/misc/settings.png \
+    lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.qm
 
 RESOURCES += \
     res.qrc

@@ -1,6 +1,7 @@
 <RCC>
-    <qresource prefix="/img">
+    <qresource prefix="/">
         <file>img/led_green.png</file>
         <file>img/led_red.png</file>
+        <file>lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.qm</file>
     </qresource>
 </RCC>

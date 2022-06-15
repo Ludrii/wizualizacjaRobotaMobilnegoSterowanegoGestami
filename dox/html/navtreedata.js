@@ -23,7 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "wRMSG", "index.html", [
-    [ "wizualizacjaRobotaMobilnegoSterowanegoGestami", "md__media_sf__d__d_r_i_v_e__studia_6semestr_wds_wizualizacja_robota_mobilnego_sterowanego_gestami__r_e_a_d_m_e.html", null ],
+    [ "wizualizacjaRobotaMobilnegoSterowanegoGestami", "md__media_sf__d__d_r_i_v_e__studia_6semestr_wds_wizualizacja_robota_mobilnego_sterowanego_gestami_prj__r_e_a_d_m_e.html", null ],
     [ "Przestrzenie nazw", "namespaces.html", [
       [ "Lista przestrzeni nazw", "namespaces.html", "namespaces_dup" ],
       [ "Składowe przestrzeni nazw", "namespacemembers.html", [
@@ -76,12 +76,12 @@ var NAVTREEINDEX =
 "class_q_c_p_polar_axis_radial.html#ad34c158db7a11352bd099ff057d1b669",
 "class_q_c_p_scatter_style.html#adb31525af6b680e6f1b7472e43859349a7c92a110880d0ef2170dff3a5b4f7779",
 "class_q_custom_plot.html#a243867f445d2f4e35e00add2f589e1da",
-"debug_2moc__predefs_8h.html#a08d4062230ffc8494f4be4f6447497e4",
-"debug_2moc__predefs_8h.html#aa808bc3159395526ac0c07d36b87dec1",
-"functions_p.html",
-"release_2moc__predefs_8h.html#a1801bfbb7ab3b0ff09a48c3d78bd97e2",
-"release_2moc__predefs_8h.html#ab6eb3d66486ef05ac7f1d489bfc675b4",
-"structqt__meta__stringdata___q_c_p_color_scale__t.html#afca49a2ef4f897a520ebdb366cf142bc"
+"debug_2moc__predefs_8h.html#a098c7fe44eed71241990da5db8f99bc3",
+"debug_2moc__predefs_8h.html#aa9e067f885a7396c1427d1547a89e063",
+"functions_h.html",
+"release_2moc__predefs_8h.html#a189bb13aac101f45c8ac7f6e52daccfa",
+"release_2moc__predefs_8h.html#ab7d84ba8d87b8bb40aa752334bb51b23",
+"structqt__meta__stringdata___q_c_p_color_gradient__t.html#aaf2a7d16e50177188c7b3ee09122c099"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

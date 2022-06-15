@@ -1,5 +1,12 @@
 var NAVTREEINDEX18 =
 {
+"structqt__meta__stringdata___q_c_p_color_gradient__t.html#aaf2a7d16e50177188c7b3ee09122c099":[2,0,92,0],
+"structqt__meta__stringdata___q_c_p_color_gradient__t.html#afab2b7d6549e00e5bbad3a8974ed6fe8":[2,0,92,1],
+"structqt__meta__stringdata___q_c_p_color_map__t.html":[2,0,93],
+"structqt__meta__stringdata___q_c_p_color_map__t.html#ae47af72e10dab09b8bdc30bfdd9871cf":[2,0,93,0],
+"structqt__meta__stringdata___q_c_p_color_map__t.html#ae86ea0a7c4d2123df474dc23f0bf8622":[2,0,93,1],
+"structqt__meta__stringdata___q_c_p_color_scale__t.html":[2,0,94],
+"structqt__meta__stringdata___q_c_p_color_scale__t.html#a7472255b684c2f1678bd0fe045913a83":[2,0,94,1],
 "structqt__meta__stringdata___q_c_p_color_scale__t.html#afca49a2ef4f897a520ebdb366cf142bc":[2,0,94,0],
 "structqt__meta__stringdata___q_c_p_color_scale_axis_rect_private__t.html":[2,0,95],
 "structqt__meta__stringdata___q_c_p_color_scale_axis_rect_private__t.html#a7af1330a160fd63c7871f39e801f68b2":[2,0,95,0],

@@ -1,15 +1,20 @@
 #include "inc/mainwindow.hh"
 #include <fcntl.h>
-#include <iostream>
 #include <QApplication>
-#include "inc/odbior.hh"
+#include <QTranslator>
+#include <QInputDialog>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
     Komunikacja LaczeKom;
+    QTranslator translator;
+    QStringList languages;
 
+    languages<<"Polski"<<"English";
+
+    /*
     if(argc<2)
     {
         std::cout<<"Error"<<std::endl;
@@ -17,9 +22,18 @@ int main(int argc, char *argv[])
     }
 
     LaczeKom.UstawNazwePortu(argv[1]);
-
-    //LaczeKom.UstawNazwePortu("/dev/pts/4"); // potrzebne przy debugowaniu
+    */
+    LaczeKom.UstawNazwePortu("/dev/pts/4"); // potrzebne przy debugowaniu
     w.UstawLacze(&LaczeKom);
+
+    QString lang = QInputDialog::getItem(NULL, "Wybierz język", "Język", languages);
+
+    if(lang=="English")
+    {
+        translator.load(":/lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.qm");
+        a.installTranslator(&translator);
+    }
+
     w.show();
 
     return a.exec();

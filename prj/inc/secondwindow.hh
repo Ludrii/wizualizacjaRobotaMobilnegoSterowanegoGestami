@@ -3,9 +3,7 @@
 
 #include <QDialog>
 #include <QTime>
-#include <QSerialPort>
 #include <array>
-#include <iostream>
 #include <QDebug>
 #include <QCoreApplication>
 #include "inc/odbior.hh"

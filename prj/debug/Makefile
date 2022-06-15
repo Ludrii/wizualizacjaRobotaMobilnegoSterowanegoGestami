@@ -17,7 +17,7 @@ CXX           = g++
 DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -std=gnu++11 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I../../wizualizacjaRobotaMobilnegoSterowanegoGestami -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
+INCPATH       = -I../../prj -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
 QMAKE         = /usr/lib/qt5/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = wizualizacjaRobotaMobilnegoSterowanegoGestami1.0.0
-DISTDIR = /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/debug/.tmp/wizualizacjaRobotaMobilnegoSterowanegoGestami1.0.0
+DISTDIR = /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj/debug/.tmp/wizualizacjaRobotaMobilnegoSterowanegoGestami1.0.0
 LINK          = g++
 LFLAGS        = 
 LIBS          = $(SUBLIBS) /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so /usr/lib/x86_64-linux-gnu/libQt5Widgets.so /usr/lib/x86_64-linux-gnu/libQt5Gui.so /usr/lib/x86_64-linux-gnu/libQt5SerialPort.so /usr/lib/x86_64-linux-gnu/libQt5Core.so /usr/lib/x86_64-linux-gnu/libGL.so -lpthread   
@@ -56,7 +56,8 @@ SOURCES       = ../src/odbior.cpp \
 		../src/qcustomplot.cpp \
 		../src/secondwindow.cpp \
 		../src/main.cpp \
-		../src/mainwindow.cpp moc_mainwindow.cpp \
+		../src/mainwindow.cpp qrc_res.cpp \
+		moc_mainwindow.cpp \
 		moc_qcustomplot.cpp \
 		moc_secondwindow.cpp
 OBJECTS       = odbior.o \
@@ -64,6 +65,7 @@ OBJECTS       = odbior.o \
 		secondwindow.o \
 		main.o \
 		mainwindow.o \
+		qrc_res.o \
 		moc_mainwindow.o \
 		moc_qcustomplot.o \
 		moc_secondwindow.o
@@ -86,6 +88,7 @@ DIST          = ../img/led/led_blue.png \
 		../img/led/led_yellow.png \
 		../img/misc/exit.png \
 		../img/misc/settings.png \
+		../lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.qm \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -165,7 +168,7 @@ DIST          = ../img/led/led_blue.png \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
 		../../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro ../inc/mainwindow.hh \
 		../inc/odbior.hh \
-		../inc/qcustomplot.h \
+		../inc/qcustomplot.hh \
 		../inc/secondwindow.hh ../src/odbior.cpp \
 		../src/qcustomplot.cpp \
 		../src/secondwindow.cpp \
@@ -259,7 +262,8 @@ Makefile: ../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro /usr/lib/x86_64-l
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro
+		../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro \
+		../res.qrc
 	$(QMAKE) -o Makefile ../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf:
@@ -339,6 +343,7 @@ Makefile: ../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro /usr/lib/x86_64-l
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf:
 ../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro:
+../res.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../wizualizacjaRobotaMobilnegoSterowanegoGestami.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
 
@@ -353,8 +358,9 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
+	$(COPY_FILE) --parents ../res.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../inc/mainwindow.hh ../inc/odbior.hh ../inc/qcustomplot.h ../inc/secondwindow.hh $(DISTDIR)/
+	$(COPY_FILE) --parents ../inc/mainwindow.hh ../inc/odbior.hh ../inc/qcustomplot.hh ../inc/secondwindow.hh $(DISTDIR)/
 	$(COPY_FILE) --parents ../src/odbior.cpp ../src/qcustomplot.cpp ../src/secondwindow.cpp ../src/main.cpp ../src/mainwindow.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../ui/secondwindow.ui ../ui/mainwindow.ui $(DISTDIR)/
 	$(COPY_FILE) --parents lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.ts $(DISTDIR)/
@@ -381,8 +387,16 @@ check: first
 
 benchmark: first
 
-compiler_rcc_make_all:
+compiler_rcc_make_all: qrc_res.cpp
 compiler_rcc_clean:
+	-$(DEL_FILE) qrc_res.cpp
+qrc_res.cpp: ../res.qrc \
+		/usr/lib/qt5/bin/rcc \
+		../lang/wizualizacjaRobotaMobilnegoSterowanegoGestami_en_150.qm \
+		../img/led_green.png \
+		../img/led_red.png
+	/usr/lib/qt5/bin/rcc -name res ../res.qrc -o qrc_res.cpp
+
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
@@ -393,21 +407,23 @@ compiler_moc_header_make_all: moc_mainwindow.cpp moc_qcustomplot.cpp moc_secondw
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_mainwindow.cpp moc_qcustomplot.cpp moc_secondwindow.cpp
 moc_mainwindow.cpp: ../inc/mainwindow.hh \
+		../inc/secondwindow.hh \
 		../inc/odbior.hh \
+		../inc/qcustomplot.hh \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/mainwindow.hh -o moc_mainwindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/mainwindow.hh -o moc_mainwindow.cpp
 
-moc_qcustomplot.cpp: ../inc/qcustomplot.h \
+moc_qcustomplot.cpp: ../inc/qcustomplot.hh \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/qcustomplot.h -o moc_qcustomplot.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/qcustomplot.hh -o moc_qcustomplot.cpp
 
 moc_secondwindow.cpp: ../inc/secondwindow.hh \
 		../inc/odbior.hh \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/secondwindow.hh -o moc_secondwindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/media/sf_D_DRIVE/Studia/6semestr/wds/wizualizacjaRobotaMobilnegoSterowanegoGestami/prj -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../inc/secondwindow.hh -o moc_secondwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -430,32 +446,37 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
+compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
 
 ####### Compile
 
 odbior.o: ../src/odbior.cpp ../inc/odbior.hh
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o odbior.o ../src/odbior.cpp
 
-qcustomplot.o: ../src/qcustomplot.cpp ../inc/qcustomplot.h
+qcustomplot.o: ../src/qcustomplot.cpp ../inc/qcustomplot.hh
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qcustomplot.o ../src/qcustomplot.cpp
 
 secondwindow.o: ../src/secondwindow.cpp ../inc/secondwindow.hh \
 		../inc/odbior.hh \
 		ui_secondwindow.h \
-		../inc/qcustomplot.h
+		../inc/qcustomplot.hh
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o secondwindow.o ../src/secondwindow.cpp
 
 main.o: ../src/main.cpp ../inc/mainwindow.hh \
-		../inc/odbior.hh
+		../inc/secondwindow.hh \
+		../inc/odbior.hh \
+		../inc/qcustomplot.hh
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../src/main.cpp
 
 mainwindow.o: ../src/mainwindow.cpp ../inc/mainwindow.hh \
-		../inc/odbior.hh \
-		ui_mainwindow.h \
 		../inc/secondwindow.hh \
-		../inc/qcustomplot.h
+		../inc/odbior.hh \
+		../inc/qcustomplot.hh \
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../src/mainwindow.cpp
+
+qrc_res.o: qrc_res.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_res.o qrc_res.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
