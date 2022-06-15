@@ -7,14 +7,13 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
     Komunikacja LaczeKom;
     QTranslator translator;
     QStringList languages;
 
     languages<<"Polski"<<"English";
 
-    /*
+
     if(argc<2)
     {
         std::cout<<"Error"<<std::endl;
@@ -22,9 +21,8 @@ int main(int argc, char *argv[])
     }
 
     LaczeKom.UstawNazwePortu(argv[1]);
-    */
-    LaczeKom.UstawNazwePortu("/dev/pts/4"); // potrzebne przy debugowaniu
-    w.UstawLacze(&LaczeKom);
+
+    //LaczeKom.UstawNazwePortu("/dev/pts/4"); // potrzebne przy debugowaniu
 
     QString lang = QInputDialog::getItem(NULL, "Wybierz język", "Język", languages);
 
@@ -34,6 +32,8 @@ int main(int argc, char *argv[])
         a.installTranslator(&translator);
     }
 
+    MainWindow w;
+    w.UstawLacze(&LaczeKom);
     w.show();
 
     return a.exec();
