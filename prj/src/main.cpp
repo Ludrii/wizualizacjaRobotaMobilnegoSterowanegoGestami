@@ -1,3 +1,9 @@
+/*!
+  \file
+  \brief Szczegóły o main.cpp.
+
+  Plik zawiera funkcję main(), która startuje aplikację.
+*/
 #include "inc/mainwindow.hh"
 #include <fcntl.h>
 #include <QApplication>

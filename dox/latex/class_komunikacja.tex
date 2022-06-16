@@ -8,21 +8,21 @@
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_komunikacja_a6e9e93d2aaaff2a777460ffd055d9a4e}{Ustaw\+Nazwe\+Portu}} (const std\+::string \&r\+Nazwa)
-\item 
+\begin{DoxyCompactList}\small\item\em Ustaw\+Nazwe\+Portu. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_komunikacja_aaa1e5c8b98cc07518518cbe956a01481}{Skojarz\+Obiekt\+Portu}} (Q\+Serial\+Port $\ast$w\+Port)
-\item 
+\begin{DoxyCompactList}\small\item\em Skojarz\+Obiekt\+Portu. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_komunikacja_a711bf34ad4e8212efd6c0cea57e1d241}{Otworz\+Port}} (const char $\ast$s\+Port\+Szeregowy)
-\item 
+\begin{DoxyCompactList}\small\item\em Otworz\+Port. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_komunikacja_a9ee3a683046bc4232f5781cd93604542}{Otworz\+Port}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Otworz\+Port. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_komunikacja_a69a77a8405fc89c4106176bd78602c61}{Kontynuuj}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Kontynuuj. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_komunikacja_adcb67a4f73a2de7da6a4d5352eb0a587}{Zakoncz}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zakoncz. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_komunikacja_a39618b7bf9fdbf3ef1db5a2a7ace1515}{Odbierz\+Jedna\+Linie}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Odbierz\+Jedna\+Linie. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_komunikacja_a6fa37a2eca36227435659d933bf40308}{Odbior\+Danych}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Odbior\+Danych. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Atrybuty publiczne}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,7 +37,7 @@ std\+::string \mbox{\hyperlink{class_komunikacja_ae301d1451b9b6f1360113fcc69980f
 \doxysubsection{Opis szczegółowy}
 
 
-Definicja w linii 7 pliku odbior.\+hh.
+Definicja w linii 10 pliku odbior.\+hh.
 
 
 
@@ -50,7 +50,20 @@ Definicja w linii 7 pliku odbior.\+hh.
 
 
 
-Definicja w linii 21 pliku odbior.\+hh.
+Kontynuuj. 
+
+Metoda odpowiadająca za sygnalizowanie, czy odczyt ma być kontunuowany.
+
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ kontunuuj odczyt \\
+\hline
+{\em false} & -\/ zakończ odczyt \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 60 pliku odbior.\+hh.
 
 \mbox{\Hypertarget{class_komunikacja_a39618b7bf9fdbf3ef1db5a2a7ace1515}\label{class_komunikacja_a39618b7bf9fdbf3ef1db5a2a7ace1515}} 
 \index{Komunikacja@{Komunikacja}!OdbierzJednaLinie@{OdbierzJednaLinie}}
@@ -58,6 +71,19 @@ Definicja w linii 21 pliku odbior.\+hh.
 \doxysubsubsection{\texorpdfstring{OdbierzJednaLinie()}{OdbierzJednaLinie()}}
 {\footnotesize\ttfamily bool Komunikacja\+::\+Odbierz\+Jedna\+Linie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Odbierz\+Jedna\+Linie. 
+
+Metoda odczytująca dane z bufora
+
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em true} & -\/ istnieją dane oczekujące na odczyt \\
+\hline
+{\em false} & -\/ nie istnieją dane oczekujące na odczyt \\
+\hline
+\end{DoxyRetVals}
 
 
 Definicja w linii 22 pliku odbior.\+cpp.
@@ -70,6 +96,10 @@ Definicja w linii 22 pliku odbior.\+cpp.
 
 
 
+Odbior\+Danych. 
+
+Metoda wywołująca metodę \mbox{\hyperlink{class_komunikacja_a39618b7bf9fdbf3ef1db5a2a7ace1515}{Odbierz\+Jedna\+Linie()}} dopóki pole \+\_\+\+Kontynuuj == true 
+
 Definicja w linii 40 pliku odbior.\+cpp.
 
 \mbox{\Hypertarget{class_komunikacja_a9ee3a683046bc4232f5781cd93604542}\label{class_komunikacja_a9ee3a683046bc4232f5781cd93604542}} 
@@ -80,7 +110,20 @@ Definicja w linii 40 pliku odbior.\+cpp.
 
 
 
-Definicja w linii 19 pliku odbior.\+hh.
+Otworz\+Port. 
+
+Metoda przesyłająca do metody \mbox{\hyperlink{class_komunikacja_a711bf34ad4e8212efd6c0cea57e1d241}{Otworz\+Port(const char$\ast$ s\+Port\+Szeregowy)}} nazwę portu zamienioną na c-\/stringa.
+
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em false} & -\/ w przypadku błędu otwarcia portu \\
+\hline
+{\em true} & -\/ w przypadku poprawnego otwarcia portu \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 51 pliku odbior.\+hh.
 
 \mbox{\Hypertarget{class_komunikacja_a711bf34ad4e8212efd6c0cea57e1d241}\label{class_komunikacja_a711bf34ad4e8212efd6c0cea57e1d241}} 
 \index{Komunikacja@{Komunikacja}!OtworzPort@{OtworzPort}}
@@ -88,6 +131,24 @@ Definicja w linii 19 pliku odbior.\+hh.
 \doxysubsubsection{\texorpdfstring{OtworzPort()}{OtworzPort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool Komunikacja\+::\+Otworz\+Port (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Port\+Szeregowy }\end{DoxyParamCaption})}
 
+
+
+Otworz\+Port. 
+
+Metoda ustwierająca port szeregowy.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em s\+Port\+Szeregowy} & Zmienna przechowują wskaźnik do tablicy znaków. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em false} & -\/ w przypadku błędu otwarcia portu \\
+\hline
+{\em true} & -\/ w przypadku poprawnego otwarcia portu \\
+\hline
+\end{DoxyRetVals}
 
 
 Definicja w linii 5 pliku odbior.\+cpp.
@@ -100,7 +161,18 @@ Definicja w linii 5 pliku odbior.\+cpp.
 
 
 
-Definicja w linii 16 pliku odbior.\+hh.
+Skojarz\+Obiekt\+Portu. 
+
+Metoda odpowiedzialna za ustawienie $\ast$\+\_\+w\+Port.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em w\+Port} & Wskaźnik, na którey zostanie ustawiony $\ast$\+\_\+w\+Port. \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 32 pliku odbior.\+hh.
 
 \mbox{\Hypertarget{class_komunikacja_a6e9e93d2aaaff2a777460ffd055d9a4e}\label{class_komunikacja_a6e9e93d2aaaff2a777460ffd055d9a4e}} 
 \index{Komunikacja@{Komunikacja}!UstawNazwePortu@{UstawNazwePortu}}
@@ -110,7 +182,18 @@ Definicja w linii 16 pliku odbior.\+hh.
 
 
 
-Definicja w linii 15 pliku odbior.\+hh.
+Ustaw\+Nazwe\+Portu. 
+
+Metoda odpowiedzialna za ustawienie \+\_\+\+Nazwa\+Portu.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em r\+Nazwa} & Zmienna, z której zostanie wczytana nazwa portu. \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 24 pliku odbior.\+hh.
 
 \mbox{\Hypertarget{class_komunikacja_adcb67a4f73a2de7da6a4d5352eb0a587}\label{class_komunikacja_adcb67a4f73a2de7da6a4d5352eb0a587}} 
 \index{Komunikacja@{Komunikacja}!Zakoncz@{Zakoncz}}
@@ -120,7 +203,11 @@ Definicja w linii 15 pliku odbior.\+hh.
 
 
 
-Definicja w linii 22 pliku odbior.\+hh.
+Zakoncz. 
+
+Metoda odpowiadająca za stgnalizowanie końca odczytu danych. 
+
+Definicja w linii 66 pliku odbior.\+hh.
 
 
 
@@ -133,7 +220,7 @@ Definicja w linii 22 pliku odbior.\+hh.
 
 
 
-Definicja w linii 10 pliku odbior.\+hh.
+Definicja w linii 13 pliku odbior.\+hh.
 
 \mbox{\Hypertarget{class_komunikacja_ae301d1451b9b6f1360113fcc69980fd9}\label{class_komunikacja_ae301d1451b9b6f1360113fcc69980fd9}} 
 \index{Komunikacja@{Komunikacja}!\_NazwaPortu@{\_NazwaPortu}}
@@ -143,7 +230,7 @@ Definicja w linii 10 pliku odbior.\+hh.
 
 
 
-Definicja w linii 11 pliku odbior.\+hh.
+Definicja w linii 14 pliku odbior.\+hh.
 
 \mbox{\Hypertarget{class_komunikacja_abe9eb5f1e934ed08fe8437ec746125b2}\label{class_komunikacja_abe9eb5f1e934ed08fe8437ec746125b2}} 
 \index{Komunikacja@{Komunikacja}!\_wPort@{\_wPort}}
@@ -153,7 +240,7 @@ Definicja w linii 11 pliku odbior.\+hh.
 
 
 
-Definicja w linii 9 pliku odbior.\+hh.
+Definicja w linii 12 pliku odbior.\+hh.
 
 
 
