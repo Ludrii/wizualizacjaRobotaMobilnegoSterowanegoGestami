@@ -1,7 +1,7 @@
 var searchData=
 [
   ['wizualizacjarobotamobilnegosterowanegogestami_2229',['wizualizacjaRobotaMobilnegoSterowanegoGestami',['../md__media_sf__d__d_r_i_v_e__studia_6semestr_wds_wizualizacja_robota_mobilnego_sterowanego_gestami_prj__r_e_a_d_m_e.html',1,'']]],
-  ['wdata_2230',['wData',['../class_second_window.html#a7691183e11640e53b7ca4b752f006dbe',1,'SecondWindow']]],
+  ['wdata_2230',['wData',['../class_second_window.html#afbd98ceef67362e5b7031273945cf40a',1,'SecondWindow']]],
   ['wheelevent_2231',['wheelEvent',['../class_q_c_p_layerable.html#a47dfd7b8fd99c08ca54e09c362b6f022',1,'QCPLayerable::wheelEvent()'],['../class_q_c_p_axis.html#aa850f195d7cc470c53809d0fff5e444d',1,'QCPAxis::wheelEvent()'],['../class_q_custom_plot.html#a7848c9ac8be60bbd8fcea9b53be543c5',1,'QCustomPlot::wheelEvent()'],['../class_q_c_p_axis_rect.html#a93eeaa0c127d6d6fe8171b2455080262',1,'QCPAxisRect::wheelEvent()'],['../class_q_c_p_color_scale.html#a63cf19be184f6670c9495ad3a9a1baeb',1,'QCPColorScale::wheelEvent()'],['../class_q_c_p_polar_axis_radial.html#ab495743f9f7412a109af0b0065a7b9ae',1,'QCPPolarAxisRadial::wheelEvent()'],['../class_q_c_p_polar_axis_angular.html#a78f5d8c2c942fa1c47dcef5d96616e8d',1,'QCPPolarAxisAngular::wheelEvent()']]],
   ['whiskerantialiased_2232',['whiskerAntialiased',['../class_q_c_p_statistical_box.html#a2015a8ea758cf65a41d4a6c52a20696b',1,'QCPStatisticalBox']]],
   ['whiskerbarpen_2233',['whiskerBarPen',['../class_q_c_p_statistical_box.html#a47ed9ad9d2ca65640319a2f071982ed4',1,'QCPStatisticalBox']]],

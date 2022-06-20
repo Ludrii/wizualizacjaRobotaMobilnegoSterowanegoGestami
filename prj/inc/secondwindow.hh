@@ -22,7 +22,7 @@ class SecondWindow : public QDialog
 public:
     explicit SecondWindow(QWidget *parent = nullptr);
     ~SecondWindow();
-    std::array<int,4> *wData = nullptr;
+    std::array<float,6> *wData = nullptr;
     QSerialPort *wSerial = nullptr;
     /*!
      * \brief setArray
@@ -31,7 +31,7 @@ public:
      *
      * \param[in] wArray wskaźnik, za pomocą którego odpowiednie pole jest ustawiane
      */
-    void setArray(std::array<int,4> *wArray) { wData = wArray; }
+    void setArray(std::array<float,6> *wArray) { wData = wArray; }
     /*!
      * \brief setSerial
      *

@@ -33,7 +33,7 @@ public:
     Komunikacja  *_wLacze = nullptr;
     QSerialPort *serial;
     QTimer *timer;
-    std::array<int,4>  data;
+    std::array<float,6>  data;
     /*!
      * \brief UstawLacze
      *

@@ -85,7 +85,7 @@ var searchData=
   ['setantialiasedsubgrid_1778',['setAntialiasedSubGrid',['../class_q_c_p_grid.html#a5692310ba183721a413d60951407d114',1,'QCPGrid::setAntialiasedSubGrid()'],['../class_q_c_p_polar_grid.html#aaf455c16a110de3595a118959e6ea0a9',1,'QCPPolarGrid::setAntialiasedSubGrid()']]],
   ['setantialiasedzeroline_1779',['setAntialiasedZeroLine',['../class_q_c_p_grid.html#a3cc6d54647393ee71afb6da56af07aa4',1,'QCPGrid::setAntialiasedZeroLine()'],['../class_q_c_p_polar_grid.html#a9c9b241ecba6d89c494d6ccb9688b84e',1,'QCPPolarGrid::setAntialiasedZeroLine()']]],
   ['setantialiasing_1780',['setAntialiasing',['../class_q_c_p_painter.html#aaba1deb9188244d9ea65b035112b4d05',1,'QCPPainter']]],
-  ['setarray_1781',['setArray',['../class_second_window.html#ac14168bd0b3790a0fe6684207ad690c3',1,'SecondWindow']]],
+  ['setarray_1781',['setArray',['../class_second_window.html#aa3598b5bd4bc016b2ff16ba95f20bf94',1,'SecondWindow']]],
   ['setautoaddplottabletolegend_1782',['setAutoAddPlottableToLegend',['../class_q_custom_plot.html#ad8858410c2db47b7104040a3aa61c3fc',1,'QCustomPlot']]],
   ['setautomargins_1783',['setAutoMargins',['../class_q_c_p_layout_element.html#accfda49994e3e6d51ed14504abf9d27d',1,'QCPLayoutElement']]],
   ['setautosqueeze_1784',['setAutoSqueeze',['../class_q_c_p_data_container.html#a233f866760a78950d2a393c1a4bc54b5',1,'QCPDataContainer']]],

@@ -37,12 +37,13 @@ void MainWindow::on_pushButton_clicked()
     sW.setArray(&data);
     sW.setSerial(serial);
     sW.makePlot();
+    sW.show();
     sW.exec();
 }
 
 void MainWindow::lcdNumber()
 {
-    ui->lcdNumber->display(10*data.at(0));
+    ui->lcdNumber->display(data.at(4));
 }
 
 void MainWindow::openSerialPort()
@@ -70,14 +71,15 @@ bool MainWindow::getData()
 {
     QTextStream stream(serial->readAll());
     QString msgBegin, msgEnd;
-    std::array<int,5> temp;
+    std::array<float,7> temp;
     int sumComputed;
 
     stream>>msgBegin;
+
     if(msgBegin!="X")
         return 1;
 
-    for(int i=0;i<5;i++)
+    for(int i=0;i<7;i++)
     {
         stream>>temp.at(i);
     }
@@ -85,10 +87,10 @@ bool MainWindow::getData()
     stream>>msgEnd;
     if(msgEnd!="FC")
         return 1;
-    sumComputed=temp.at(0)+2*temp.at(1)+3*temp.at(2)+4*temp.at(3);
-    if(sumComputed==temp.at(4))
+    sumComputed=temp.at(0)+2*temp.at(1)+3*temp.at(2)+4*temp.at(3)+5*temp.at(4)+6*temp.at(5);
+    if(sumComputed==temp.at(6))
     {
-        for(int i=0;i<4;i++)
+        for(int i=0;i<6;i++)
         {
             data.at(i)=temp.at(i);
         }
@@ -98,7 +100,7 @@ bool MainWindow::getData()
 
 void MainWindow::progressBar()
 {
-    ui->progressBar->setValue(10*data.at(1));
+    ui->progressBar->setValue(data.at(5));
 }
 
 void MainWindow::greenLedOn()

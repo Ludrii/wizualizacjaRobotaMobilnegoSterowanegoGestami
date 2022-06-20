@@ -121,136 +121,139 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html',''); init
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> MainWindow::on_pushButton_clicked()</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_second_window.html">SecondWindow</a> sW(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    sW.setArray(&amp;<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    sW.setArray(&amp;<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    sW.setSerial(<a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    sW.makePlot();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    sW.exec();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> MainWindow::lcdNumber()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#ae7a7c202aa4d1093bd0d57e95adeb934">lcdNumber</a>-&gt;display(10*<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(0));</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> MainWindow::openSerialPort()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a>-&gt;<a class="code" href="class_komunikacja.html#aaa1e5c8b98cc07518518cbe956a01481">SkojarzObiektPortu</a>(<a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setBaudRate(QSerialPort::Baud115200);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setFlowControl(QSerialPort::NoFlowControl);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setStopBits(QSerialPort::OneStop);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setDataBits(QSerialPort::Data8);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setParity(QSerialPort::NoParity);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setPortName(QString::fromStdString(<a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a>-&gt;<a class="code" href="class_komunikacja.html#ae301d1451b9b6f1360113fcc69980fd9">_NazwaPortu</a>));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;open(QSerialPort::ReadOnly))</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::cerr &lt;&lt;<span class="stringliteral">&quot;:( Blad otwarcia portu &quot;</span>&lt;&lt; <a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a>-&gt;<a class="code" href="class_komunikacja.html#ae301d1451b9b6f1360113fcc69980fd9">_NazwaPortu</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        greenLedOn();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">bool</span> MainWindow::getData()</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QTextStream stream(<a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;readAll());</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QString msgBegin, msgEnd;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::array&lt;int,5&gt; temp;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> sumComputed;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    stream&gt;&gt;msgBegin;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span>(msgBegin!=<span class="stringliteral">&quot;X&quot;</span>)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;5;i++)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        stream&gt;&gt;temp.at(i);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    stream&gt;&gt;msgEnd;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span>(msgEnd!=<span class="stringliteral">&quot;FC&quot;</span>)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    sumComputed=temp.at(0)+2*temp.at(1)+3*temp.at(2)+4*temp.at(3);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span>(sumComputed==temp.at(4))</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;4;i++)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(i)=temp.at(i);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> MainWindow::progressBar()</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#a3310fb0a17f0aff07db695fbc82c3abc">progressBar</a>-&gt;setValue(10*<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(1));</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> MainWindow::greenLedOn()</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#a8a1aee885b11f9c7d55afe1a917c0111">led</a>-&gt;setPixmap(QPixmap(<span class="stringliteral">&quot;:/img/led_green.png&quot;</span>));</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span> MainWindow::draw()</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(0)&lt;=2)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        rect0-&gt;setBrush(Qt::red);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(0)&lt;=4)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        rect0-&gt;setBrush(Qt::yellow);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        rect0-&gt;setBrush(Qt::green);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    rect0-&gt;update();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(1)&lt;=2)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        rect1-&gt;setBrush(Qt::red);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(1)&lt;=4)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        rect1-&gt;setBrush(Qt::yellow);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        rect1-&gt;setBrush(Qt::green);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    rect1-&gt;update();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(2)&lt;=2)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        rect2-&gt;setBrush(Qt::red);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(2)&lt;=4)</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        rect2-&gt;setBrush(Qt::yellow);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        rect2-&gt;setBrush(Qt::green);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    rect2-&gt;update();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(3)&lt;=2)</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        rect3-&gt;setBrush(Qt::red);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">data</a>.at(3)&lt;=4)</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        rect3-&gt;setBrush(Qt::yellow);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        rect3-&gt;setBrush(Qt::green);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    rect3-&gt;update();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#aef4008f1a8703087445fcb0f3610b4f1">graphicsView</a>-&gt;fitInView( scene-&gt;sceneRect(), Qt::KeepAspectRatio );</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    sW.show();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    sW.exec();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> MainWindow::lcdNumber()</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#ae7a7c202aa4d1093bd0d57e95adeb934">lcdNumber</a>-&gt;display(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(4));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> MainWindow::openSerialPort()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a>-&gt;<a class="code" href="class_komunikacja.html#aaa1e5c8b98cc07518518cbe956a01481">SkojarzObiektPortu</a>(<a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setBaudRate(QSerialPort::Baud115200);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setFlowControl(QSerialPort::NoFlowControl);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setStopBits(QSerialPort::OneStop);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setDataBits(QSerialPort::Data8);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setParity(QSerialPort::NoParity);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;setPortName(QString::fromStdString(<a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a>-&gt;<a class="code" href="class_komunikacja.html#ae301d1451b9b6f1360113fcc69980fd9">_NazwaPortu</a>));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;open(QSerialPort::ReadOnly))</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::cerr &lt;&lt;<span class="stringliteral">&quot;:( Blad otwarcia portu &quot;</span>&lt;&lt; <a class="code" href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">_wLacze</a>-&gt;<a class="code" href="class_komunikacja.html#ae301d1451b9b6f1360113fcc69980fd9">_NazwaPortu</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        greenLedOn();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">bool</span> MainWindow::getData()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QTextStream stream(<a class="code" href="class_main_window.html#a9029411f21223671e111ff617fcece6a">serial</a>-&gt;readAll());</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QString msgBegin, msgEnd;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::array&lt;float,7&gt; temp;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> sumComputed;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    stream&gt;&gt;msgBegin;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span>(msgBegin!=<span class="stringliteral">&quot;X&quot;</span>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;7;i++)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        stream&gt;&gt;temp.at(i);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    stream&gt;&gt;msgEnd;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span>(msgEnd!=<span class="stringliteral">&quot;FC&quot;</span>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    sumComputed=temp.at(0)+2*temp.at(1)+3*temp.at(2)+4*temp.at(3)+5*temp.at(4)+6*temp.at(5);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span>(sumComputed==temp.at(6))</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;6;i++)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(i)=temp.at(i);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span> MainWindow::progressBar()</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#a3310fb0a17f0aff07db695fbc82c3abc">progressBar</a>-&gt;setValue(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(5));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> MainWindow::greenLedOn()</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#a8a1aee885b11f9c7d55afe1a917c0111">led</a>-&gt;setPixmap(QPixmap(<span class="stringliteral">&quot;:/img/led_green.png&quot;</span>));</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">void</span> MainWindow::draw()</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(0)&lt;=2)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        rect0-&gt;setBrush(Qt::red);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(0)&lt;=4)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        rect0-&gt;setBrush(Qt::yellow);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        rect0-&gt;setBrush(Qt::green);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    rect0-&gt;update();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(1)&lt;=2)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        rect1-&gt;setBrush(Qt::red);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(1)&lt;=4)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        rect1-&gt;setBrush(Qt::yellow);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        rect1-&gt;setBrush(Qt::green);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    rect1-&gt;update();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(2)&lt;=2)</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        rect2-&gt;setBrush(Qt::red);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(2)&lt;=4)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        rect2-&gt;setBrush(Qt::yellow);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        rect2-&gt;setBrush(Qt::green);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    rect2-&gt;update();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(3)&lt;=2)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        rect3-&gt;setBrush(Qt::red);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">data</a>.at(3)&lt;=4)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        rect3-&gt;setBrush(Qt::yellow);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        rect3-&gt;setBrush(Qt::green);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    rect3-&gt;update();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    ui-&gt;<a class="code" href="class_ui___main_window.html#aef4008f1a8703087445fcb0f3610b4f1">graphicsView</a>-&gt;fitInView( scene-&gt;sceneRect(), Qt::KeepAspectRatio );</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_main_window_html_a0f25f47e67c955e6db4a3163d8eeb674"><div class="ttname"><a href="class_main_window.html#a0f25f47e67c955e6db4a3163d8eeb674">MainWindow::data</a></div><div class="ttdeci">std::array&lt; float, 6 &gt; data</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00036">mainwindow.hh:36</a></div></div>
 <div class="ttc" id="aclass_ui___main_window_html_ae7a7c202aa4d1093bd0d57e95adeb934"><div class="ttname"><a href="class_ui___main_window.html#ae7a7c202aa4d1093bd0d57e95adeb934">Ui_MainWindow::lcdNumber</a></div><div class="ttdeci">QLCDNumber * lcdNumber</div><div class="ttdef"><b>Definition:</b> <a href="debug_2ui__mainwindow_8h_source.html#l00052">ui_mainwindow.h:52</a></div></div>
 <div class="ttc" id="aclass_komunikacja_html_ae301d1451b9b6f1360113fcc69980fd9"><div class="ttname"><a href="class_komunikacja.html#ae301d1451b9b6f1360113fcc69980fd9">Komunikacja::_NazwaPortu</a></div><div class="ttdeci">std::string _NazwaPortu</div><div class="ttdef"><b>Definition:</b> <a href="odbior_8hh_source.html#l00014">odbior.hh:14</a></div></div>
 <div class="ttc" id="aclass_main_window_html_a356578805ed1248a7f2807434cb0e5ee"><div class="ttname"><a href="class_main_window.html#a356578805ed1248a7f2807434cb0e5ee">MainWindow::timer</a></div><div class="ttdeci">QTimer * timer</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00035">mainwindow.hh:35</a></div></div>
@@ -264,7 +267,6 @@ $(document).ready(function(){initNavTree('mainwindow_8cpp_source.html',''); init
 <div class="ttc" id="aclass_main_window_html_a16e7807d8461b21efa581578c9da7917"><div class="ttname"><a href="class_main_window.html#a16e7807d8461b21efa581578c9da7917">MainWindow::_wLacze</a></div><div class="ttdeci">Komunikacja * _wLacze</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00033">mainwindow.hh:33</a></div></div>
 <div class="ttc" id="aclass_second_window_html"><div class="ttname"><a href="class_second_window.html">SecondWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="secondwindow_8hh_source.html#l00018">secondwindow.hh:18</a></div></div>
 <div class="ttc" id="aclass_ui___main_window_html_a8a1aee885b11f9c7d55afe1a917c0111"><div class="ttname"><a href="class_ui___main_window.html#a8a1aee885b11f9c7d55afe1a917c0111">Ui_MainWindow::led</a></div><div class="ttdeci">QLabel * led</div><div class="ttdef"><b>Definition:</b> <a href="debug_2ui__mainwindow_8h_source.html#l00047">ui_mainwindow.h:47</a></div></div>
-<div class="ttc" id="aclass_main_window_html_ae5154a2c04e0848be87395387597e7d0"><div class="ttname"><a href="class_main_window.html#ae5154a2c04e0848be87395387597e7d0">MainWindow::data</a></div><div class="ttdeci">std::array&lt; int, 4 &gt; data</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00036">mainwindow.hh:36</a></div></div>
 <div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">The MainWindow class.</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hh_source.html#l00027">mainwindow.hh:27</a></div></div>
 <div class="ttc" id="aclass_main_window_html_a996c5a2b6f77944776856f08ec30858d"><div class="ttname"><a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00004">mainwindow.cpp:4</a></div></div>
 <div class="ttc" id="aclass_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00027">mainwindow.cpp:27</a></div></div>
